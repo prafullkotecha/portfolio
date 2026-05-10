@@ -1,0 +1,38 @@
+{
+  "id": "metaphor-mindIT",
+  "title": "Metaphor MindIT",
+  "repo": "https://github.com/prafullkotecha/metaphor-mindIT",
+  "description": "> Transform complex technical concepts into culturally grounded metaphors that resonate across diverse learning backgrounds.",
+  "framework": "Unknown",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [
+    "elevenlabs",
+    "openai"
+  ],
+  "env_vars": [
+    "API_GATEWAY_PORT",
+    "API_GATEWAY_URL",
+    "AUDIO_GEN_PORT",
+    "AUDIO_GEN_URL",
+    "CULTURAL_SAFETY_PORT",
+    "CULTURAL_SAFETY_URL",
+    "DATABASE_URL",
+    "IMAGE_GEN_PORT",
+    "IMAGE_GEN_URL",
+    "LLM_MAX_TOKENS",
+    "LLM_MODEL",
+    "LLM_PROVIDER",
+    "LLM_TEMPERATURE",
+    "NEXTAUTH_SECRET",
+    "NEXTAUTH_URL"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-03-02",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

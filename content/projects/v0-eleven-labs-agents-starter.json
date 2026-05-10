@@ -1,0 +1,26 @@
+{
+  "id": "v0-eleven-labs-agents-starter",
+  "title": "Eleven Labs Agents Starter",
+  "repo": "https://github.com/prafullkotecha/v0-eleven-labs-agents-starter",
+  "description": "ElevenLabs voice-agent starter (Next.js + API routes).",
+  "framework": "Next.js",
+  "tier": "B",
+  "deploy_target": "vercel",
+  "ai_providers": [
+    "elevenlabs"
+  ],
+  "env_vars": [
+    "AGENT_ID",
+    "ELEVENLABS_API_KEY",
+    "NODE_ENV"
+  ],
+  "tags": [
+    "AI",
+    "Next.js"
+  ],
+  "source": "v0",
+  "last_commit": "2025-09-08",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

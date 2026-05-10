@@ -1,0 +1,26 @@
+{
+  "id": "gemini-ai-studio-done_and_dusted-family-chores-pk",
+  "title": "Done and Dusted Family Chores",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-done_and_dusted-family-chores-pk",
+  "description": "Family chore manager — assignments, streaks, AI nudges.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "APP_URL",
+    "DISABLE_HMR",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Productivity"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-04-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

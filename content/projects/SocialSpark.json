@@ -1,0 +1,17 @@
+{
+  "id": "SocialSpark",
+  "title": "SocialSpark",
+  "repo": "https://github.com/prafullkotecha/SocialSpark",
+  "description": "Social media content scheduling and inspiration tool.",
+  "framework": "Unknown",
+  "tier": "B",
+  "deploy_target": "manual",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Mixed",
+  "last_commit": "2025-09-12",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

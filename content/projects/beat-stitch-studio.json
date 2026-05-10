@@ -1,0 +1,19 @@
+{
+  "id": "beat-stitch-studio",
+  "title": "Beat Stitch Studio",
+  "repo": "https://github.com/prafullkotecha/beat-stitch-studio",
+  "description": "Beat-stitching studio — combine loops and samples in-browser.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Generative"
+  ],
+  "source": "Lovable",
+  "last_commit": "2025-08-22",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

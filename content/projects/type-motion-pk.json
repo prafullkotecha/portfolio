@@ -1,0 +1,25 @@
+{
+  "id": "type-motion-pk",
+  "title": "Type Motion",
+  "repo": "https://github.com/prafullkotecha/type-motion-pk",
+  "description": "Kinetic typography playground — animated type with motion presets.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-02-01",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

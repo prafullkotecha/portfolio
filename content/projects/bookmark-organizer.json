@@ -1,0 +1,22 @@
+{
+  "id": "bookmark-organizer",
+  "title": "Bookmark Organizer",
+  "repo": "https://github.com/prafullkotecha/bookmark-organizer",
+  "description": "Bookmark Organizer is a web application that helps you manage and organize your bookmarks. It allows you to save, categorize, and filter bookmarks from various sources.",
+  "framework": "Unknown",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [
+    "NODE_ENV",
+    "REACT_APP_USE_MOCK_API"
+  ],
+  "tags": [
+    "Productivity"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-05-25",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

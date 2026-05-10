@@ -1,0 +1,25 @@
+{
+  "id": "v0-eleven-labs-music-starter",
+  "title": "Eleven Labs Music Starter",
+  "repo": "https://github.com/prafullkotecha/v0-eleven-labs-music-starter",
+  "description": "ElevenLabs music generation starter.",
+  "framework": "Next.js",
+  "tier": "B",
+  "deploy_target": "vercel",
+  "ai_providers": [
+    "elevenlabs"
+  ],
+  "env_vars": [
+    "ELEVENLABS_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative",
+    "Next.js"
+  ],
+  "source": "v0",
+  "last_commit": "2025-09-08",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

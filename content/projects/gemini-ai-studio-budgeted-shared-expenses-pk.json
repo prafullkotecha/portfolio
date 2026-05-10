@@ -1,0 +1,27 @@
+{
+  "id": "gemini-ai-studio-budgeted-shared-expenses-pk",
+  "title": "Budgeted Shared Expenses",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-budgeted-shared-expenses-pk",
+  "description": "Shared expense tracker with budget AI suggestions — splits, categories.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "APP_URL",
+    "DISABLE_HMR",
+    "GEMINI_API_KEY",
+    "NODE_ENV"
+  ],
+  "tags": [
+    "AI",
+    "Productivity"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-04-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

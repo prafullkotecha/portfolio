@@ -1,0 +1,25 @@
+{
+  "id": "booth-lead-pro",
+  "title": "Booth Lead Pro",
+  "repo": "https://github.com/prafullkotecha/booth-lead-pro",
+  "description": "Lead capture for trade shows — kiosk-mode form + post-event email handoff.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Business"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-02-12",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

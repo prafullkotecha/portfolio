@@ -1,0 +1,26 @@
+{
+  "id": "gemini-ai-studio-ecommerce-category-generator-pk",
+  "title": "Ecommerce Category Generator",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-ecommerce-category-generator-pk",
+  "description": "Generate ecommerce category trees with Gemini — taxonomy at scale.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "APP_URL",
+    "DISABLE_HMR",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Business"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-04-28",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

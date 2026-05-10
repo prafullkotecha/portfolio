@@ -1,0 +1,19 @@
+{
+  "id": "ai-temp-recruiter",
+  "title": "AI Temp Recruiter",
+  "repo": "https://github.com/prafullkotecha/ai-temp-recruiter",
+  "description": "AI-assisted temp staffing flow — match candidates, score fits, draft outreach.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Business"
+  ],
+  "source": "Lovable",
+  "last_commit": "2025-11-26",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

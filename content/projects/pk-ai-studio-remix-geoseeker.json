@@ -1,0 +1,26 @@
+{
+  "id": "pk-ai-studio-remix-geoseeker",
+  "title": "Remix Geoseeker",
+  "repo": "https://github.com/prafullkotecha/pk-ai-studio-remix-geoseeker",
+  "description": "Geo-seek game using Gemini and Google Maps.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY",
+    "NODE_ENV",
+    "VITE_GOOGLE_MAPS_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-02-21",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

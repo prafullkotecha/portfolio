@@ -1,0 +1,17 @@
+{
+  "id": "gram-connect-on-net",
+  "title": "Gram Connect on Net",
+  "repo": "https://github.com/prafullkotecha/gram-connect-on-net",
+  "description": "Gram Panchayat connect — village-level civic info portal.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Lovable",
+  "last_commit": "2025-08-23",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

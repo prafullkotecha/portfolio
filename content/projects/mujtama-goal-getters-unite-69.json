@@ -1,0 +1,17 @@
+{
+  "id": "mujtama-goal-getters-unite-69",
+  "title": "Mujtama Goal Getters Unite 69",
+  "repo": "https://github.com/prafullkotecha/mujtama-goal-getters-unite-69",
+  "description": "Community goal-tracking platform — accountability circles.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Lovable",
+  "last_commit": "2025-04-17",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

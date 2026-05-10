@@ -1,0 +1,35 @@
+{
+  "id": "field-service-pro-sa",
+  "title": "Field Service Pro",
+  "repo": "https://github.com/prafullkotecha/field-service-pro-sa",
+  "description": "ServicePro is a comprehensive, multi-tenant SaaS platform designed to empower small to medium professional service businesses. It provides the tools to efficiently manage field operations, customer re",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [
+    "API_PORT",
+    "CI",
+    "DATABASE_URL",
+    "DB_PORT",
+    "DEV",
+    "JWT_ACCESS_EXPIRY_SECONDS",
+    "JWT_REFRESH_EXPIRY_SECONDS",
+    "JWT_SECRET",
+    "NODE_ENV",
+    "POSTGRES_DB",
+    "POSTGRES_PASSWORD",
+    "POSTGRES_USER",
+    "PROJECT_ROOT",
+    "SECRETS_ENCRYPTION_KEY",
+    "STORAGE_BACKEND"
+  ],
+  "tags": [
+    "Productivity"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-04-19",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

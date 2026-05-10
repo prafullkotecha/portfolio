@@ -1,0 +1,17 @@
+{
+  "id": "bloom-align-connect",
+  "title": "Bloom Align Connect",
+  "repo": "https://github.com/prafullkotecha/bloom-align-connect",
+  "description": "Wellness platform connecting practitioners and clients with intake flows.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Lovable",
+  "last_commit": "2025-10-19",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

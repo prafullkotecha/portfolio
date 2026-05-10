@@ -1,0 +1,22 @@
+{
+  "id": "PassGenius",
+  "title": "PassGenius",
+  "repo": "https://github.com/prafullkotecha/PassGenius",
+  "description": "Password manager with vault, tags, and breach checking.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [
+    "DATABASE_URL",
+    "NODE_ENV",
+    "PORT",
+    "REPL_ID"
+  ],
+  "tags": [],
+  "source": "Replit",
+  "last_commit": "2025-08-15",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

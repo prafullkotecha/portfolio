@@ -1,0 +1,125 @@
+# Pages CMS configuration
+# https://pagescms.org/docs/configuration
+#
+# After committing this file, visit https://pagescms.org and connect
+# the prafullkotecha/portfolio repo. You'll get an admin UI for editing
+# everything below.
+
+media: public/screenshots
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    format: json
+    filename: '{fields.id}.json'
+    view:
+      fields: [title, tier, framework, source, published, live_url]
+      primary: title
+      sort: [tier, title]
+      group:
+        field: tier
+      search: [id, title, description, tags]
+    fields:
+      - name: id
+        label: 'Project ID (must match GitHub repo name; do not change after creation)'
+        type: string
+        required: true
+        pattern:
+          regex: '^[a-zA-Z0-9_-]+$'
+          message: 'Only letters, numbers, dashes, underscores'
+
+      - name: title
+        label: 'Display title'
+        type: string
+        required: true
+
+      - name: published
+        label: 'Published (uncheck to hide from the portfolio without deleting)'
+        type: boolean
+        default: true
+
+      - name: tier
+        label: 'Tier'
+        type: select
+        options:
+          values:
+            - { value: 'A', label: 'A — Live (deploy-ready)' }
+            - { value: 'B', label: 'B — Soon (minor work)' }
+            - { value: 'C', label: 'C — Source-only (backend-heavy)' }
+        default: 'A'
+        required: true
+
+      - name: description
+        label: 'Description (1-2 sentences shown on cards)'
+        type: text
+
+      - name: live_url
+        label: 'Live demo URL (set this once deployed)'
+        type: string
+        pattern:
+          regex: '^(https?://.*)?$'
+          message: 'Must be a URL starting with http:// or https:// (or empty)'
+
+      - name: repo
+        label: 'GitHub repo URL'
+        type: string
+        required: true
+
+      - name: screenshot
+        label: 'Screenshot (uploaded to public/screenshots/)'
+        type: image
+
+      - name: framework
+        label: 'Framework'
+        type: string
+
+      - name: source
+        label: 'Built with'
+        type: select
+        options:
+          values: ['Google AI Studio', 'v0', 'Lovable', 'Bolt', 'Replit', 'Mixed']
+        default: 'Mixed'
+
+      - name: deploy_target
+        label: 'Deploy target'
+        type: select
+        options:
+          values:
+            - 'cloudflare-pages'
+            - 'vercel'
+            - 'deferred'
+            - 'manual'
+        default: 'cloudflare-pages'
+
+      - name: ai_providers
+        label: 'AI providers'
+        type: select
+        list: true
+        options:
+          multiple: true
+          creatable: true
+          values: ['gemini', 'openai', 'anthropic', 'elevenlabs', 'replicate', 'huggingface', 'stability']
+
+      - name: tags
+        label: 'Tags'
+        type: select
+        list: true
+        options:
+          multiple: true
+          creatable: true
+          values: ['AI', 'Generative', 'Productivity', 'Healthcare', 'Business', 'Demo', 'Static/Landing', 'Supabase', 'Next.js']
+
+      - name: env_vars
+        label: 'Env vars needed at build/runtime'
+        type: string
+        list: true
+
+      - name: last_commit
+        label: 'Last commit (YYYY-MM-DD)'
+        type: date
+
+settings:
+  content:
+    merge: false  # we use direct commits, not PRs

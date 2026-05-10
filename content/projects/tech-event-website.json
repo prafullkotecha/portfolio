@@ -1,0 +1,19 @@
+{
+  "id": "tech-event-website",
+  "title": "Tech Event Website",
+  "repo": "https://github.com/prafullkotecha/tech-event-website",
+  "description": "Tech conference schedule site — static HTML in `public/`, deployable as-is (no build needed).",
+  "framework": "Static (public/)",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Static/Landing"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-09-17",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "fit-check-pk",
+  "title": "Fit Check",
+  "repo": "https://github.com/prafullkotecha/fit-check-pk",
+  "description": "Outfit-check using Gemini vision — feedback on clothing combinations.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-22",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

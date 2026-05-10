@@ -1,0 +1,28 @@
+{
+  "id": "gemini-ai-studio-therapy-assistant",
+  "title": "Therapy Assistant",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-therapy-assistant",
+  "description": "Therapy assistant — session notes, sentiment tracking via Gemini.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "FRONTEND_URL",
+    "GEMINI_API_KEY",
+    "NODE_ENV",
+    "PORT",
+    "VITE_BACKEND_URL"
+  ],
+  "tags": [
+    "AI",
+    "Healthcare"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-11-04",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

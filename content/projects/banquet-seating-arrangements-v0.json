@@ -1,0 +1,24 @@
+{
+  "id": "banquet-seating-arrangements-v0",
+  "title": "Banquet Seating Arrangements",
+  "repo": "https://github.com/prafullkotecha/banquet-seating-arrangements-v0",
+  "description": "Drag-and-drop banquet seating planner with table layouts and guest constraints.",
+  "framework": "Next.js",
+  "tier": "B",
+  "deploy_target": "vercel",
+  "ai_providers": [],
+  "env_vars": [
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "SUPABASE_SERVICE_ROLE_KEY"
+  ],
+  "tags": [
+    "Next.js",
+    "Supabase"
+  ],
+  "source": "v0",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

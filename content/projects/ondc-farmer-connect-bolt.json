@@ -1,0 +1,17 @@
+{
+  "id": "ondc-farmer-connect-bolt",
+  "title": "ONDC Farmer Connect Bolt",
+  "repo": "https://github.com/prafullkotecha/ondc-farmer-connect-bolt",
+  "description": "ONDC farmer-buyer marketplace prototype — Expo Router app exported to web (`expo export --platform web`).",
+  "framework": "Expo (Web)",
+  "tier": "B",
+  "deploy_target": "vercel",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Mixed",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

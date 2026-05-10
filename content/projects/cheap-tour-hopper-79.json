@@ -1,0 +1,17 @@
+{
+  "id": "cheap-tour-hopper-79",
+  "title": "Cheap Tour Hopper 79",
+  "repo": "https://github.com/prafullkotecha/cheap-tour-hopper-79",
+  "description": "Discount tour aggregator UI — search, compare, save itineraries.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Lovable",
+  "last_commit": "2025-04-13",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

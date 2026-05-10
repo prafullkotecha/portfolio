@@ -1,0 +1,20 @@
+{
+  "id": "b-claim-alchemy",
+  "title": "B Claim Alchemy",
+  "repo": "https://github.com/prafullkotecha/b-claim-alchemy",
+  "description": "Healthcare claims alchemy — transform raw claims data through ETL pipelines.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Healthcare",
+    "Business"
+  ],
+  "source": "Lovable",
+  "last_commit": "2025-07-14",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

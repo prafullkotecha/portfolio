@@ -1,0 +1,27 @@
+{
+  "id": "StickerSage",
+  "title": "StickerSage",
+  "repo": "https://github.com/prafullkotecha/StickerSage",
+  "description": "AI sticker generator with OpenAI image API — themes, packs.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [
+    "openai"
+  ],
+  "env_vars": [
+    "DATABASE_URL",
+    "NODE_ENV",
+    "OPENAI_API_KEY",
+    "REPL_ID",
+    "VITE_OPENAI_API_KEY"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Replit",
+  "last_commit": "2025-04-13",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

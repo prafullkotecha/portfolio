@@ -1,0 +1,25 @@
+{
+  "id": "ai-dj-playset-generator",
+  "title": "AI DJ Playset Generator",
+  "repo": "https://github.com/prafullkotecha/ai-dj-playset-generator",
+  "description": "Generate themed DJ setlists with Gemini — moods, BPM curves, transitions.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

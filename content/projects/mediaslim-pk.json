@@ -1,0 +1,25 @@
+{
+  "id": "mediaslim-pk",
+  "title": "Mediaslim",
+  "repo": "https://github.com/prafullkotecha/mediaslim-pk",
+  "description": "Trim and compress media files in-browser with FFmpeg.wasm.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-10",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

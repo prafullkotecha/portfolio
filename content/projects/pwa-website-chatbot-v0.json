@@ -1,0 +1,22 @@
+{
+  "id": "pwa-website-chatbot-v0",
+  "title": "PWA Website Chatbot",
+  "repo": "https://github.com/prafullkotecha/pwa-website-chatbot-v0",
+  "description": "PWA chatbot embedded on a marketing site — Next.js + OpenAI.",
+  "framework": "Next.js",
+  "tier": "B",
+  "deploy_target": "vercel",
+  "ai_providers": [
+    "openai"
+  ],
+  "env_vars": [],
+  "tags": [
+    "AI",
+    "Next.js"
+  ],
+  "source": "v0",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

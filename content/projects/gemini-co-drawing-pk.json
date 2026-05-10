@@ -1,0 +1,25 @@
+{
+  "id": "gemini-co-drawing-pk",
+  "title": "Gemini Co Drawing",
+  "repo": "https://github.com/prafullkotecha/gemini-co-drawing-pk",
+  "description": "Collaborative drawing canvas with Gemini turn-by-turn assistance.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

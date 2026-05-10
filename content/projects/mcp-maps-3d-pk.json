@@ -1,0 +1,24 @@
+{
+  "id": "mcp-maps-3d-pk",
+  "title": "MCP Maps 3D",
+  "repo": "https://github.com/prafullkotecha/mcp-maps-3d-pk",
+  "description": "MCP server demo with 3D maps integration.",
+  "framework": "Vite",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

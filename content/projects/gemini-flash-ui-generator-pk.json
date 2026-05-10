@@ -1,0 +1,25 @@
+{
+  "id": "gemini-flash-ui-generator-pk",
+  "title": "UI Generator",
+  "repo": "https://github.com/prafullkotecha/gemini-flash-ui-generator-pk",
+  "description": "Generate React UI from text prompts using Gemini Flash.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-02-01",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -20,26 +20,68 @@ Steady-state cost target: **~$1/mo** (just the domain). Free tiers cover everyth
 4. Tier B (Vercel for v0/Next.js apps, Supabase shared project for the 3 that need it)
 5. Tier C stays source-only on the portfolio for now — tackle later with Neon + Railway
 
+## Editing projects (admin UI)
+
+The catalog is editable via [Pages CMS](https://pagescms.org) — a free, hosted, git-backed CMS. No coding required.
+
+### One-time setup
+
+1. Visit https://pagescms.org and log in with GitHub
+2. Authorize access to the `prafullkotecha/portfolio` repo
+3. Pages CMS reads `.pages.yml` and renders an admin UI matching the schema
+
+### Day-to-day
+
+- **Add a project**: New entry → fill the form → save (Pages CMS commits a new file to `content/projects/{id}.json`)
+- **Edit details**: Click any project → edit fields → save
+- **Hide a project**: Uncheck "Published" (filters it out without deleting)
+- **Add a screenshot**: Upload via the Screenshot field (commits to `public/screenshots/`)
+- **Set live URL after deploy**: Just paste it into the Live URL field
+
+Each save commits to GitHub → Vercel auto-rebuilds → live in ~30 seconds.
+
+### How it works under the hood
+
+- Source of truth: `content/projects/*.json` (one file per project, ~71 today)
+- Build-time aggregator: `scripts/aggregate-projects.mjs` runs at `predev` and `prebuild`, reading all files in `content/projects/`, filtering out unpublished entries, and writing the result to `src/data/projects.json`
+- The three React pages (`/`, `/v2`, `/v3`) import from `src/data/projects.json` as before — they don't know the CMS exists
+- `src/data/projects.json` is git-ignored (regenerated on each build) so there's only one source of truth
+
+### Editing without the CMS
+
+You can always edit `content/projects/{id}.json` directly — via GitHub's web editor (press `.` on the repo) or in your editor of choice. Same effect.
+
+To bulk-edit (e.g., set `live_url` for 20 projects in one go), use:
+
+```bash
+./scripts/set-live-url.sh chat-with-docs-pk https://chat-with-docs-pk.yourdomain.com
+```
+
+It updates the right file in `content/projects/`. Commit and push as usual.
+
 ## Repo layout
 
 ```
 .
+├── content/projects/   # ← source of truth, one .json per project (edit via Pages CMS)
 ├── src/                # Next.js portfolio site
-├── public/
-├── docs/
-│   ├── TRIAGE.md           # what was found in 71 repos, by tier
-│   └── triage-raw.json     # raw analyzer output (framework, env, AI providers, etc.)
+│   ├── app/{,/v2,/v3}/page.tsx  # three design alternatives
+│   ├── components/ProjectCard.tsx
+│   ├── data/projects.json       # ← GENERATED at build time from content/projects/
+│   └── lib/types.ts
+├── public/screenshots/ # uploaded via Pages CMS
 ├── scripts/
-│   ├── set-live-url.sh     # update a project's live_url after deploy
-│   ├── cf-bulk-create.sh   # optional: bulk-create CF Pages projects via API
-│   └── ai-proxy-worker/    # Cloudflare Worker proxying Gemini/OpenAI/ElevenLabs
-│       ├── src/index.js
-│       ├── deploy.sh           # one-shot deploy + secrets
-│       ├── PATCHING.md         # how to migrate an app from direct SDK to proxy
-│       ├── README.md
-│       └── wrangler.toml
-├── RUNBOOK.md          # full deploy runbook for all 71 projects
-└── PROJECTS-CHECKLIST.csv  # tick-box list of all 71 projects
+│   ├── aggregate-projects.mjs   # runs at predev/prebuild — aggregates content/projects → src/data/projects.json
+│   ├── migrate-to-content.mjs   # one-time, already run
+│   ├── set-live-url.sh
+│   ├── cf-bulk-create.sh
+│   └── ai-proxy-worker/         # CF Worker for AI key proxy
+├── docs/
+│   ├── TRIAGE.md
+│   └── triage-raw.json
+├── .pages.yml          # Pages CMS configuration (admin UI schema)
+├── RUNBOOK.md
+└── PROJECTS-CHECKLIST.csv
 ```
 
 The Next.js project lives at the repo root; everything else (`docs/`, `scripts/`, `RUNBOOK.md`, `PROJECTS-CHECKLIST.csv`) is operational and ignored by Vercel's build.
@@ -77,23 +119,6 @@ npm run build
 2. Framework preset: **Next.js (Static HTML Export)**
 3. Build command: `npm run build`
 4. Output directory: `out`
-
-## Adding a live URL after deploying a project
-
-Easy way:
-```bash
-# from the repo root:
-./scripts/set-live-url.sh chat-with-docs-pk https://chat-with-docs-pk.yourdomain.com
-git add -A && git commit -m "live: chat-with-docs-pk" && git push
-```
-
-Manual way: edit `src/data/projects.json`, find the project's `id`, set its `live_url`, push.
-
-## Adding screenshots (optional, future)
-
-1. Drop images in `public/screenshots/` named `<project-id>.png`
-2. Update `ProjectCard.tsx` to render `/screenshots/${project.id}.png` if it exists
-3. Vercel will serve them statically
 
 ## Customizing
 

@@ -1,0 +1,25 @@
+{
+  "id": "get-started-with-gemini-js-sdk-pk",
+  "title": "Get Started with Gemini JS SDK",
+  "repo": "https://github.com/prafullkotecha/get-started-with-gemini-js-sdk-pk",
+  "description": "Starter for the Gemini JS SDK — minimal, dependency-light.",
+  "framework": "Vite",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Demo"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

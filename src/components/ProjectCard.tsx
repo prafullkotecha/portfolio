@@ -29,6 +29,18 @@ export function ProjectCard({ project, index, delay }: { project: Project; index
         </div>
       </div>
 
+      {/* Screenshot (when present) */}
+      {project.screenshot && (
+        <div className="mb-3 -mx-1 overflow-hidden border border-ink/10 bg-paperShade aspect-[16/10]">
+          <img
+            src={project.screenshot}
+            alt={`Screenshot of ${project.title}`}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      )}
+
       {/* Title */}
       <h3 className="font-display text-2xl leading-tight text-ink mb-2 group-hover:text-rust transition-colors">
         {project.title}

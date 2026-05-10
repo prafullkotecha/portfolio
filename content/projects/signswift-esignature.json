@@ -1,0 +1,24 @@
+{
+  "id": "signswift-esignature",
+  "title": "Signswift Esignature",
+  "repo": "https://github.com/prafullkotecha/signswift-esignature",
+  "description": "E-signature flow — drag-drop fields, signing order, audit log.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,21 @@
+{
+  "id": "bolt-commerce-js-store",
+  "title": "Commerce JS Store",
+  "repo": "https://github.com/prafullkotecha/bolt-commerce-js-store",
+  "description": "bolt-commerce-js-store",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [
+    "VITE_COMMERCEJS_PUBLIC_KEY"
+  ],
+  "tags": [
+    "Business"
+  ],
+  "source": "Bolt",
+  "last_commit": "2025-09-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

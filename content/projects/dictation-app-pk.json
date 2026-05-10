@@ -1,0 +1,25 @@
+{
+  "id": "dictation-app-pk",
+  "title": "Dictation App",
+  "repo": "https://github.com/prafullkotecha/dictation-app-pk",
+  "description": "Voice dictation app — record, transcribe with Gemini, export.",
+  "framework": "Vite",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Productivity"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "digital-garage-ai",
+  "title": "Digital Garage AI",
+  "repo": "https://github.com/prafullkotecha/digital-garage-ai",
+  "description": "AI assistant for car maintenance and DIY garage workflows.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

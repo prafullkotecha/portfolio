@@ -1,0 +1,25 @@
+{
+  "id": "340b-platform",
+  "title": "340B Platform",
+  "repo": "https://github.com/prafullkotecha/340b-platform",
+  "description": "Reference UI for a 340B drug discount program platform \u2014 eligibility, claims, reporting.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Healthcare"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

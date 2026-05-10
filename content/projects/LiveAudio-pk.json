@@ -1,0 +1,24 @@
+{
+  "id": "LiveAudio-pk",
+  "title": "LiveAudio",
+  "repo": "https://github.com/prafullkotecha/LiveAudio-pk",
+  "description": "Live audio capture and Gemini Live API integration demo.",
+  "framework": "Vite",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-09-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

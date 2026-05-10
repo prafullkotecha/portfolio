@@ -1,0 +1,25 @@
+{
+  "id": "dashboard-prototype-playful",
+  "title": "Dashboard Prototype Playful",
+  "repo": "https://github.com/prafullkotecha/dashboard-prototype-playful",
+  "description": "Playful analytics dashboard prototype with whimsical micro-interactions.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Business"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

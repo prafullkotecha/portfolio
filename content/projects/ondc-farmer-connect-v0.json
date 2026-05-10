@@ -1,0 +1,26 @@
+{
+  "id": "ondc-farmer-connect-v0",
+  "title": "ONDC Farmer Connect",
+  "repo": "https://github.com/prafullkotecha/ondc-farmer-connect-v0",
+  "description": "ONDC farmer-buyer marketplace prototype (v0/Next.js).",
+  "framework": "Next.js",
+  "tier": "B",
+  "deploy_target": "vercel",
+  "ai_providers": [],
+  "env_vars": [
+    "ONDC_ENCRYPTION_PUBLIC_KEY",
+    "ONDC_GATEWAY_URL",
+    "ONDC_REGISTRY_URL",
+    "ONDC_SIGNING_PUBLIC_KEY",
+    "ONDC_SUBSCRIBER_ID",
+    "ONDC_SUBSCRIBER_URI"
+  ],
+  "tags": [
+    "Next.js"
+  ],
+  "source": "v0",
+  "last_commit": "2025-08-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

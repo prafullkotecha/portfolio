@@ -1,0 +1,24 @@
+{
+  "id": "ClinicConnect",
+  "title": "ClinicConnect",
+  "repo": "https://github.com/prafullkotecha/ClinicConnect",
+  "description": "Clinic management — patient records, scheduling, billing (Express+Drizzle+Postgres).",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [
+    "DATABASE_URL",
+    "NODE_ENV",
+    "PORT",
+    "REPLIT_DEV_DOMAIN",
+    "REPLIT_INTERNAL_APP_DOMAIN",
+    "REPL_ID"
+  ],
+  "tags": [],
+  "source": "Replit",
+  "last_commit": "2025-11-24",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

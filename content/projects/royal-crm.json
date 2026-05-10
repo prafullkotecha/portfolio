@@ -1,0 +1,19 @@
+{
+  "id": "royal-crm",
+  "title": "Royal CRM",
+  "repo": "https://github.com/prafullkotecha/royal-crm",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Business"
+  ],
+  "source": "Mixed",
+  "last_commit": "2025-05-25",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

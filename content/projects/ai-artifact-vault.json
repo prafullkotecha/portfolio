@@ -1,0 +1,23 @@
+{
+  "id": "ai-artifact-vault",
+  "title": "AI Artifact Vault",
+  "repo": "https://github.com/prafullkotecha/ai-artifact-vault",
+  "description": "Personal vault for AI-generated artifacts — chat snippets, prompts, outputs.",
+  "framework": "Vite+React",
+  "tier": "B",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [
+    "VITE_SUPABASE_PROJECT_ID",
+    "VITE_SUPABASE_PUBLISHABLE_KEY",
+    "VITE_SUPABASE_URL"
+  ],
+  "tags": [
+    "Supabase"
+  ],
+  "source": "Lovable",
+  "last_commit": "2025-08-24",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

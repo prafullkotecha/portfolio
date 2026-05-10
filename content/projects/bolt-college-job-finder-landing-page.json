@@ -1,0 +1,19 @@
+{
+  "id": "bolt-college-job-finder-landing-page",
+  "title": "College Job Finder Landing Page",
+  "repo": "https://github.com/prafullkotecha/bolt-college-job-finder-landing-page",
+  "description": "bolt-college-job-finder-landing-page",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Static/Landing"
+  ],
+  "source": "Bolt",
+  "last_commit": "2025-09-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "document-zenith-view",
+  "title": "Document Zenith View",
+  "repo": "https://github.com/prafullkotecha/document-zenith-view",
+  "description": "Document viewer with zen reading mode and annotation overlays.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Lovable",
+  "last_commit": "2025-08-14",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

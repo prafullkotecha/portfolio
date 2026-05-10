@@ -1,0 +1,25 @@
+{
+  "id": "gemini-ai-studio-robotics-spatial-understanding-pk",
+  "title": "Robotics Spatial Understanding",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-robotics-spatial-understanding-pk",
+  "description": "Spatial understanding demo for robotics with Gemini multi-modal.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Demo"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2025-10-23",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

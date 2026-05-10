@@ -1,0 +1,28 @@
+{
+  "id": "tu-dekha",
+  "title": "Tu Dekha",
+  "repo": "https://github.com/prafullkotecha/tu-dekha",
+  "description": "A modern, full-stack event management platform built with React, TypeScript, and Lovable Cloud. Create, discover, and manage events with an intuitive interface and powerful features.",
+  "framework": "Vite+React",
+  "tier": "B",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "openai"
+  ],
+  "env_vars": [
+    "DEV",
+    "VITE_GOOGLE_MAPS_API_KEY",
+    "VITE_SUPABASE_PROJECT_ID",
+    "VITE_SUPABASE_PUBLISHABLE_KEY",
+    "VITE_SUPABASE_URL"
+  ],
+  "tags": [
+    "AI",
+    "Supabase"
+  ],
+  "source": "Lovable",
+  "last_commit": "2026-03-09",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

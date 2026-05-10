@@ -1,0 +1,36 @@
+{
+  "id": "therapy-clinic-nextjs",
+  "title": "Therapy Clinic Nextjs",
+  "repo": "https://github.com/prafullkotecha/therapy-clinic-nextjs",
+  "description": "Multi-tenant HIPAA-compliant behavioral therapy clinic management system",
+  "framework": "Next.js",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [
+    "ANALYZE",
+    "ARCJET_KEY",
+    "AUTH_PROVIDERS",
+    "AUTH_SECRET",
+    "AUTH_URL",
+    "AWS_REGION",
+    "CHECKLY_EMAIL_ADDRESS",
+    "CHECKLY_LOGICAL_ID",
+    "CHECKLY_PROJECT_NAME",
+    "CI",
+    "DATABASE_URL",
+    "DEV_BYPASS_AUTH",
+    "ENVIRONMENT_URL",
+    "KEYCLOAK_CLIENT_ID",
+    "KEYCLOAK_CLIENT_SECRET"
+  ],
+  "tags": [
+    "Healthcare",
+    "Next.js"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-03-29",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

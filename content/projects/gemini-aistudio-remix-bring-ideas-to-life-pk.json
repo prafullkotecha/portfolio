@@ -1,0 +1,25 @@
+{
+  "id": "gemini-aistudio-remix-bring-ideas-to-life-pk",
+  "title": "Remix Bring Ideas to Life",
+  "repo": "https://github.com/prafullkotecha/gemini-aistudio-remix-bring-ideas-to-life-pk",
+  "description": "Idea-to-prototype remix using Gemini — sketch → spec → UI.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-04-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

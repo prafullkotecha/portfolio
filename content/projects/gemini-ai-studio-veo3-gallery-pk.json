@@ -1,0 +1,25 @@
+{
+  "id": "gemini-ai-studio-veo3-gallery-pk",
+  "title": "Veo3 Gallery",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-veo3-gallery-pk",
+  "description": "Gallery for Veo3-generated videos with prompt history.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-04-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

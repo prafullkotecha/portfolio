@@ -1,0 +1,17 @@
+{
+  "id": "bolt-slidev-forked",
+  "title": "Slidev Forked",
+  "repo": "https://github.com/prafullkotecha/bolt-slidev-forked",
+  "description": "[Edit on StackBlitz ⚡️](https://sli.dev/new)",
+  "framework": "Unknown",
+  "tier": "A",
+  "deploy_target": "manual",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [],
+  "source": "Bolt",
+  "last_commit": "2025-09-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gemini-ai-studio-echoscript-pk",
+  "title": "Echoscript",
+  "repo": "https://github.com/prafullkotecha/gemini-ai-studio-echoscript-pk",
+  "description": "Voice → script → action workflow with Gemini live audio.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-04-27",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

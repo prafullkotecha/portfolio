@@ -1,0 +1,22 @@
+{
+  "id": "HomeInventory",
+  "title": "HomeInventory",
+  "repo": "https://github.com/prafullkotecha/HomeInventory",
+  "description": "Home inventory tracker with photos, warranties, and rooms.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [
+    "DATABASE_URL",
+    "NODE_ENV",
+    "PORT",
+    "REPL_ID"
+  ],
+  "tags": [],
+  "source": "Replit",
+  "last_commit": "2025-08-11",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

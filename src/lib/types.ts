@@ -14,4 +14,6 @@ export interface Project {
   source: string;
   last_commit: string;
   live_url: string | null;
+  published?: boolean;     // CMS-managed; default true
+  screenshot?: string | null;  // CMS-managed; path under /public/screenshots/
 }
