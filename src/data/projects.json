@@ -1,0 +1,1531 @@
+[
+  {
+    "id": "340b-platform",
+    "title": "340B Platform",
+    "repo": "https://github.com/prafullkotecha/340b-platform",
+    "description": "Reference UI for a 340B drug discount program platform \u2014 eligibility, claims, reporting.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Healthcare"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "ai-dj-playset-generator",
+    "title": "AI DJ Playset Generator",
+    "repo": "https://github.com/prafullkotecha/ai-dj-playset-generator",
+    "description": "Generate themed DJ setlists with Gemini \u2014 moods, BPM curves, transitions.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "ai-temp-recruiter",
+    "title": "AI Temp Recruiter",
+    "repo": "https://github.com/prafullkotecha/ai-temp-recruiter",
+    "description": "AI-assisted temp staffing flow \u2014 match candidates, score fits, draft outreach.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Business"
+    ],
+    "source": "Lovable",
+    "last_commit": "2025-11-26",
+    "live_url": null
+  },
+  {
+    "id": "b-claim-alchemy",
+    "title": "B Claim Alchemy",
+    "repo": "https://github.com/prafullkotecha/b-claim-alchemy",
+    "description": "Healthcare claims alchemy \u2014 transform raw claims data through ETL pipelines.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Healthcare",
+      "Business"
+    ],
+    "source": "Lovable",
+    "last_commit": "2025-07-14",
+    "live_url": null
+  },
+  {
+    "id": "beat-by-dj-pooja",
+    "title": "Beat by DJ Pooja",
+    "repo": "https://github.com/prafullkotecha/beat-by-dj-pooja",
+    "description": "Promo site for DJ Pooja \u2014 mixes, events, contact.",
+    "framework": "Next.js",
+    "tier": "A",
+    "deploy_target": "vercel",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Generative",
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "beat-stitch-studio",
+    "title": "Beat Stitch Studio",
+    "repo": "https://github.com/prafullkotecha/beat-stitch-studio",
+    "description": "Beat-stitching studio \u2014 combine loops and samples in-browser.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Generative"
+    ],
+    "source": "Lovable",
+    "last_commit": "2025-08-22",
+    "live_url": null
+  },
+  {
+    "id": "bloom-align-connect",
+    "title": "Bloom Align Connect",
+    "repo": "https://github.com/prafullkotecha/bloom-align-connect",
+    "description": "Wellness platform connecting practitioners and clients with intake flows.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Lovable",
+    "last_commit": "2025-10-19",
+    "live_url": null
+  },
+  {
+    "id": "booth-lead-pro",
+    "title": "Booth Lead Pro",
+    "repo": "https://github.com/prafullkotecha/booth-lead-pro",
+    "description": "Lead capture for trade shows \u2014 kiosk-mode form + post-event email handoff.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Business"
+    ],
+    "source": "Mixed",
+    "last_commit": "2026-02-12",
+    "live_url": null
+  },
+  {
+    "id": "chat-with-docs-pk",
+    "title": "Chat with Docs",
+    "repo": "https://github.com/prafullkotecha/chat-with-docs-pk",
+    "description": "Upload documents and chat with them via Gemini \u2014 RAG without a backend.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "cheap-tour-hopper-79",
+    "title": "Cheap Tour Hopper 79",
+    "repo": "https://github.com/prafullkotecha/cheap-tour-hopper-79",
+    "description": "Discount tour aggregator UI \u2014 search, compare, save itineraries.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Lovable",
+    "last_commit": "2025-04-13",
+    "live_url": null
+  },
+  {
+    "id": "bolt-college-job-finder-landing-page",
+    "title": "College Job Finder Landing Page",
+    "repo": "https://github.com/prafullkotecha/bolt-college-job-finder-landing-page",
+    "description": "bolt-college-job-finder-landing-page",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Static/Landing"
+    ],
+    "source": "Bolt",
+    "last_commit": "2025-09-27",
+    "live_url": null
+  },
+  {
+    "id": "bolt-commerce-js-store",
+    "title": "Commerce JS Store",
+    "repo": "https://github.com/prafullkotecha/bolt-commerce-js-store",
+    "description": "bolt-commerce-js-store",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [
+      "VITE_COMMERCEJS_PUBLIC_KEY"
+    ],
+    "tags": [
+      "Business"
+    ],
+    "source": "Bolt",
+    "last_commit": "2025-09-27",
+    "live_url": null
+  },
+  {
+    "id": "dashboard-prototype-playful",
+    "title": "Dashboard Prototype Playful",
+    "repo": "https://github.com/prafullkotecha/dashboard-prototype-playful",
+    "description": "Playful analytics dashboard prototype with whimsical micro-interactions.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Business"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "dictation-app-pk",
+    "title": "Dictation App",
+    "repo": "https://github.com/prafullkotecha/dictation-app-pk",
+    "description": "Voice dictation app \u2014 record, transcribe with Gemini, export.",
+    "framework": "Vite",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Productivity"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "digital-garage-ai",
+    "title": "Digital Garage AI",
+    "repo": "https://github.com/prafullkotecha/digital-garage-ai",
+    "description": "AI assistant for car maintenance and DIY garage workflows.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "document-zenith-view",
+    "title": "Document Zenith View",
+    "repo": "https://github.com/prafullkotecha/document-zenith-view",
+    "description": "Document viewer with zen reading mode and annotation overlays.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Lovable",
+    "last_commit": "2025-08-14",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-echoscript-pk",
+    "title": "Echoscript",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-echoscript-pk",
+    "description": "Voice \u2192 script \u2192 action workflow with Gemini live audio.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-04-27",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-ecommerce-category-generator-pk",
+    "title": "Ecommerce Category Generator",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-ecommerce-category-generator-pk",
+    "description": "Generate ecommerce category trees with Gemini \u2014 taxonomy at scale.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "APP_URL",
+      "DISABLE_HMR",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Business"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-04-28",
+    "live_url": null
+  },
+  {
+    "id": "fit-check-pk",
+    "title": "Fit Check",
+    "repo": "https://github.com/prafullkotecha/fit-check-pk",
+    "description": "Outfit-check using Gemini vision \u2014 feedback on clothing combinations.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-22",
+    "live_url": null
+  },
+  {
+    "id": "flashcard-maker-pk",
+    "title": "Flashcard Maker",
+    "repo": "https://github.com/prafullkotecha/flashcard-maker-pk",
+    "description": "Flashcard generator from any topic via Gemini \u2014 Anki-friendly export.",
+    "framework": "Vite",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Productivity"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "GemBooth-pk",
+    "title": "GemBooth",
+    "repo": "https://github.com/prafullkotecha/GemBooth-pk",
+    "description": "Photo booth experience powered by Gemini \u2014 fun filters and AI captions.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-10",
+    "live_url": null
+  },
+  {
+    "id": "gemini-co-drawing-pk",
+    "title": "Gemini Co Drawing",
+    "repo": "https://github.com/prafullkotecha/gemini-co-drawing-pk",
+    "description": "Collaborative drawing canvas with Gemini turn-by-turn assistance.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "get-started-with-gemini-js-sdk-pk",
+    "title": "Get Started with Gemini JS SDK",
+    "repo": "https://github.com/prafullkotecha/get-started-with-gemini-js-sdk-pk",
+    "description": "Starter for the Gemini JS SDK \u2014 minimal, dependency-light.",
+    "framework": "Vite",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Demo"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "gram-connect-on-net",
+    "title": "Gram Connect on Net",
+    "repo": "https://github.com/prafullkotecha/gram-connect-on-net",
+    "description": "Gram Panchayat connect \u2014 village-level civic info portal.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Lovable",
+    "last_commit": "2025-08-23",
+    "live_url": null
+  },
+  {
+    "id": "infinite-zoom-enhance-pk",
+    "title": "Infinite Zoom Enhance",
+    "repo": "https://github.com/prafullkotecha/infinite-zoom-enhance-pk",
+    "description": "Infinite zoom-and-enhance effect using Gemini upscaling.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative",
+      "Demo"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-22",
+    "live_url": null
+  },
+  {
+    "id": "LiveAudio-pk",
+    "title": "LiveAudio",
+    "repo": "https://github.com/prafullkotecha/LiveAudio-pk",
+    "description": "Live audio capture and Gemini Live API integration demo.",
+    "framework": "Vite",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "google-ai-studio-lumina-scheduling",
+    "title": "Lumina Scheduling",
+    "repo": "https://github.com/prafullkotecha/google-ai-studio-lumina-scheduling",
+    "description": "Smart scheduling assistant \u2014 Lumina-themed AI calendar.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Productivity"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-11-18",
+    "live_url": null
+  },
+  {
+    "id": "mcp-maps-3d-pk",
+    "title": "MCP Maps 3D",
+    "repo": "https://github.com/prafullkotecha/mcp-maps-3d-pk",
+    "description": "MCP server demo with 3D maps integration.",
+    "framework": "Vite",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "mediaslim-pk",
+    "title": "Mediaslim",
+    "repo": "https://github.com/prafullkotecha/mediaslim-pk",
+    "description": "Trim and compress media files in-browser with FFmpeg.wasm.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-10",
+    "live_url": null
+  },
+  {
+    "id": "modern-directory-listings",
+    "title": "Modern Directory Listings",
+    "repo": "https://github.com/prafullkotecha/modern-directory-listings",
+    "description": "Modern directory listings template \u2014 businesses, filters, maps.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Business"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "monky-dashboard-concept-v0",
+    "title": "Monky Dashboard Concept",
+    "repo": "https://github.com/prafullkotecha/monky-dashboard-concept-v0",
+    "description": "Concept dashboard with monkey theme \u2014 built with v0.",
+    "framework": "Next.js",
+    "tier": "A",
+    "deploy_target": "vercel",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Business",
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "mujtama-goal-getters-unite-69",
+    "title": "Mujtama Goal Getters Unite 69",
+    "repo": "https://github.com/prafullkotecha/mujtama-goal-getters-unite-69",
+    "description": "Community goal-tracking platform \u2014 accountability circles.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Lovable",
+    "last_commit": "2025-04-17",
+    "live_url": null
+  },
+  {
+    "id": "pastForward-pk",
+    "title": "PastForward",
+    "repo": "https://github.com/prafullkotecha/pastForward-pk",
+    "description": "Time-travel through historical events with Gemini-narrated walkthroughs.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-10",
+    "live_url": null
+  },
+  {
+    "id": "bolt-photography-portfolio",
+    "title": "Photography Portfolio",
+    "repo": "https://github.com/prafullkotecha/bolt-photography-portfolio",
+    "description": "bolt-photography-portfolio",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Static/Landing"
+    ],
+    "source": "Bolt",
+    "last_commit": "2025-09-27",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-pixshop-pk",
+    "title": "Pixshop",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-pixshop-pk",
+    "description": "AI image editing with Gemini Image \u2014 inpaint, edit, transform.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-10-23",
+    "live_url": null
+  },
+  {
+    "id": "bolt-rainbow-button-component",
+    "title": "Rainbow Button Component",
+    "repo": "https://github.com/prafullkotecha/bolt-rainbow-button-component",
+    "description": "bolt-rainbow-button-component",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Demo"
+    ],
+    "source": "Bolt",
+    "last_commit": "2025-09-27",
+    "live_url": null
+  },
+  {
+    "id": "gemini-aistudio-remix-bring-ideas-to-life-pk",
+    "title": "Remix Bring Ideas to Life",
+    "repo": "https://github.com/prafullkotecha/gemini-aistudio-remix-bring-ideas-to-life-pk",
+    "description": "Idea-to-prototype remix using Gemini \u2014 sketch \u2192 spec \u2192 UI.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-04-27",
+    "live_url": null
+  },
+  {
+    "id": "google-ai-studio-research-visualization-pk",
+    "title": "Research Visualization",
+    "repo": "https://github.com/prafullkotecha/google-ai-studio-research-visualization-pk",
+    "description": "Visualize research papers and concepts via interactive Gemini-powered diagrams.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Demo"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-11-18",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-robotics-spatial-understanding-pk",
+    "title": "Robotics Spatial Understanding",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-robotics-spatial-understanding-pk",
+    "description": "Spatial understanding demo for robotics with Gemini multi-modal.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Demo"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-10-23",
+    "live_url": null
+  },
+  {
+    "id": "royal-crm",
+    "title": "Royal CRM",
+    "repo": "https://github.com/prafullkotecha/royal-crm",
+    "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Business"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-05-25",
+    "live_url": null
+  },
+  {
+    "id": "seek-synergy",
+    "title": "Seek Synergy",
+    "repo": "https://github.com/prafullkotecha/seek-synergy",
+    "description": "Team-finding platform for collaborators on side projects.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Lovable",
+    "last_commit": "2025-08-14",
+    "live_url": null
+  },
+  {
+    "id": "signswift-esignature",
+    "title": "Signswift Esignature",
+    "repo": "https://github.com/prafullkotecha/signswift-esignature",
+    "description": "E-signature flow \u2014 drag-drop fields, signing order, audit log.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "bolt-slidev-forked",
+    "title": "Slidev Forked",
+    "repo": "https://github.com/prafullkotecha/bolt-slidev-forked",
+    "description": "[Edit on StackBlitz \u26a1\ufe0f](https://sli.dev/new)",
+    "framework": "Unknown",
+    "tier": "A",
+    "deploy_target": "manual",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Bolt",
+    "last_commit": "2025-09-27",
+    "live_url": null
+  },
+  {
+    "id": "tech-event-website",
+    "title": "Tech Event Website",
+    "repo": "https://github.com/prafullkotecha/tech-event-website",
+    "description": "Tech conference schedule site \u2014 static HTML in `public/`, deployable as-is (no build needed).",
+    "framework": "Static (public/)",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [
+      "Static/Landing"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-09-17",
+    "live_url": null
+  },
+  {
+    "id": "type-motion-pk",
+    "title": "Type Motion",
+    "repo": "https://github.com/prafullkotecha/type-motion-pk",
+    "description": "Kinetic typography playground \u2014 animated type with motion presets.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-02-01",
+    "live_url": null
+  },
+  {
+    "id": "gemini-flash-ui-generator-pk",
+    "title": "UI Generator",
+    "repo": "https://github.com/prafullkotecha/gemini-flash-ui-generator-pk",
+    "description": "Generate React UI from text prompts using Gemini Flash.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-02-01",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-veo3-gallery-pk",
+    "title": "Veo3 Gallery",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-veo3-gallery-pk",
+    "description": "Gallery for Veo3-generated videos with prompt history.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-04-27",
+    "live_url": null
+  },
+  {
+    "id": "video-analyzer-pk",
+    "title": "Video Analyzer",
+    "repo": "https://github.com/prafullkotecha/video-analyzer-pk",
+    "description": "Video upload + frame analysis via Gemini multimodal.",
+    "framework": "Vite+React",
+    "tier": "A",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "ai-artifact-vault",
+    "title": "AI Artifact Vault",
+    "repo": "https://github.com/prafullkotecha/ai-artifact-vault",
+    "description": "Personal vault for AI-generated artifacts \u2014 chat snippets, prompts, outputs.",
+    "framework": "Vite+React",
+    "tier": "B",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [],
+    "env_vars": [
+      "VITE_SUPABASE_PROJECT_ID",
+      "VITE_SUPABASE_PUBLISHABLE_KEY",
+      "VITE_SUPABASE_URL"
+    ],
+    "tags": [
+      "Supabase"
+    ],
+    "source": "Lovable",
+    "last_commit": "2025-08-24",
+    "live_url": null
+  },
+  {
+    "id": "banquet-seating-arrangements-v0",
+    "title": "Banquet Seating Arrangements",
+    "repo": "https://github.com/prafullkotecha/banquet-seating-arrangements-v0",
+    "description": "Drag-and-drop banquet seating planner with table layouts and guest constraints.",
+    "framework": "Next.js",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [],
+    "env_vars": [
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "SUPABASE_SERVICE_ROLE_KEY"
+    ],
+    "tags": [
+      "Next.js",
+      "Supabase"
+    ],
+    "source": "v0",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "v0-eleven-labs-agents-starter",
+    "title": "Eleven Labs Agents Starter",
+    "repo": "https://github.com/prafullkotecha/v0-eleven-labs-agents-starter",
+    "description": "ElevenLabs voice-agent starter (Next.js + API routes).",
+    "framework": "Next.js",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [
+      "elevenlabs"
+    ],
+    "env_vars": [
+      "AGENT_ID",
+      "ELEVENLABS_API_KEY",
+      "NODE_ENV"
+    ],
+    "tags": [
+      "AI",
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-09-08",
+    "live_url": null
+  },
+  {
+    "id": "v0-eleven-labs-music-starter",
+    "title": "Eleven Labs Music Starter",
+    "repo": "https://github.com/prafullkotecha/v0-eleven-labs-music-starter",
+    "description": "ElevenLabs music generation starter.",
+    "framework": "Next.js",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [
+      "elevenlabs"
+    ],
+    "env_vars": [
+      "ELEVENLABS_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative",
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-09-08",
+    "live_url": null
+  },
+  {
+    "id": "v0-eleven-labs-v3-podcast-generator",
+    "title": "Eleven Labs V3 Podcast Generator",
+    "repo": "https://github.com/prafullkotecha/v0-eleven-labs-v3-podcast-generator",
+    "description": "End-to-end podcast generator \u2014 script (OpenAI) + voice (ElevenLabs) + storage (Supabase).",
+    "framework": "Next.js",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [
+      "elevenlabs",
+      "openai"
+    ],
+    "env_vars": [
+      "ELEVENLABS_API_KEY",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "OPENAI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative",
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-09-08",
+    "live_url": null
+  },
+  {
+    "id": "ondc-farmer-connect-v0",
+    "title": "ONDC Farmer Connect",
+    "repo": "https://github.com/prafullkotecha/ondc-farmer-connect-v0",
+    "description": "ONDC farmer-buyer marketplace prototype (v0/Next.js).",
+    "framework": "Next.js",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [],
+    "env_vars": [
+      "ONDC_ENCRYPTION_PUBLIC_KEY",
+      "ONDC_GATEWAY_URL",
+      "ONDC_REGISTRY_URL",
+      "ONDC_SIGNING_PUBLIC_KEY",
+      "ONDC_SUBSCRIBER_ID",
+      "ONDC_SUBSCRIBER_URI"
+    ],
+    "tags": [
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "ondc-farmer-connect-bolt",
+    "title": "ONDC Farmer Connect Bolt",
+    "repo": "https://github.com/prafullkotecha/ondc-farmer-connect-bolt",
+    "description": "ONDC farmer-buyer marketplace prototype \u2014 Expo Router app exported to web (`expo export --platform web`).",
+    "framework": "Expo (Web)",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Mixed",
+    "last_commit": "2025-09-11",
+    "live_url": null
+  },
+  {
+    "id": "pwa-website-chatbot-v0",
+    "title": "PWA Website Chatbot",
+    "repo": "https://github.com/prafullkotecha/pwa-website-chatbot-v0",
+    "description": "PWA chatbot embedded on a marketing site \u2014 Next.js + OpenAI.",
+    "framework": "Next.js",
+    "tier": "B",
+    "deploy_target": "vercel",
+    "ai_providers": [
+      "openai"
+    ],
+    "env_vars": [],
+    "tags": [
+      "AI",
+      "Next.js"
+    ],
+    "source": "v0",
+    "last_commit": "2025-08-31",
+    "live_url": null
+  },
+  {
+    "id": "SocialSpark",
+    "title": "SocialSpark",
+    "repo": "https://github.com/prafullkotecha/SocialSpark",
+    "description": "Social media content scheduling and inspiration tool.",
+    "framework": "Unknown",
+    "tier": "B",
+    "deploy_target": "manual",
+    "ai_providers": [],
+    "env_vars": [],
+    "tags": [],
+    "source": "Mixed",
+    "last_commit": "2025-09-12",
+    "live_url": null
+  },
+  {
+    "id": "tu-dekha",
+    "title": "Tu Dekha",
+    "repo": "https://github.com/prafullkotecha/tu-dekha",
+    "description": "A modern, full-stack event management platform built with React, TypeScript, and Lovable Cloud. Create, discover, and manage events with an intuitive interface and powerful features.",
+    "framework": "Vite+React",
+    "tier": "B",
+    "deploy_target": "cloudflare-pages",
+    "ai_providers": [
+      "openai"
+    ],
+    "env_vars": [
+      "DEV",
+      "VITE_GOOGLE_MAPS_API_KEY",
+      "VITE_SUPABASE_PROJECT_ID",
+      "VITE_SUPABASE_PUBLISHABLE_KEY",
+      "VITE_SUPABASE_URL"
+    ],
+    "tags": [
+      "AI",
+      "Supabase"
+    ],
+    "source": "Lovable",
+    "last_commit": "2026-03-09",
+    "live_url": null
+  },
+  {
+    "id": "bookmark-organizer",
+    "title": "Bookmark Organizer",
+    "repo": "https://github.com/prafullkotecha/bookmark-organizer",
+    "description": "Bookmark Organizer is a web application that helps you manage and organize your bookmarks. It allows you to save, categorize, and filter bookmarks from various sources.",
+    "framework": "Unknown",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "NODE_ENV",
+      "REACT_APP_USE_MOCK_API"
+    ],
+    "tags": [
+      "Productivity"
+    ],
+    "source": "Mixed",
+    "last_commit": "2025-05-25",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-budgeted-shared-expenses-pk",
+    "title": "Budgeted Shared Expenses",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-budgeted-shared-expenses-pk",
+    "description": "Shared expense tracker with budget AI suggestions \u2014 splits, categories.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "APP_URL",
+      "DISABLE_HMR",
+      "GEMINI_API_KEY",
+      "NODE_ENV"
+    ],
+    "tags": [
+      "AI",
+      "Productivity"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-04-27",
+    "live_url": null
+  },
+  {
+    "id": "ClinicConnect",
+    "title": "ClinicConnect",
+    "repo": "https://github.com/prafullkotecha/ClinicConnect",
+    "description": "Clinic management \u2014 patient records, scheduling, billing (Express+Drizzle+Postgres).",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "PORT",
+      "REPLIT_DEV_DOMAIN",
+      "REPLIT_INTERNAL_APP_DOMAIN",
+      "REPL_ID"
+    ],
+    "tags": [],
+    "source": "Replit",
+    "last_commit": "2025-11-24",
+    "live_url": null
+  },
+  {
+    "id": "DJProposals",
+    "title": "DJProposals",
+    "repo": "https://github.com/prafullkotecha/DJProposals",
+    "description": "DJ business proposal generator \u2014 packages, pricing, contracts (Express+Postgres).",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "GOOGLE_MAPS_API_KEY",
+      "NODE_ENV",
+      "PORT",
+      "REPL_ID",
+      "VITE_GOOGLE_MAPS_API_KEY"
+    ],
+    "tags": [],
+    "source": "Replit",
+    "last_commit": "2025-08-04",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-done_and_dusted-family-chores-pk",
+    "title": "Done and Dusted Family Chores",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-done_and_dusted-family-chores-pk",
+    "description": "Family chore manager \u2014 assignments, streaks, AI nudges.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "APP_URL",
+      "DISABLE_HMR",
+      "GEMINI_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Productivity"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-04-27",
+    "live_url": null
+  },
+  {
+    "id": "field-service-pro-sa",
+    "title": "Field Service Pro",
+    "repo": "https://github.com/prafullkotecha/field-service-pro-sa",
+    "description": "ServicePro is a comprehensive, multi-tenant SaaS platform designed to empower small to medium professional service businesses. It provides the tools to efficiently manage field operations, customer re",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "API_PORT",
+      "CI",
+      "DATABASE_URL",
+      "DB_PORT",
+      "DEV",
+      "JWT_ACCESS_EXPIRY_SECONDS",
+      "JWT_REFRESH_EXPIRY_SECONDS",
+      "JWT_SECRET",
+      "NODE_ENV",
+      "POSTGRES_DB",
+      "POSTGRES_PASSWORD",
+      "POSTGRES_USER",
+      "PROJECT_ROOT",
+      "SECRETS_ENCRYPTION_KEY",
+      "STORAGE_BACKEND"
+    ],
+    "tags": [
+      "Productivity"
+    ],
+    "source": "Mixed",
+    "last_commit": "2026-04-19",
+    "live_url": null
+  },
+  {
+    "id": "HomeInventory",
+    "title": "HomeInventory",
+    "repo": "https://github.com/prafullkotecha/HomeInventory",
+    "description": "Home inventory tracker with photos, warranties, and rooms.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "PORT",
+      "REPL_ID"
+    ],
+    "tags": [],
+    "source": "Replit",
+    "last_commit": "2025-08-11",
+    "live_url": null
+  },
+  {
+    "id": "metaphor-mindIT",
+    "title": "Metaphor MindIT",
+    "repo": "https://github.com/prafullkotecha/metaphor-mindIT",
+    "description": "> Transform complex technical concepts into culturally grounded metaphors that resonate across diverse learning backgrounds.",
+    "framework": "Unknown",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [
+      "elevenlabs",
+      "openai"
+    ],
+    "env_vars": [
+      "API_GATEWAY_PORT",
+      "API_GATEWAY_URL",
+      "AUDIO_GEN_PORT",
+      "AUDIO_GEN_URL",
+      "CULTURAL_SAFETY_PORT",
+      "CULTURAL_SAFETY_URL",
+      "DATABASE_URL",
+      "IMAGE_GEN_PORT",
+      "IMAGE_GEN_URL",
+      "LLM_MAX_TOKENS",
+      "LLM_MODEL",
+      "LLM_PROVIDER",
+      "LLM_TEMPERATURE",
+      "NEXTAUTH_SECRET",
+      "NEXTAUTH_URL"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Mixed",
+    "last_commit": "2026-03-02",
+    "live_url": null
+  },
+  {
+    "id": "PassGenius",
+    "title": "PassGenius",
+    "repo": "https://github.com/prafullkotecha/PassGenius",
+    "description": "Password manager with vault, tags, and breach checking.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "PORT",
+      "REPL_ID"
+    ],
+    "tags": [],
+    "source": "Replit",
+    "last_commit": "2025-08-15",
+    "live_url": null
+  },
+  {
+    "id": "pk-ai-studio-remix-geoseeker",
+    "title": "Remix Geoseeker",
+    "repo": "https://github.com/prafullkotecha/pk-ai-studio-remix-geoseeker",
+    "description": "Geo-seek game using Gemini and Google Maps.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "GEMINI_API_KEY",
+      "NODE_ENV",
+      "VITE_GOOGLE_MAPS_API_KEY"
+    ],
+    "tags": [
+      "AI",
+      "Generative"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2026-02-21",
+    "live_url": null
+  },
+  {
+    "id": "StickerSage",
+    "title": "StickerSage",
+    "repo": "https://github.com/prafullkotecha/StickerSage",
+    "description": "AI sticker generator with OpenAI image API \u2014 themes, packs.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [
+      "openai"
+    ],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "OPENAI_API_KEY",
+      "REPL_ID",
+      "VITE_OPENAI_API_KEY"
+    ],
+    "tags": [
+      "AI"
+    ],
+    "source": "Replit",
+    "last_commit": "2025-04-13",
+    "live_url": null
+  },
+  {
+    "id": "gemini-ai-studio-therapy-assistant",
+    "title": "Therapy Assistant",
+    "repo": "https://github.com/prafullkotecha/gemini-ai-studio-therapy-assistant",
+    "description": "Therapy assistant \u2014 session notes, sentiment tracking via Gemini.",
+    "framework": "Vite+React",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "FRONTEND_URL",
+      "GEMINI_API_KEY",
+      "NODE_ENV",
+      "PORT",
+      "VITE_BACKEND_URL"
+    ],
+    "tags": [
+      "AI",
+      "Healthcare"
+    ],
+    "source": "Google AI Studio",
+    "last_commit": "2025-11-04",
+    "live_url": null
+  },
+  {
+    "id": "therapy-clinic-nextjs",
+    "title": "Therapy Clinic Nextjs",
+    "repo": "https://github.com/prafullkotecha/therapy-clinic-nextjs",
+    "description": "Multi-tenant HIPAA-compliant behavioral therapy clinic management system",
+    "framework": "Next.js",
+    "tier": "C",
+    "deploy_target": "deferred",
+    "ai_providers": [],
+    "env_vars": [
+      "ANALYZE",
+      "ARCJET_KEY",
+      "AUTH_PROVIDERS",
+      "AUTH_SECRET",
+      "AUTH_URL",
+      "AWS_REGION",
+      "CHECKLY_EMAIL_ADDRESS",
+      "CHECKLY_LOGICAL_ID",
+      "CHECKLY_PROJECT_NAME",
+      "CI",
+      "DATABASE_URL",
+      "DEV_BYPASS_AUTH",
+      "ENVIRONMENT_URL",
+      "KEYCLOAK_CLIENT_ID",
+      "KEYCLOAK_CLIENT_SECRET"
+    ],
+    "tags": [
+      "Healthcare",
+      "Next.js"
+    ],
+    "source": "Mixed",
+    "last_commit": "2026-03-29",
+    "live_url": null
+  }
+]
