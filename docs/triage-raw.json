@@ -1,0 +1,1296 @@
+[
+  {
+    "name": "340b-platform",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "ClinicConnect",
+    "framework": "Vite+React",
+    "backend": [
+      "drizzle",
+      "express",
+      "node-server",
+      "postgres"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "PORT",
+      "REPLIT_DEV_DOMAIN",
+      "REPLIT_INTERNAL_APP_DOMAIN",
+      "REPL_ID"
+    ],
+    "tier": "C",
+    "description": "",
+    "last_commit": "2025-11-24",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "DJProposals",
+    "framework": "Vite+React",
+    "backend": [
+      "drizzle",
+      "express",
+      "node-server",
+      "postgres"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "GOOGLE_MAPS_API_KEY",
+      "NODE_ENV",
+      "PORT",
+      "REPL_ID",
+      "VITE_GOOGLE_MAPS_API_KEY"
+    ],
+    "tier": "C",
+    "description": "",
+    "last_commit": "2025-08-04",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "GemBooth-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-10",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "HomeInventory",
+    "framework": "Vite+React",
+    "backend": [
+      "drizzle",
+      "express",
+      "node-server",
+      "postgres"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "PORT",
+      "REPL_ID"
+    ],
+    "tier": "C",
+    "description": "",
+    "last_commit": "2025-08-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "LiveAudio-pk",
+    "framework": "Vite",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "PassGenius",
+    "framework": "Vite+React",
+    "backend": [
+      "drizzle",
+      "express",
+      "node-server",
+      "postgres"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "PORT",
+      "REPL_ID"
+    ],
+    "tier": "C",
+    "description": "",
+    "last_commit": "2025-08-15",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "SocialSpark",
+    "framework": "Unknown",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "B",
+    "description": "",
+    "last_commit": "2025-09-12",
+    "has_build_script": false,
+    "has_dev_script": false,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "StickerSage",
+    "framework": "Vite+React",
+    "backend": [
+      "drizzle",
+      "express",
+      "node-server",
+      "postgres"
+    ],
+    "ai_providers": [
+      "openai"
+    ],
+    "env_vars": [
+      "DATABASE_URL",
+      "NODE_ENV",
+      "OPENAI_API_KEY",
+      "REPL_ID",
+      "VITE_OPENAI_API_KEY"
+    ],
+    "tier": "C",
+    "description": "",
+    "last_commit": "2025-04-13",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "ai-artifact-vault",
+    "framework": "Vite+React",
+    "backend": [
+      "supabase"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "VITE_SUPABASE_PROJECT_ID",
+      "VITE_SUPABASE_PUBLISHABLE_KEY",
+      "VITE_SUPABASE_URL"
+    ],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/919f4f1b-b193-411a-9b62-d1043861d9cd",
+    "last_commit": "2025-08-24",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "ai-dj-playset-generator",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "ai-temp-recruiter",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/3029730a-027e-4dc3-b7ca-82d25e5811e0",
+    "last_commit": "2025-11-26",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "b-claim-alchemy",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/59294b0b-85f0-4844-9df4-b9c3537670fb",
+    "last_commit": "2025-07-14",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "banquet-seating-arrangements-v0",
+    "framework": "Next.js",
+    "backend": [
+      "supabase"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "SUPABASE_SERVICE_ROLE_KEY"
+    ],
+    "tier": "A",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "beat-by-dj-pooja",
+    "framework": "Next.js",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "beat-stitch-studio",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/119dc857-7e6b-4d9c-ae50-4250efe48f9f",
+    "last_commit": "2025-08-22",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bloom-align-connect",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/07cd6b96-1605-4962-8bdf-26c0d55bfe47",
+    "last_commit": "2025-10-19",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bolt-college-job-finder-landing-page",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "bolt-college-job-finder-landing-page",
+    "last_commit": "2025-09-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bolt-commerce-js-store",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [
+      "VITE_COMMERCEJS_PUBLIC_KEY"
+    ],
+    "tier": "A",
+    "description": "bolt-commerce-js-store",
+    "last_commit": "2025-09-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bolt-photography-portfolio",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "bolt-photography-portfolio",
+    "last_commit": "2025-09-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bolt-rainbow-button-component",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "bolt-rainbow-button-component",
+    "last_commit": "2025-09-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bolt-slidev-forked",
+    "framework": "Unknown",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "B",
+    "description": "[Edit on StackBlitz \u26a1\ufe0f](https://sli.dev/new)",
+    "last_commit": "2025-09-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "bookmark-organizer",
+    "framework": "Unknown",
+    "backend": [
+      "express"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "NODE_ENV",
+      "REACT_APP_USE_MOCK_API"
+    ],
+    "tier": "B",
+    "description": "Bookmark Organizer is a web application that helps you manage and organize your bookmarks. It allows you to save, categorize, and filter bookmarks from various sources.",
+    "last_commit": "2025-05-25",
+    "has_build_script": false,
+    "has_dev_script": false,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "booth-lead-pro",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-02-12",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "chat-with-docs-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "cheap-tour-hopper-79",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/5288a929-6de2-4309-b8c4-940dad4799dc",
+    "last_commit": "2025-04-13",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "dashboard-prototype-playful",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "dictation-app-pk",
+    "framework": "Vite",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "digital-garage-ai",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "document-zenith-view",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/4bdf3aa3-165c-4011-84f4-05f5ed1239bb",
+    "last_commit": "2025-08-14",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "field-service-pro-sa",
+    "framework": "Vite+React",
+    "backend": [
+      "express"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "API_PORT",
+      "CI",
+      "DATABASE_URL",
+      "DB_PORT",
+      "DEV",
+      "JWT_ACCESS_EXPIRY_SECONDS",
+      "JWT_REFRESH_EXPIRY_SECONDS",
+      "JWT_SECRET",
+      "NODE_ENV",
+      "POSTGRES_DB",
+      "POSTGRES_PASSWORD",
+      "POSTGRES_USER",
+      "PROJECT_ROOT",
+      "SECRETS_ENCRYPTION_KEY",
+      "STORAGE_BACKEND"
+    ],
+    "tier": "A",
+    "description": "ServicePro is a comprehensive, multi-tenant SaaS platform designed to empower small to medium professional service businesses. It provides the tools to efficiently manage field operations, customer re",
+    "last_commit": "2026-04-19",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "fit-check-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-22",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "flashcard-maker-pk",
+    "framework": "Vite",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-ai-studio-budgeted-shared-expenses-pk",
+    "framework": "Vite+React",
+    "backend": [
+      "node-server"
+    ],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "APP_URL",
+      "DISABLE_HMR",
+      "GEMINI_API_KEY",
+      "NODE_ENV"
+    ],
+    "tier": "C",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-04-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "gemini-ai-studio-done_and_dusted-family-chores-pk",
+    "framework": "Vite+React",
+    "backend": [
+      "node-server"
+    ],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "APP_URL",
+      "DISABLE_HMR",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "C",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-04-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "gemini-ai-studio-echoscript-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-04-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-ai-studio-ecommerce-category-generator-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "APP_URL",
+      "DISABLE_HMR",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-04-28",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "gemini-ai-studio-pixshop-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-10-23",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-ai-studio-robotics-spatial-understanding-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-10-23",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-ai-studio-therapy-assistant",
+    "framework": "Vite+React",
+    "backend": [
+      "express"
+    ],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "FRONTEND_URL",
+      "GEMINI_API_KEY",
+      "NODE_ENV",
+      "PORT",
+      "VITE_BACKEND_URL"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-11-04",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "gemini-ai-studio-veo3-gallery-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-04-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-aistudio-remix-bring-ideas-to-life-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-04-27",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-co-drawing-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gemini-flash-ui-generator-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-02-01",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "get-started-with-gemini-js-sdk-pk",
+    "framework": "Vite",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "google-ai-studio-lumina-scheduling",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-11-18",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "google-ai-studio-research-visualization-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-11-18",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "gram-connect-on-net",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/2997d417-9439-44da-847e-5070338ff8f0",
+    "last_commit": "2025-08-23",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "infinite-zoom-enhance-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-22",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "mcp-maps-3d-pk",
+    "framework": "Vite",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "mediaslim-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-10",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "metaphor-mindIT",
+    "framework": "Unknown",
+    "backend": [],
+    "ai_providers": [
+      "elevenlabs",
+      "openai"
+    ],
+    "env_vars": [
+      "API_GATEWAY_PORT",
+      "API_GATEWAY_URL",
+      "AUDIO_GEN_PORT",
+      "AUDIO_GEN_URL",
+      "CULTURAL_SAFETY_PORT",
+      "CULTURAL_SAFETY_URL",
+      "DATABASE_URL",
+      "IMAGE_GEN_PORT",
+      "IMAGE_GEN_URL",
+      "LLM_MAX_TOKENS",
+      "LLM_MODEL",
+      "LLM_PROVIDER",
+      "LLM_TEMPERATURE",
+      "NEXTAUTH_SECRET",
+      "NEXTAUTH_URL"
+    ],
+    "tier": "B",
+    "description": "> Transform complex technical concepts into culturally grounded metaphors that resonate across diverse learning backgrounds.",
+    "last_commit": "2026-03-02",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "modern-directory-listings",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "monky-dashboard-concept-v0",
+    "framework": "Next.js",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "mujtama-goal-getters-unite-69",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/d1c2d1aa-771d-437b-96b6-6f6bcc13559f",
+    "last_commit": "2025-04-17",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "ondc-farmer-connect-bolt",
+    "framework": "React (no bundler?)",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "B",
+    "description": "ondc-farmer-connect-bolt",
+    "last_commit": "2025-09-11",
+    "has_build_script": false,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "ondc-farmer-connect-v0",
+    "framework": "Next.js",
+    "backend": [
+      "next-api"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "ONDC_ENCRYPTION_PUBLIC_KEY",
+      "ONDC_GATEWAY_URL",
+      "ONDC_REGISTRY_URL",
+      "ONDC_SIGNING_PUBLIC_KEY",
+      "ONDC_SUBSCRIBER_ID",
+      "ONDC_SUBSCRIBER_URI"
+    ],
+    "tier": "B",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "pastForward-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-10",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "pk-ai-studio-remix-geoseeker",
+    "framework": "Vite+React",
+    "backend": [
+      "node-server"
+    ],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "GEMINI_API_KEY",
+      "NODE_ENV",
+      "VITE_GOOGLE_MAPS_API_KEY"
+    ],
+    "tier": "C",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-02-21",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "pwa-website-chatbot-v0",
+    "framework": "Next.js",
+    "backend": [
+      "next-api"
+    ],
+    "ai_providers": [
+      "openai"
+    ],
+    "env_vars": [],
+    "tier": "B",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "royal-crm",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+    "last_commit": "2025-05-25",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "seek-synergy",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "A",
+    "description": "**URL**: https://lovable.dev/projects/f6e8530a-3a12-48bf-9d6c-ef0c68ed6289",
+    "last_commit": "2025-08-14",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "signswift-esignature",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-08-31",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "tech-event-website",
+    "framework": "Unknown",
+    "backend": [
+      "node-server"
+    ],
+    "ai_providers": [],
+    "env_vars": [],
+    "tier": "C",
+    "description": "This is a simple web application that displays the schedule for a tech conference. Users can view the list of talks and filter them by category.",
+    "last_commit": "2025-09-17",
+    "has_build_script": false,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "therapy-clinic-nextjs",
+    "framework": "Next.js",
+    "backend": [
+      "auth",
+      "drizzle",
+      "keycloak",
+      "next-api",
+      "nextauth",
+      "postgres"
+    ],
+    "ai_providers": [],
+    "env_vars": [
+      "ANALYZE",
+      "ARCJET_KEY",
+      "AUTH_PROVIDERS",
+      "AUTH_SECRET",
+      "AUTH_URL",
+      "AWS_REGION",
+      "CHECKLY_EMAIL_ADDRESS",
+      "CHECKLY_LOGICAL_ID",
+      "CHECKLY_PROJECT_NAME",
+      "CI",
+      "DATABASE_URL",
+      "DEV_BYPASS_AUTH",
+      "ENVIRONMENT_URL",
+      "KEYCLOAK_CLIENT_ID",
+      "KEYCLOAK_CLIENT_SECRET"
+    ],
+    "tier": "C",
+    "description": "Multi-tenant HIPAA-compliant behavioral therapy clinic management system",
+    "last_commit": "2026-03-29",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": true
+  },
+  {
+    "name": "tu-dekha",
+    "framework": "Vite+React",
+    "backend": [
+      "supabase"
+    ],
+    "ai_providers": [
+      "openai"
+    ],
+    "env_vars": [
+      "DEV",
+      "VITE_GOOGLE_MAPS_API_KEY",
+      "VITE_SUPABASE_PROJECT_ID",
+      "VITE_SUPABASE_PUBLISHABLE_KEY",
+      "VITE_SUPABASE_URL"
+    ],
+    "tier": "A",
+    "description": "A modern, full-stack event management platform built with React, TypeScript, and Lovable Cloud. Create, discover, and manage events with an intuitive interface and powerful features.",
+    "last_commit": "2026-03-09",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "type-motion-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2026-02-01",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "v0-eleven-labs-agents-starter",
+    "framework": "Next.js",
+    "backend": [
+      "next-api"
+    ],
+    "ai_providers": [
+      "elevenlabs"
+    ],
+    "env_vars": [
+      "AGENT_ID",
+      "ELEVENLABS_API_KEY",
+      "NODE_ENV"
+    ],
+    "tier": "B",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-09-08",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "v0-eleven-labs-music-starter",
+    "framework": "Next.js",
+    "backend": [
+      "next-api"
+    ],
+    "ai_providers": [
+      "elevenlabs"
+    ],
+    "env_vars": [
+      "ELEVENLABS_API_KEY"
+    ],
+    "tier": "B",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-09-08",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "v0-eleven-labs-v3-podcast-generator",
+    "framework": "Next.js",
+    "backend": [
+      "next-api"
+    ],
+    "ai_providers": [
+      "elevenlabs",
+      "openai"
+    ],
+    "env_vars": [
+      "ELEVENLABS_API_KEY",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "OPENAI_API_KEY"
+    ],
+    "tier": "B",
+    "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+    "last_commit": "2025-09-08",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  },
+  {
+    "name": "video-analyzer-pk",
+    "framework": "Vite+React",
+    "backend": [],
+    "ai_providers": [
+      "gemini"
+    ],
+    "env_vars": [
+      "API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "tier": "A",
+    "description": "This contains everything you need to run your app locally.",
+    "last_commit": "2025-09-11",
+    "has_build_script": true,
+    "has_dev_script": true,
+    "has_dotenv_example": false
+  }
+]

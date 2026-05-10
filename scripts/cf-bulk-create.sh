@@ -1,0 +1,129 @@
+#!/usr/bin/env bash
+#
+# OPTIONAL: bulk-create Cloudflare Pages projects via API.
+# Skip if you'd rather click through the dashboard (~30s per repo).
+#
+# Prerequisites:
+#  1. CF_API_TOKEN: https://dash.cloudflare.com/profile/api-tokens
+#     Create token with permissions: Account > Cloudflare Pages: Edit
+#  2. CF_ACCOUNT_ID: shown in CF dashboard right sidebar
+#  3. GitHub installation linked to CF account: do this ONCE in dashboard
+#     (Workers & Pages → Create → Pages → Connect to Git → authorize prafullkotecha)
+#  4. GH_OWNER: your GitHub username (prafullkotecha)
+#  5. (Optional) GEMINI_API_KEY env var to inject into projects that need it
+#
+# Usage:
+#   export CF_API_TOKEN=...
+#   export CF_ACCOUNT_ID=...
+#   export GH_OWNER=prafullkotecha
+#   export GEMINI_API_KEY=...
+#   ./cf-bulk-create.sh
+#
+# What it does: reads projects.json, for each Tier A project with deploy_target=cloudflare-pages,
+# creates a CF Pages project linked to the GitHub repo with build settings + env vars.
+# CF will auto-build on push.
+
+set -euo pipefail
+
+: "${CF_API_TOKEN:?Set CF_API_TOKEN}"
+: "${CF_ACCOUNT_ID:?Set CF_ACCOUNT_ID}"
+: "${GH_OWNER:=prafullkotecha}"
+: "${GEMINI_API_KEY:=}"
+: "${PROJECTS_JSON:=$(dirname $0)/../src/data/projects.json}"
+
+if [ ! -f "$PROJECTS_JSON" ]; then
+  echo "projects.json not found at $PROJECTS_JSON"; exit 1
+fi
+
+API="https://api.cloudflare.com/client/v4"
+H_AUTH="Authorization: Bearer $CF_API_TOKEN"
+H_JSON="Content-Type: application/json"
+
+create_project () {
+  local id="$1"
+  local framework="$2"
+  local needs_gemini="$3"
+  local out_dir="dist"
+  if [ "$framework" = "CRA" ]; then out_dir="build"; fi
+  if [ "$framework" = "Next.js" ]; then out_dir="out"; fi
+
+  echo "→ Creating: $id (output: $out_dir)"
+
+  local env_vars="{}"
+  if [ "$needs_gemini" = "true" ] && [ -n "$GEMINI_API_KEY" ]; then
+    env_vars=$(jq -n --arg k "$GEMINI_API_KEY" '{
+      GEMINI_API_KEY: {value: $k, type: "secret_text"},
+      API_KEY:        {value: $k, type: "secret_text"}
+    }')
+  fi
+
+  local payload
+  payload=$(jq -n \
+    --arg name "$id" \
+    --arg owner "$GH_OWNER" \
+    --arg repo "$id" \
+    --arg out "$out_dir" \
+    --argjson envs "$env_vars" \
+    '{
+      name: $name,
+      production_branch: "main",
+      source: {
+        type: "github",
+        config: {
+          owner: $owner,
+          repo_name: $repo,
+          production_branch: "main",
+          deployments_enabled: true,
+          pr_comments_enabled: false
+        }
+      },
+      build_config: {
+        build_command: "npm run build",
+        destination_dir: $out,
+        root_dir: ""
+      },
+      deployment_configs: {
+        production: {
+          env_vars: $envs,
+          compatibility_date: "2024-12-01"
+        },
+        preview: {
+          env_vars: $envs,
+          compatibility_date: "2024-12-01"
+        }
+      }
+    }')
+
+  local resp
+  resp=$(curl -sS -X POST "$API/accounts/$CF_ACCOUNT_ID/pages/projects" \
+    -H "$H_AUTH" -H "$H_JSON" \
+    -d "$payload")
+
+  local success
+  success=$(echo "$resp" | jq -r '.success // false')
+  if [ "$success" = "true" ]; then
+    local subdomain
+    subdomain=$(echo "$resp" | jq -r '.result.subdomain')
+    echo "  ✓ https://$subdomain"
+    echo "$id,https://$subdomain" >> created.csv
+  else
+    echo "  ✗ FAILED:"
+    echo "$resp" | jq '.errors'
+  fi
+}
+
+echo "project_id,subdomain" > created.csv
+
+# Filter Tier A + cloudflare-pages targets
+jq -c '.[] | select(.tier=="A" and .deploy_target=="cloudflare-pages")' "$PROJECTS_JSON" | \
+while IFS= read -r p; do
+  id=$(echo "$p" | jq -r '.id')
+  fw=$(echo "$p" | jq -r '.framework')
+  needs=$(echo "$p" | jq -r 'if (.ai_providers | index("gemini")) then "true" else "false" end')
+  create_project "$id" "$fw" "$needs"
+  sleep 1  # avoid rate limit
+done
+
+echo ""
+echo "Done. Created project list in created.csv"
+echo "Next: trigger first build by visiting each https://...pages.dev (or push to repos)"

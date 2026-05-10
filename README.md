@@ -2,6 +2,30 @@
 
 Static Next.js site listing 71 hobby projects. Reads from `src/data/projects.json` and renders cards with filters, search, and live demo links.
 
+## Repo layout
+
+```
+.
+├── src/                # Next.js portfolio site
+├── public/
+├── docs/
+│   ├── TRIAGE.md           # what was found in 71 repos, by tier
+│   └── triage-raw.json     # raw analyzer output (framework, env, AI providers, etc.)
+├── scripts/
+│   ├── set-live-url.sh     # update a project's live_url after deploy
+│   ├── cf-bulk-create.sh   # optional: bulk-create CF Pages projects via API
+│   └── ai-proxy-worker/    # Cloudflare Worker proxying Gemini/OpenAI/ElevenLabs
+│       ├── src/index.js
+│       ├── deploy.sh           # one-shot deploy + secrets
+│       ├── PATCHING.md         # how to migrate an app from direct SDK to proxy
+│       ├── README.md
+│       └── wrangler.toml
+├── RUNBOOK.md          # full deploy runbook for all 71 projects
+└── PROJECTS-CHECKLIST.csv  # tick-box list of all 71 projects
+```
+
+The Next.js project lives at the repo root; everything else (`docs/`, `scripts/`, `RUNBOOK.md`, `PROJECTS-CHECKLIST.csv`) is operational and ignored by Vercel's build.
+
 ## Stack
 - Next.js 14 (static export)
 - Tailwind CSS
@@ -40,9 +64,9 @@ npm run build
 
 Easy way:
 ```bash
-# from the deliverables/ root:
+# from the repo root:
 ./scripts/set-live-url.sh chat-with-docs-pk https://chat-with-docs-pk.yourdomain.com
-git -C portfolio add -A && git -C portfolio commit -m "live: chat-with-docs-pk" && git -C portfolio push
+git add -A && git commit -m "live: chat-with-docs-pk" && git push
 ```
 
 Manual way: edit `src/data/projects.json`, find the project's `id`, set its `live_url`, push.

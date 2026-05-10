@@ -1,0 +1,72 @@
+#,tier,project_id,title,framework,build_cmd,output_dir,deploy_target,env_vars,ai_providers,deployed?,live_url,notes
+001,A,340b-platform,340B Platform,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+002,A,ai-dj-playset-generator,AI DJ Playset Generator,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+003,A,ai-temp-recruiter,AI Temp Recruiter,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+004,A,b-claim-alchemy,B Claim Alchemy,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+005,A,beat-by-dj-pooja,Beat by DJ Pooja,Next.js,npm run build,out,vercel,,,,,
+006,A,beat-stitch-studio,Beat Stitch Studio,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+007,A,bloom-align-connect,Bloom Align Connect,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+008,A,booth-lead-pro,Booth Lead Pro,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+009,A,chat-with-docs-pk,Chat with Docs,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+010,A,cheap-tour-hopper-79,Cheap Tour Hopper 79,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+011,A,bolt-college-job-finder-landing-page,College Job Finder Landing Page,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+012,A,bolt-commerce-js-store,Commerce JS Store,Vite+React,npm run build,dist,cloudflare-pages,VITE_COMMERCEJS_PUBLIC_KEY,,,,
+013,A,dashboard-prototype-playful,Dashboard Prototype Playful,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+014,A,dictation-app-pk,Dictation App,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+015,A,digital-garage-ai,Digital Garage AI,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+016,A,document-zenith-view,Document Zenith View,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+017,A,gemini-ai-studio-echoscript-pk,Echoscript,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+018,A,gemini-ai-studio-ecommerce-category-generator-pk,Ecommerce Category Generator,Vite+React,npm run build,dist,cloudflare-pages,APP_URL;DISABLE_HMR;GEMINI_API_KEY,gemini,,,
+019,A,fit-check-pk,Fit Check,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+020,A,flashcard-maker-pk,Flashcard Maker,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+021,A,GemBooth-pk,GemBooth,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+022,A,gemini-co-drawing-pk,Gemini Co Drawing,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+023,A,get-started-with-gemini-js-sdk-pk,Get Started with Gemini JS SDK,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+024,A,gram-connect-on-net,Gram Connect on Net,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+025,A,infinite-zoom-enhance-pk,Infinite Zoom Enhance,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+026,A,LiveAudio-pk,LiveAudio,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+027,A,google-ai-studio-lumina-scheduling,Lumina Scheduling,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+028,A,mcp-maps-3d-pk,MCP Maps 3D,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+029,A,mediaslim-pk,Mediaslim,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+030,A,modern-directory-listings,Modern Directory Listings,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+031,A,monky-dashboard-concept-v0,Monky Dashboard Concept,Next.js,npm run build,out,vercel,,,,,
+032,A,mujtama-goal-getters-unite-69,Mujtama Goal Getters Unite 69,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+033,A,pastForward-pk,PastForward,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+034,A,bolt-photography-portfolio,Photography Portfolio,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+035,A,gemini-ai-studio-pixshop-pk,Pixshop,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+036,A,bolt-rainbow-button-component,Rainbow Button Component,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+037,A,gemini-aistudio-remix-bring-ideas-to-life-pk,Remix Bring Ideas to Life,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+038,A,google-ai-studio-research-visualization-pk,Research Visualization,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+039,A,gemini-ai-studio-robotics-spatial-understanding-pk,Robotics Spatial Understanding,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+040,A,royal-crm,Royal CRM,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+041,A,seek-synergy,Seek Synergy,Vite+React,npm run build,dist,cloudflare-pages,,,,,
+042,A,signswift-esignature,Signswift Esignature,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+043,A,bolt-slidev-forked,Slidev Forked,Unknown,npm run build,dist,manual,,,,,
+044,A,tech-event-website,Tech Event Website,Static (public/),(none),public,cloudflare-pages,,,,,
+045,A,type-motion-pk,Type Motion,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+046,A,gemini-flash-ui-generator-pk,UI Generator,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+047,A,gemini-ai-studio-veo3-gallery-pk,Veo3 Gallery,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+048,A,video-analyzer-pk,Video Analyzer,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
+049,B,ai-artifact-vault,AI Artifact Vault,Vite+React,npm run build,dist,cloudflare-pages,VITE_SUPABASE_PROJECT_ID;VITE_SUPABASE_PUBLISHABLE_KEY;VITE_SUPABASE_URL,,,,needs Supabase project
+050,B,banquet-seating-arrangements-v0,Banquet Seating Arrangements,Next.js,npm run build,.next,vercel,NEXT_PUBLIC_SUPABASE_ANON_KEY;NEXT_PUBLIC_SUPABASE_URL;SUPABASE_SERVICE_ROLE_KEY,,,,needs Supabase project
+051,B,v0-eleven-labs-agents-starter,Eleven Labs Agents Starter,Next.js,npm run build,.next,vercel,AGENT_ID;ELEVENLABS_API_KEY;NODE_ENV,elevenlabs,,,
+052,B,v0-eleven-labs-music-starter,Eleven Labs Music Starter,Next.js,npm run build,.next,vercel,ELEVENLABS_API_KEY,elevenlabs,,,
+053,B,v0-eleven-labs-v3-podcast-generator,Eleven Labs V3 Podcast Generator,Next.js,npm run build,.next,vercel,ELEVENLABS_API_KEY;NEXT_PUBLIC_SUPABASE_ANON_KEY;NEXT_PUBLIC_SUPABASE_URL;OPENAI_API_KEY,elevenlabs;openai,,,
+054,B,ondc-farmer-connect-v0,ONDC Farmer Connect,Next.js,npm run build,.next,vercel,ONDC_ENCRYPTION_PUBLIC_KEY;ONDC_GATEWAY_URL;ONDC_REGISTRY_URL;ONDC_SIGNING_PUBLIC_KEY;ONDC_SUBSCRIBER_ID;ONDC_SUBSCRIBER_URI,,,,
+055,B,ondc-farmer-connect-bolt,ONDC Farmer Connect Bolt,Expo (Web),npm run build:web,dist,vercel,,,,,
+056,B,pwa-website-chatbot-v0,PWA Website Chatbot,Next.js,npm run build,.next,vercel,,openai,,,
+057,B,SocialSpark,SocialSpark,Unknown,npm run build,dist,manual,,,,,
+058,B,tu-dekha,Tu Dekha,Vite+React,npm run build,dist,cloudflare-pages,DEV;VITE_GOOGLE_MAPS_API_KEY;VITE_SUPABASE_PROJECT_ID;VITE_SUPABASE_PUBLISHABLE_KEY;VITE_SUPABASE_URL,openai,,,needs Supabase project
+059,C,bookmark-organizer,Bookmark Organizer,Unknown,npm run build,dist,deferred,NODE_ENV;REACT_APP_USE_MOCK_API,,,,defer — backend-heavy
+060,C,gemini-ai-studio-budgeted-shared-expenses-pk,Budgeted Shared Expenses,Vite+React,npm run build,dist,deferred,APP_URL;DISABLE_HMR;GEMINI_API_KEY;NODE_ENV,gemini,,,defer — backend-heavy
+061,C,ClinicConnect,ClinicConnect,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;PORT;REPLIT_DEV_DOMAIN;REPLIT_INTERNAL_APP_DOMAIN;REPL_ID,,,,defer — backend-heavy
+062,C,DJProposals,DJProposals,Vite+React,npm run build,dist,deferred,DATABASE_URL;GOOGLE_MAPS_API_KEY;NODE_ENV;PORT;REPL_ID;VITE_GOOGLE_MAPS_API_KEY,,,,defer — backend-heavy
+063,C,gemini-ai-studio-done_and_dusted-family-chores-pk,Done and Dusted Family Chores,Vite+React,npm run build,dist,deferred,APP_URL;DISABLE_HMR;GEMINI_API_KEY,gemini,,,defer — backend-heavy
+064,C,field-service-pro-sa,Field Service Pro,Vite+React,npm run build,dist,deferred,API_PORT;CI;DATABASE_URL;DB_PORT;DEV;JWT_ACCESS_EXPIRY_SECONDS;JWT_REFRESH_EXPIRY_SECONDS;JWT_SECRET;NODE_ENV;POSTGRES_DB;POSTGRES_PASSWORD;POSTGRES_USER;PROJECT_ROOT;SECRETS_ENCRYPTION_KEY;STORAGE_BACKEND,,,,defer — backend-heavy
+065,C,HomeInventory,HomeInventory,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;PORT;REPL_ID,,,,defer — backend-heavy
+066,C,metaphor-mindIT,Metaphor MindIT,Unknown,npm run build,dist,deferred,API_GATEWAY_PORT;API_GATEWAY_URL;AUDIO_GEN_PORT;AUDIO_GEN_URL;CULTURAL_SAFETY_PORT;CULTURAL_SAFETY_URL;DATABASE_URL;IMAGE_GEN_PORT;IMAGE_GEN_URL;LLM_MAX_TOKENS;LLM_MODEL;LLM_PROVIDER;LLM_TEMPERATURE;NEXTAUTH_SECRET;NEXTAUTH_URL,elevenlabs;openai,,,defer — backend-heavy
+067,C,PassGenius,PassGenius,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;PORT;REPL_ID,,,,defer — backend-heavy
+068,C,pk-ai-studio-remix-geoseeker,Remix Geoseeker,Vite+React,npm run build,dist,deferred,GEMINI_API_KEY;NODE_ENV;VITE_GOOGLE_MAPS_API_KEY,gemini,,,defer — backend-heavy
+069,C,StickerSage,StickerSage,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;OPENAI_API_KEY;REPL_ID;VITE_OPENAI_API_KEY,openai,,,defer — backend-heavy
+070,C,gemini-ai-studio-therapy-assistant,Therapy Assistant,Vite+React,npm run build,dist,deferred,FRONTEND_URL;GEMINI_API_KEY;NODE_ENV;PORT;VITE_BACKEND_URL,gemini,,,defer — backend-heavy
+071,C,therapy-clinic-nextjs,Therapy Clinic Nextjs,Next.js,npm run build,.next,deferred,ANALYZE;ARCJET_KEY;AUTH_PROVIDERS;AUTH_SECRET;AUTH_URL;AWS_REGION;CHECKLY_EMAIL_ADDRESS;CHECKLY_LOGICAL_ID;CHECKLY_PROJECT_NAME;CI;DATABASE_URL;DEV_BYPASS_AUTH;ENVIRONMENT_URL;KEYCLOAK_CLIENT_ID;KEYCLOAK_CLIENT_SECRET,,,,defer — backend-heavy
