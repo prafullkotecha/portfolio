@@ -71,10 +71,17 @@ export default function Home() {
             <p className="font-mono text-sm leading-relaxed text-ink/80 mb-3">
               A working index of {stats.total} hobby projects built by <strong className="text-rust">Prafull Kotecha</strong> across 18 months of late-night experiments — AI agents, full-stack, generative play.
             </p>
-            <div className="flex flex-wrap gap-2 md:justify-end font-mono text-xs">
+            <div className="flex flex-wrap gap-2 md:justify-end font-mono text-xs mb-2">
               <a href="https://github.com/prafullkotecha" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-4 hover:text-rust">GitHub →</a>
               <span className="text-muted">·</span>
               <a href="https://www.linkedin.com/in/prafullkotecha/" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-4 hover:text-rust">LinkedIn →</a>
+            </div>
+            <div className="flex flex-wrap gap-2 md:justify-end font-mono text-[10px] uppercase tracking-[0.15em] text-muted">
+              <span className="text-rust">› catalog</span>
+              <span>·</span>
+              <a href="/v2" className="hover:text-rust">terminal</a>
+              <span>·</span>
+              <a href="/v3" className="hover:text-rust">spec sheet</a>
             </div>
           </div>
         </div>
