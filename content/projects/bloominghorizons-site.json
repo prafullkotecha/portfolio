@@ -1,0 +1,19 @@
+{
+  "id": "bloominghorizons-site",
+  "title": "Blooming Horizons",
+  "repo": "https://github.com/prafullkotecha/bloominghorizons-site",
+  "description": "Static mirror of bloominghorizons.com (production site)",
+  "framework": "HTML",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Website"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-07-21",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

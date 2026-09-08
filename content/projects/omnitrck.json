@@ -1,0 +1,19 @@
+{
+  "id": "omnitrck",
+  "title": "OmniTrck",
+  "repo": "https://github.com/prafullkotecha/omnitrck",
+  "description": "Android app to track purchases across stores.",
+  "framework": "Kotlin",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Android"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-05-23",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

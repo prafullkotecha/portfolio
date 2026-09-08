@@ -70,3 +70,19 @@
 069,C,StickerSage,StickerSage,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;OPENAI_API_KEY;REPL_ID;VITE_OPENAI_API_KEY,openai,,,defer — backend-heavy
 070,C,gemini-ai-studio-therapy-assistant,Therapy Assistant,Vite+React,npm run build,dist,deferred,FRONTEND_URL;GEMINI_API_KEY;NODE_ENV;PORT;VITE_BACKEND_URL,gemini,,,defer — backend-heavy
 071,C,therapy-clinic-nextjs,Therapy Clinic Nextjs,Next.js,npm run build,.next,deferred,ANALYZE;ARCJET_KEY;AUTH_PROVIDERS;AUTH_SECRET;AUTH_URL;AWS_REGION;CHECKLY_EMAIL_ADDRESS;CHECKLY_LOGICAL_ID;CHECKLY_PROJECT_NAME;CI;DATABASE_URL;DEV_BYPASS_AUTH;ENVIRONMENT_URL;KEYCLOAK_CLIENT_ID;KEYCLOAK_CLIENT_SECRET,,,,defer — backend-heavy
+072,A,qrcode-custom-erator,QR Code Custom-erator,TypeScript,npm run build,dist,cloudflare-pages,,,,
+073,A,beats-by-pooja,Beats by Pooja,Astro,npm run build,dist,cloudflare-pages,,,,
+074,A,design-templates,Design Templates,HTML,,,cloudflare-pages,,,,
+075,A,aistudio-remix-tickr-pk,Tickr,Vite+React,npm run build,dist,cloudflare-pages,GEMINI_API_KEY,gemini,,,
+076,A,remix-ai-data-analyst-pk,AI Data Analyst,Vite+React,npm run build,dist,cloudflare-pages,GEMINI_API_KEY,gemini,,,
+077,A,roopsie-boutique,Roopsie Boutique,HTML,,,cloudflare-pages,,,,
+078,A,bloominghorizons-site,Blooming Horizons,HTML,,,cloudflare-pages,,,,
+079,B,standby-ai-studio,Standby AI Studio,TypeScript,npm run build,dist,cloudflare-pages,,,,
+080,B,tagsmith,Tagsmith,Unknown,,,cloudflare-pages,,,,
+081,C,dctwin,DC Twin,Three.js+TypeScript,,,deferred,,,,defer — backend-heavy
+082,C,340b-policy-navigator,340B Policy Navigator,TypeScript,npm run build,.next,deferred,,,,defer — backend-heavy
+083,C,cloakwork,Cloakwork,Spring Boot,mvn package,target,deferred,,,,defer — backend-heavy
+084,C,340b-refgraph,340B RefGraph,Java,,,deferred,,,,defer — backend-heavy
+085,C,pulse,Pulse,Flutter,flutter build web,build/web,deferred,,,,defer — backend-heavy
+086,C,fieldmedic,FieldMedic,Kotlin,,,deferred,,,,defer — Android/NPU
+087,C,omnitrck,OmniTrck,Kotlin,,,deferred,,,,defer — Android

@@ -1,0 +1,19 @@
+{
+  "id": "design-templates",
+  "title": "Design Templates",
+  "repo": "https://github.com/prafullkotecha/design-templates",
+  "description": "A collection of design templates.",
+  "framework": "HTML",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Design"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-08-29",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

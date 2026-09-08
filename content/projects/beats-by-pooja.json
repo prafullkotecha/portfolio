@@ -1,0 +1,20 @@
+{
+  "id": "beats-by-pooja",
+  "title": "Beats by Pooja",
+  "repo": "https://github.com/prafullkotecha/beats-by-pooja",
+  "description": "Official website for DJ Pooja — Astro + Cloudflare Pages",
+  "framework": "Astro",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Website",
+    "Music"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-09-06",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

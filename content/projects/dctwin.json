@@ -1,0 +1,21 @@
+{
+  "id": "dctwin",
+  "title": "DC Twin",
+  "repo": "https://github.com/prafullkotecha/dctwin",
+  "description": "Build live 3D data-center twins from data — DTDL v3 models, one generic Three.js runtime, pluggable telemetry.",
+  "framework": "Three.js+TypeScript",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "3D",
+    "IoT",
+    "Digital Twin"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-09-07",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

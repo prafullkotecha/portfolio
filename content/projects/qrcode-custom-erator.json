@@ -1,0 +1,20 @@
+{
+  "id": "qrcode-custom-erator",
+  "title": "QR Code Custom-erator",
+  "repo": "https://github.com/prafullkotecha/qrcode-custom-erator",
+  "description": "Whip up custom QR codes in a snap, share the magic, and watch the scan stats roll in live!",
+  "framework": "TypeScript",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "QR Codes",
+    "Analytics"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-09-07",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "aistudio-remix-tickr-pk",
+  "title": "Tickr",
+  "repo": "https://github.com/prafullkotecha/aistudio-remix-tickr-pk",
+  "description": "Autonomous financial research agent — gathers SEC filings, processes reasoning timelines, and generates interactive stock analysis reports.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Finance",
+    "Agents"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-08-21",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

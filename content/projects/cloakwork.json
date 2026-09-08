@@ -1,0 +1,21 @@
+{
+  "id": "cloakwork",
+  "title": "Cloakwork",
+  "repo": "https://github.com/prafullkotecha/cloakwork",
+  "description": "WorkOS-shaped SSO API on Keycloak (Spring Boot + HTMX)",
+  "framework": "Spring Boot",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Auth",
+    "SSO",
+    "Java"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-08-22",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

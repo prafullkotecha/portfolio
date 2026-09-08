@@ -1,0 +1,19 @@
+{
+  "id": "tagsmith",
+  "title": "Tagsmith",
+  "repo": "https://github.com/prafullkotecha/tagsmith",
+  "description": "Tag generation tooling.",
+  "framework": "Unknown",
+  "tier": "B",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Utility"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-05-19",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

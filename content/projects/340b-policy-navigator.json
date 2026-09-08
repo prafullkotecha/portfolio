@@ -1,0 +1,21 @@
+{
+  "id": "340b-policy-navigator",
+  "title": "340B Policy Navigator",
+  "repo": "https://github.com/prafullkotecha/340b-policy-navigator",
+  "description": "340B Manufacturer Policy Navigator: compliance engine for covered entities",
+  "framework": "TypeScript",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Healthcare",
+    "340B",
+    "Compliance"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-09-07",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

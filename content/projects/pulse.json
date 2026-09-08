@@ -1,0 +1,19 @@
+{
+  "id": "pulse",
+  "title": "Pulse",
+  "repo": "https://github.com/prafullkotecha/pulse",
+  "description": "Pulse — a Flutter app.",
+  "framework": "Flutter",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Mobile"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-07-25",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

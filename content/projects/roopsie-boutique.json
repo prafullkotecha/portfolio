@@ -1,0 +1,20 @@
+{
+  "id": "roopsie-boutique",
+  "title": "Roopsie Boutique",
+  "repo": "https://github.com/prafullkotecha/roopsie-boutique",
+  "description": "Roopsie Boutique ecommerce rebuild — PRD and click-through prototypes",
+  "framework": "HTML",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Ecommerce",
+    "Prototype"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-08-12",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

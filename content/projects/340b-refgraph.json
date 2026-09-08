@@ -1,0 +1,20 @@
+{
+  "id": "340b-refgraph",
+  "title": "340B RefGraph",
+  "repo": "https://github.com/prafullkotecha/340b-refgraph",
+  "description": "Graph-based reference tooling for 340B.",
+  "framework": "Java",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Healthcare",
+    "340B"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-08-19",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

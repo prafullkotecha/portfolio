@@ -1,21 +1,21 @@
 # Maker's Catalog — Portfolio
 
-Static Next.js site listing 71 hobby projects. Reads from `src/data/projects.json` and renders cards with filters, search, and live demo links.
+Static Next.js site listing 87 hobby projects. Reads from `src/data/projects.json` and renders cards with filters, search, and live demo links.
 
 ## At a glance
 
 | Tier | Count | Where | Effort |
 |---|---|---|---|
-| **A** — deploy as-is | 48 | Cloudflare Pages | ~30 sec each |
-| **B** — minor work | 10 | Vercel + Supabase | ~5 min each |
-| **C** — backend-heavy | 13 | Defer | source-only on portfolio |
+| **A** — deploy as-is | 55 | Cloudflare Pages | ~30 sec each |
+| **B** — minor work | 12 | Vercel + Supabase | ~5 min each |
+| **C** — backend-heavy | 20 | Defer | source-only on portfolio |
 
 Steady-state cost target: **~$1/mo** (just the domain). Free tiers cover everything else.
 
 ## Day plan
 
 1. Read [RUNBOOK.md](./RUNBOOK.md) (~10 min)
-2. Deploy this portfolio site to Vercel — it'll show all 71 with "coming soon" labels
+2. Deploy this portfolio site to Vercel — it'll show all 87 with "coming soon" labels
 3. Knock out Tier A on Cloudflare Pages, ticking off [PROJECTS-CHECKLIST.csv](./PROJECTS-CHECKLIST.csv) as you go
 4. Tier B (Vercel for v0/Next.js apps, Supabase shared project for the 3 that need it)
 5. Tier C stays source-only on the portfolio for now — tackle later with Neon + Railway
@@ -42,7 +42,7 @@ Each save commits to GitHub → Vercel auto-rebuilds → live in ~30 seconds.
 
 ### How it works under the hood
 
-- Source of truth: `content/projects/*.json` (one file per project, ~71 today)
+- Source of truth: `content/projects/*.json` (one file per project, ~87 today)
 - Build-time aggregator: `scripts/aggregate-projects.mjs` runs at `predev` and `prebuild`, reading all files in `content/projects/`, filtering out unpublished entries, and writing the result to `src/data/projects.json`
 - The three React pages (`/`, `/v2`, `/v3`) import from `src/data/projects.json` as before — they don't know the CMS exists
 - `src/data/projects.json` is git-ignored (regenerated on each build) so there's only one source of truth

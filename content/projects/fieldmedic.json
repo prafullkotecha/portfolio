@@ -1,0 +1,22 @@
+{
+  "id": "fieldmedic",
+  "title": "FieldMedic",
+  "repo": "https://github.com/prafullkotecha/fieldmedic",
+  "description": "Offline AI first-aid triage on Coralboard NPU and Android (LiteRT-LM) — model proposes, rules guarantee",
+  "framework": "Kotlin",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "AI",
+    "Healthcare",
+    "Android",
+    "Edge"
+  ],
+  "source": "Hand-built",
+  "last_commit": "2026-07-23",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,24 @@
+{
+  "id": "remix-ai-data-analyst-pk",
+  "title": "AI Data Analyst",
+  "repo": "https://github.com/prafullkotecha/remix-ai-data-analyst-pk",
+  "description": "Interactive data analytics — upload CSVs, ask a question, and let Gemini Managed Agents autonomously analyze it.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "cloudflare-pages",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Data Analytics"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-08-21",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}
