@@ -4,7 +4,7 @@
   "repo": "https://github.com/prafullkotecha/standby-ai-studio",
   "description": "Help DJ be an MC and keep the crowd entertained",
   "framework": "TypeScript",
-  "tier": "B",
+  "tier": "A",
   "deploy_target": "cloudflare-pages",
   "ai_providers": [],
   "env_vars": [],
@@ -14,7 +14,7 @@
   ],
   "source": "Mixed",
   "last_commit": "2026-08-21",
-  "live_url": null,
+  "live_url": "https://standby.ai.studio",
   "published": true,
   "screenshot": null
 }

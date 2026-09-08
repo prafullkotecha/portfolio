@@ -2,7 +2,7 @@
   "id": "bloominghorizons-site",
   "title": "Blooming Horizons",
   "repo": "https://github.com/prafullkotecha/bloominghorizons-site",
-  "description": "Static mirror of bloominghorizons.com (production site)",
+  "description": "Replacement build for bloominghorizons.com — the currently live site is NOT owned by us; this replacement is not yet deployed.",
   "framework": "HTML",
   "tier": "A",
   "deploy_target": "cloudflare-pages",
@@ -13,7 +13,7 @@
   ],
   "source": "Hand-built",
   "last_commit": "2026-07-21",
-  "live_url": "https://bloominghorizons.com",
+  "live_url": null,
   "published": true,
   "screenshot": null
 }

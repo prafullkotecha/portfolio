@@ -34,6 +34,12 @@ run (sync or not) it must also:
    - **Probe each candidate with an HTTP HEAD/GET** (accept 200 as live;
      record 301/302 target then follow). Only mark a project live on a
      confirmed successful response.
+   - **Verify ownership, not just availability:** a 200 on a domain does NOT
+     mean it hosts the owner's deployment. Confirm the domain is wired to the
+     owner's project (deploy config in repo, DNS records, or owner report).
+     Counter-example: bloominghorizons.com returns 200 but hosts the OLD site
+     the owner is replacing — it must NOT count as live for
+     `bloominghorizons-site`. When in doubt, ask the owner.
    - Count live vs total, broken down by tier. Report the number and the
      trend since last run.
 2. **Encourage:** surface a short, motivating status line, e.g.
@@ -190,9 +196,11 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
 - 2026-09: Mission upgraded — live detection now based on ACTUAL repo
   packaging (wrangler/vercel/netlify/firebase configs) + HTTP probes of
   candidate URLs, not just the live_url field.
-- Deployment baseline after first real audit: **2/87 live** —
+- Deployment baseline after owner corrections: **2/87 live** —
   beats-by-pooja → https://beatsbypooja.com (wrangler.jsonc, HTTP 200),
-  bloominghorizons-site → https://bloominghorizons.com (netlify.toml,
-  HTTP 200). Firebase Studio applets (qrcode-custom-erator, tickr,
+  standby-ai-studio → https://standby.ai.studio (HTTP 200, owner-confirmed;
+  bumped Tier B → A). bloominghorizons.com returned 200 but hosts the OLD
+  site, NOT the owner's replacement build — `bloominghorizons-site` remains
+  un-deployed. Firebase Studio applets (qrcode-custom-erator, tickr,
   done_and_dusted, budgeted) have applet configs but no public hosting
   (web.app 404) — candidate next actions.
