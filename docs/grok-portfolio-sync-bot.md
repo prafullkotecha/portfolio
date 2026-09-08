@@ -15,6 +15,40 @@ Grok scheduled task).
   in `.pages.yml`)
 - **Supporting artifacts:** `PROJECTS-CHECKLIST.csv`, `README.md` (counts table)
 
+## Mission (always active, alongside sync)
+
+The owner's overarching goal is: **deploy every deployable project so users
+can interact with and use it live.** The bot is not just a sync tool — on every
+run (sync or not) it must also:
+
+1. **Track** deployment progress: count projects with a live URL vs total,
+   broken down by tier. Report the number and the trend since last run.
+2. **Encourage:** surface a short, motivating status line, e.g.
+   "7/87 live (8%) — 7 Tier-A static sites are ~30-second deploys away.
+   Let's get one done today."
+3. **Propose concrete next steps:** every run must end with 1–3 specific,
+   actionable deployment tasks, ordered by effort-to-impact. Prefer:
+   - The next un-deployed **Tier A** project (static/Cloudflare Pages,
+     ~30 sec each): give the exact `wrangler pages deploy` / dashboard steps
+     and the URL it will live at.
+   - Tier B projects with a clear blocker named (e.g., "needs
+     `VITE_SUPABASE_URL` — create the shared Supabase project first").
+   - If everything in A/B is live, propose the cheapest Tier C conversion.
+4. **Record outcomes:** when the owner reports a deployment, update
+   `content/projects/{id}.json` (`live_url`) and the `deployed?` /
+   `live_url` columns in `PROJECTS-CHECKLIST.csv`, then celebrate briefly and
+   show the updated progress percentage.
+
+**Deployment heuristics:**
+- Tier A + `deploy_target: cloudflare-pages` → propose Cloudflare Pages deploy
+  (build cmd from checklist; usually `npm run build`, output `dist`).
+- Tier A/B apps with `ai_providers: [gemini]` → remind that `GEMINI_API_KEY`
+  must be set as the env var at deploy time.
+- Tier C stays deferred unless the owner asks — but if Tier A/B are done,
+  propose one Tier C with the smallest backend footprint.
+- Never propose a deploy for a project whose repo doesn't build (flag for
+  manual investigation instead).
+
 ## Trigger modes
 
 1. **On-demand:** user says "sync my portfolio" / "portfolio sync".
@@ -92,6 +126,11 @@ PROCEDURE
 10. If write access is available: commit with message
     "sync: add N new projects, update M from GitHub state (as of YYYY-MM-DD)"
     and push to main. Otherwise, output the full diff/patch for the user.
+11. **Deployment report (every run, even on-demand without sync):**
+    - Count live deployments: projects with non-null `live_url` in
+      content/projects/. Report `X/87 live (Y%)` and change since last run.
+    - End with the Mission section's 1–3 concrete next-step proposals,
+      exactly as specified in "Mission" above.
 
 RULES
 - Never delete or unpublish existing entries.
@@ -133,3 +172,7 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
 - 2026-09: Template created. Initial sync added 16 new projects, updated 3
   (therapy-clinic-nextjs, field-service-pro-sa, tu-dekha); portfolio now
   tracks 87 projects (A:55 / B:12 / C:20).
+- 2026-09: Added Mission section — bot now tracks and drives the
+  deploy-everything goal on every run. Baseline at mission start:
+  **0/87 live (0%)**, 7 checklist live_url cells were misaligned notes from
+  the initial sync (since corrected); no project has ever been deployed.
