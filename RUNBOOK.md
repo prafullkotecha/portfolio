@@ -14,7 +14,7 @@ Create accounts (all free):
 |---|---|---|
 | Cloudflare | Pages (host SPAs), Workers (AI proxy) | https://dash.cloudflare.com/sign-up |
 | Vercel | Host Next.js apps + portfolio | https://vercel.com/signup |
-| Supabase | Postgres for 3 apps that need it | https://supabase.com/dashboard |
+| Supabase | **Self-hosted in Docker on the VPS** — Postgres + Auth + Storage for all apps; see [docs/SELFHOSTED-SUPABASE.md](./docs/SELFHOSTED-SUPABASE.md). (supabase.com hosting not used.) |
 | Neon (optional) | Backup DB option | https://neon.tech |
 
 Get/check API keys:
@@ -138,10 +138,9 @@ Now any non-allowed origin gets 403 even with the key.
 ## 6. Tier B — apps needing minor work (10 apps)
 
 ### 6.1 Supabase apps (`ai-artifact-vault`, `tu-dekha`, `banquet-seating-arrangements-v0`)
-Each Lovable/v0 project that uses Supabase typically expects a project the AI tool created. Two options:
+Each Lovable/v0 project that uses Supabase typically expects a project the AI tool created. **Decision (2026-09):** all of them point at the **self-hosted Supabase instance on the VPS** — see [docs/SELFHOSTED-SUPABASE.md](./docs/SELFHOSTED-SUPABASE.md). Run each app's migration scripts (look in `supabase/migrations/`) against the shared instance, one schema per app, RLS on every table. Same `SUPABASE_URL` and publishable key for all three — no hosted-project limits apply.
 
-- **Quickest:** spin up a **single shared Supabase project** for all three. Run their migration scripts (look in `supabase/migrations/`) against that one DB. Same `SUPABASE_URL` and `ANON_KEY` for all three. Works because schemas don't collide.
-- **Cleaner:** one Supabase project per app. Free tier allows 2 projects; you'd hit the limit on the 3rd.
+Legacy note (hosted era): the old "quickest vs cleaner" tradeoff of shared vs per-app supabase.com projects (2-project free-tier cap) is superseded and only relevant if you ever fall back to hosting.
 
 Steps:
 1. https://supabase.com/dashboard → New project (free)
