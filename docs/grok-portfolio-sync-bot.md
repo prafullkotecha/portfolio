@@ -21,8 +21,21 @@ The owner's overarching goal is: **deploy every deployable project so users
 can interact with and use it live.** The bot is not just a sync tool — on every
 run (sync or not) it must also:
 
-1. **Track** deployment progress: count projects with a live URL vs total,
-   broken down by tier. Report the number and the trend since last run.
+1. **Track** deployment progress by checking ACTUAL deployments, never just
+   the `live_url` field (which may lag or lie). Detection procedure:
+   - Inspect each repo's packaging/deploy files via the GitHub API:
+     `wrangler.toml`/`wrangler.jsonc` (Cloudflare Pages/Workers), `vercel.json`,
+     `netlify.toml`, `firebase-applet-config.json`/`firebase.json`, `CNAME`,
+     `fly.toml`, `railway.json`, `render.yaml`, `Dockerfile`, and
+     `.github/workflows/*` deploy actions.
+   - Derive candidate URLs: custom domains from CNAME/dns records/README,
+     `<project>.pages.dev`, `<project>.vercel.app`, `<project>.netlify.app`,
+     `<firebase-projectId>.web.app`, Cloudflare Workers routes.
+   - **Probe each candidate with an HTTP HEAD/GET** (accept 200 as live;
+     record 301/302 target then follow). Only mark a project live on a
+     confirmed successful response.
+   - Count live vs total, broken down by tier. Report the number and the
+     trend since last run.
 2. **Encourage:** surface a short, motivating status line, e.g.
    "7/87 live (8%) — 7 Tier-A static sites are ~30-second deploys away.
    Let's get one done today."
@@ -34,10 +47,10 @@ run (sync or not) it must also:
    - Tier B projects with a clear blocker named (e.g., "needs
      `VITE_SUPABASE_URL` — create the shared Supabase project first").
    - If everything in A/B is live, propose the cheapest Tier C conversion.
-4. **Record outcomes:** when the owner reports a deployment, update
-   `content/projects/{id}.json` (`live_url`) and the `deployed?` /
-   `live_url` columns in `PROJECTS-CHECKLIST.csv`, then celebrate briefly and
-   show the updated progress percentage.
+4. **Record outcomes:** when a live deployment is detected (by owner report
+   OR by the probe above), update `content/projects/{id}.json` (`live_url`)
+   and the `deployed?` / `live_url` columns in `PROJECTS-CHECKLIST.csv`, then
+   celebrate briefly and show the updated progress percentage.
 
 **Deployment heuristics:**
 - Tier A + `deploy_target: cloudflare-pages` → propose Cloudflare Pages deploy
@@ -173,6 +186,13 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
   (therapy-clinic-nextjs, field-service-pro-sa, tu-dekha); portfolio now
   tracks 87 projects (A:55 / B:12 / C:20).
 - 2026-09: Added Mission section — bot now tracks and drives the
-  deploy-everything goal on every run. Baseline at mission start:
-  **0/87 live (0%)**, 7 checklist live_url cells were misaligned notes from
-  the initial sync (since corrected); no project has ever been deployed.
+  deploy-everything goal on every run.
+- 2026-09: Mission upgraded — live detection now based on ACTUAL repo
+  packaging (wrangler/vercel/netlify/firebase configs) + HTTP probes of
+  candidate URLs, not just the live_url field.
+- Deployment baseline after first real audit: **2/87 live** —
+  beats-by-pooja → https://beatsbypooja.com (wrangler.jsonc, HTTP 200),
+  bloominghorizons-site → https://bloominghorizons.com (netlify.toml,
+  HTTP 200). Firebase Studio applets (qrcode-custom-erator, tickr,
+  done_and_dusted, budgeted) have applet configs but no public hosting
+  (web.app 404) — candidate next actions.
