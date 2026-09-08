@@ -121,10 +121,10 @@ Whatever hosts the frontend, reuse the same backends to keep cost near zero and 
 
 | Need | Primary choice | Why / notes |
 |---|---|---|
-| Postgres | **Supabase** (1 shared project, per-app schemas/DBs) | Free tier: 500 MB, auth included, generous. Already the RUNBOOK plan. Fallback: **Neon** (scale-to-zero branching, generous free). |
-| Auth | **Supabase Auth** for Supabase apps; **Firebase Auth** for the applets; **Keycloak on the VPS** for anything SSO/enterprise-shaped (cloakwork pattern) | Avoid one auth system per app. |
+| Postgres | **Self-hosted Supabase (Docker on the VPS)** — see [SELFHOSTED-SUPABASE.md](./SELFHOSTED-SUPABASE.md). One instance, per-app schemas + RLS. Fallback: **Neon** (scale-to-zero) or supabase.com free tier (2 projects, pauses on inactivity). |
+| Auth | **Supabase Auth (self-hosted GoTrue)** for Supabase apps; **Firebase Auth** for the applets; **Keycloak on the VPS** for anything SSO/enterprise-shaped (cloakwork pattern) | Avoid one auth system per app. |
 | Serverless API proxy | **Cloudflare Worker** (`scripts/ai-proxy-worker` already exists) | Hides Gemini/OpenAI keys server-side; pair with referrer-restricted keys per RUNBOOK. |
-| Object storage | Cloudflare R2 (no egress fees) or Supabase Storage | Screenshots, uploads. |
+| Object storage | Cloudflare R2 (no egress fees) or **Supabase Storage (self-hosted, same instance)** | Screenshots, uploads. |
 | Containers/long-running | **VPS (Docker)** first; Cloud Run / Azure Container Apps as managed alternatives | For Spring Boot, Express, Keycloak. |
 
 ---
