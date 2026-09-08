@@ -131,7 +131,7 @@ export default function StandardOutput() {
           </p>
 
           <p className="text-[#6e7681] text-[11px]">
-            // total {filtered.length} of {projects.length}, sorted by tier asc
+            {"//"} total {filtered.length} of {projects.length}, sorted by tier asc
           </p>
         </div>
 
@@ -157,7 +157,7 @@ export default function StandardOutput() {
             <span className="animate-pulse text-[#f0883e]">▊</span>
           </p>
           <p className="mt-3">
-            // hosted on cloudflare pages + vercel · {new Date().getFullYear()} · <Link href="/" className="text-[#79c0ff] hover:underline">browse `/` (catalog view)</Link> · <Link href="/v3" className="text-[#79c0ff] hover:underline">browse `/v3` (spec-sheet view)</Link>
+            {"//"} hosted on cloudflare pages + vercel · {new Date().getFullYear()} · <Link href="/" className="text-[#79c0ff] hover:underline">browse `/` (catalog view)</Link> · <Link href="/v3" className="text-[#79c0ff] hover:underline">browse `/v3` (spec-sheet view)</Link>
           </p>
         </div>
       </div>
@@ -202,7 +202,7 @@ function FileRow({ project: p, index }: { project: Project; index: number }) {
           {p.ai_providers.length > 0 && (
             <span className="text-[#a371f7] ml-2 text-[11px]">@{p.ai_providers.join(",")}</span>
           )}
-          <span className="text-[#6e7681] ml-2 text-[11px] truncate">// {p.description.slice(0, 70)}{p.description.length > 70 ? "..." : ""}</span>
+          <span className="text-[#6e7681] ml-2 text-[11px] truncate">{"//"} {p.description.slice(0, 70)}{p.description.length > 70 ? "..." : ""}</span>
         </span>
         <span className="text-[#6e7681] text-right text-[11px]">{expanded ? "▼" : "▶"}</span>
       </div>
