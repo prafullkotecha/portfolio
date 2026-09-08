@@ -12,6 +12,8 @@ Static Next.js site listing 87 hobby projects. Reads from `src/data/projects.jso
 
 Steady-state cost target: **~$1/mo** (just the domain). Free tiers cover everything else.
 
+- See also: [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform comparison and deployment defaults · [docs/TRIAGE.md](./docs/TRIAGE.md) — per-project tier rationale · [docs/grok-portfolio-sync-bot.md](./docs/grok-portfolio-sync-bot.md) — the bot that keeps this catalog synced with GitHub and tracks live deployments
+
 ## Day plan
 
 1. Read [RUNBOOK.md](./RUNBOOK.md) (~10 min)
