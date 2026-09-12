@@ -45,7 +45,7 @@ content:
         type: select
         options:
           values:
-            - { value: 'A', label: 'A — Live (deploy-ready)' }
+            - { value: 'A', label: 'A — Deploy-ready/static candidate' }
             - { value: 'B', label: 'B — Soon (minor work)' }
             - { value: 'C', label: 'C — Source-only (backend-heavy)' }
         default: 'A'
@@ -87,8 +87,10 @@ content:
         type: select
         options:
           values:
+            - 'github-pages'
             - 'cloudflare-pages'
             - 'vercel'
+            - 'google-app-engine'
             - 'deferred'
             - 'manual'
         default: 'cloudflare-pages'

@@ -5,7 +5,7 @@
   "description": "Tech conference schedule site — static HTML in `public/`, deployable as-is (no build needed).",
   "framework": "Static (public/)",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

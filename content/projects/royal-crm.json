@@ -5,7 +5,7 @@
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "framework": "Vite+React",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

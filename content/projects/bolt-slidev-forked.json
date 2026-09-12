@@ -5,7 +5,7 @@
   "description": "[Edit on StackBlitz ⚡️](https://sli.dev/new)",
   "framework": "Unknown",
   "tier": "A",
-  "deploy_target": "manual",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [],

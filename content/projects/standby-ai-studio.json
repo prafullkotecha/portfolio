@@ -5,7 +5,7 @@
   "description": "Help DJ be an MC and keep the crowd entertained",
   "framework": "TypeScript",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "google-app-engine",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

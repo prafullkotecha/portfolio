@@ -5,7 +5,7 @@
   "description": "Concept dashboard with monkey theme — built with v0.",
   "framework": "Next.js",
   "tier": "A",
-  "deploy_target": "vercel",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

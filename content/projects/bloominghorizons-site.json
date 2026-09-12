@@ -2,10 +2,10 @@
   "id": "bloominghorizons-site",
   "title": "Blooming Horizons",
   "repo": "https://github.com/prafullkotecha/bloominghorizons-site",
-  "description": "Replacement build for bloominghorizons.com — the currently live site is NOT owned by us; this replacement is not yet deployed.",
+  "description": "Replacement build for bloominghorizons.com. The replacement is published on GitHub Pages; the site currently served from bloominghorizons.com is an older site not owned by us.",
   "framework": "HTML",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

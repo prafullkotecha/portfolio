@@ -5,7 +5,7 @@
   "description": "AI-assisted temp staffing flow — match candidates, score fits, draft outreach.",
   "framework": "Vite+React",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

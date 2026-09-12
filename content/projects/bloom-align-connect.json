@@ -5,7 +5,7 @@
   "description": "Wellness platform connecting practitioners and clients with intake flows.",
   "framework": "Vite+React",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [],

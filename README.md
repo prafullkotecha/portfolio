@@ -1,26 +1,30 @@
 # Maker's Catalog — Portfolio
 
-Static Next.js site listing 87 hobby projects. Reads from `src/data/projects.json` and renders cards with filters, search, and live demo links.
+Static Next.js site listing 87 hobby projects. Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
 
 ## At a glance
 
-| Tier | Count | Where | Effort |
+| Tier | Count | Meaning | Default next host |
 |---|---|---|---|
-| **A** — deploy as-is | 55 | Cloudflare Pages | ~30 sec each |
-| **B** — minor work | 12 | Vercel + Supabase | ~5 min each |
-| **C** — backend-heavy | 20 | Defer | source-only on portfolio |
+| **A** — deploy as-is | 56 | Static or frontend-only | GitHub Pages or Cloudflare Pages |
+| **B** — minor work | 11 | Configuration, secrets, or managed services required | Vercel/Cloudflare plus the required service |
+| **C** — backend-heavy | 20 | Backend or database work required | Deferred until its runtime is provisioned |
 
-Steady-state cost target: **~$1/mo** (just the domain). Free tiers cover everything else.
+**Current deployment status:** 22/87 projects live (25.3%), including 20 on GitHub Pages and two existing custom-domain deployments. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
 
-- See also: [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform comparison and deployment defaults · [docs/TRIAGE.md](./docs/TRIAGE.md) — per-project tier rationale · [docs/grok-portfolio-sync-bot.md](./docs/grok-portfolio-sync-bot.md) — the bot that keeps this catalog synced with GitHub and tracks live deployments
+- [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) — canonical live inventory and current GitHub Pages mechanics
+- [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform choices for remaining projects
+- [docs/TRIAGE.md](./docs/TRIAGE.md) — original 71-project technical triage snapshot
+- [docs/grok-portfolio-sync-bot.md](./docs/grok-portfolio-sync-bot.md) — synchronization and live-deployment verification rules
 
-## Day plan
+## Current rollout
 
-1. Read [RUNBOOK.md](./RUNBOOK.md) (~10 min)
-2. Deploy this portfolio site to Vercel — it'll show all 87 with "coming soon" labels
-3. Knock out Tier A on Cloudflare Pages, ticking off [PROJECTS-CHECKLIST.csv](./PROJECTS-CHECKLIST.csv) as you go
-4. Tier B (Vercel for v0/Next.js apps, Supabase shared project for the 3 that need it)
-5. Tier C stays source-only on the portfolio for now — tackle later with Neon + Railway
+1. The portfolio and 20 static projects are deployed through GitHub Actions to GitHub Pages.
+2. Two existing projects remain live on custom domains.
+3. Remaining frontend projects should be deployed only after required API keys and service dependencies are available.
+4. Tier C remains source-only until its backend runtime and databases are provisioned.
+
+See [RUNBOOK.md](./RUNBOOK.md) for the operational workflow and [PROJECTS-CHECKLIST.csv](./PROJECTS-CHECKLIST.csv) for per-project state.
 
 ## Editing projects (admin UI)
 
@@ -40,7 +44,7 @@ The catalog is editable via [Pages CMS](https://pagescms.org) — a free, hosted
 - **Add a screenshot**: Upload via the Screenshot field (commits to `public/screenshots/`)
 - **Set live URL after deploy**: Just paste it into the Live URL field
 
-Each save commits to GitHub → Vercel auto-rebuilds → live in ~30 seconds.
+Each save commits to GitHub. A push to `main` triggers the GitHub Pages workflow and republishes the portfolio.
 
 ### How it works under the hood
 
@@ -79,14 +83,16 @@ It updates the right file in `content/projects/`. Commit and push as usual.
 │   ├── cf-bulk-create.sh
 │   └── ai-proxy-worker/         # CF Worker for AI key proxy
 ├── docs/
+│   ├── DEPLOYMENTS.md
 │   ├── TRIAGE.md
 │   └── triage-raw.json
+├── .github/workflows/deploy-pages.yml
 ├── .pages.yml          # Pages CMS configuration (admin UI schema)
 ├── RUNBOOK.md
 └── PROJECTS-CHECKLIST.csv
 ```
 
-The Next.js project lives at the repo root; everything else (`docs/`, `scripts/`, `RUNBOOK.md`, `PROJECTS-CHECKLIST.csv`) is operational and ignored by Vercel's build.
+The Next.js project lives at the repo root. GitHub Actions builds its static export with the `/portfolio` base path and publishes `out/` to GitHub Pages.
 
 ## Stack
 - Next.js 14 (static export)
@@ -111,16 +117,14 @@ npm run build
 
 ## Deploy
 
-### Vercel (recommended)
-1. https://vercel.com/new → import this repo
-2. Defaults work (Next.js auto-detected)
-3. Add custom domain in Project Settings → Domains
+The portfolio is deployed by [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml).
 
-### Cloudflare Pages
-1. CF dashboard → Pages → Create → connect this repo
-2. Framework preset: **Next.js (Static HTML Export)**
-3. Build command: `npm run build`
-4. Output directory: `out`
+1. Push to `main` or run the workflow manually.
+2. The workflow builds with `NEXT_PUBLIC_BASE_PATH=/portfolio`.
+3. The static `out/` directory is uploaded as the Pages artifact.
+4. GitHub deploys it to <https://prafullkotecha.github.io/portfolio/>.
+
+Repository Settings → Pages must use **GitHub Actions** as the source. See [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) for the project inventory and maintenance steps.
 
 ## Customizing
 
@@ -130,7 +134,7 @@ npm run build
 
 ## Data source
 
-`src/data/projects.json` is the source of truth. Schema in `src/lib/types.ts`:
+`content/projects/*.json` is the source of truth. `src/data/projects.json` is generated by `npm run aggregate`. Schema in `src/lib/types.ts`:
 
 ```ts
 {
@@ -140,7 +144,7 @@ npm run build
   description: string,
   framework: string,     // Vite+React | Next.js | ...
   tier: "A" | "B" | "C", // controls badge + filter
-  deploy_target: string, // cloudflare-pages | vercel | deferred
+  deploy_target: string, // github-pages | cloudflare-pages | vercel | google-app-engine | manual | deferred
   ai_providers: string[],
   env_vars: string[],
   tags: string[],
@@ -151,10 +155,12 @@ npm run build
 ```
 
 
-## All 71 projects at a glance
+## Original 71-project catalog snapshot
+
+The tables below are retained as the original detailed write-up. The live portfolio and `content/projects/` are authoritative for the current 87-project inventory and deployment status.
 
 <details>
-<summary><strong>🟢 Live (deploy-ready) — 48 projects</strong></summary>
+<summary><strong>Original Tier A deploy-ready candidates — 48 projects</strong></summary>
 
 | Title | What it does | Built with | AI |
 |---|---|---|---|
@@ -210,7 +216,7 @@ npm run build
 </details>
 
 <details>
-<summary><strong>🟡 Soon (minor work) — 10 projects</strong></summary>
+<summary><strong>Original Tier B minor-work candidates — 10 projects</strong></summary>
 
 | Title | What it does | Built with | AI |
 |---|---|---|---|
@@ -228,7 +234,7 @@ npm run build
 </details>
 
 <details>
-<summary><strong>⚪ Source-only (backend-heavy) — 13 projects</strong></summary>
+<summary><strong>Original Tier C backend-heavy candidates — 13 projects</strong></summary>
 
 | Title | What it does | Built with | AI |
 |---|---|---|---|

@@ -5,7 +5,7 @@
   "description": "Beat-stitching studio — combine loops and samples in-browser.",
   "framework": "Vite+React",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

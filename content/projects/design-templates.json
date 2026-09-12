@@ -5,7 +5,7 @@
   "description": "A collection of design templates.",
   "framework": "HTML",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

@@ -5,7 +5,7 @@
   "description": "bolt-college-job-finder-landing-page",
   "framework": "Vite+React",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

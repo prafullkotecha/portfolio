@@ -29,8 +29,9 @@ run (sync or not) it must also:
      `fly.toml`, `railway.json`, `render.yaml`, `Dockerfile`, and
      `.github/workflows/*` deploy actions.
    - Derive candidate URLs: custom domains from CNAME/dns records/README,
-     `<project>.pages.dev`, `<project>.vercel.app`, `<project>.netlify.app`,
-     `<firebase-projectId>.web.app`, Cloudflare Workers routes.
+     `prafullkotecha.github.io/<project>/`, `<project>.pages.dev`,
+     `<project>.vercel.app`, `<project>.netlify.app`,
+     `<firebase-projectId>.web.app`, and Cloudflare Workers routes.
    - **Probe each candidate with an HTTP HEAD/GET** (accept 200 as live;
      record 301/302 target then follow). Only mark a project live on a
      confirmed successful response.
@@ -42,25 +43,26 @@ run (sync or not) it must also:
      `bloominghorizons-site`. When in doubt, ask the owner.
    - Count live vs total, broken down by tier. Report the number and the
      trend since last run.
-2. **Encourage:** surface a short, motivating status line, e.g.
-   "7/87 live (8%) — 7 Tier-A static sites are ~30-second deploys away.
-   Let's get one done today."
+2. **Encourage:** surface a short, motivating status line using the live count
+   calculated during this run, without copying an older baseline.
 3. **Propose concrete next steps:** every run must end with 1–3 specific,
    actionable deployment tasks, ordered by effort-to-impact. Prefer:
-   - The next un-deployed **Tier A** project (static/Cloudflare Pages,
-     ~30 sec each): give the exact `wrangler pages deploy` / dashboard steps
-     and the URL it will live at.
+   - The next un-deployed **Tier A** project. Prefer GitHub Pages for a truly
+     static, secret-free app and Cloudflare Pages/Workers when an edge runtime
+     or protected secret is required. Give exact steps and the expected URL.
    - Tier B projects with a clear blocker named (e.g., "needs
      `VITE_SUPABASE_URL` — create the shared Supabase project first").
    - If everything in A/B is live, propose the cheapest Tier C conversion.
 4. **Record outcomes:** when a live deployment is detected (by owner report
    OR by the probe above), update `content/projects/{id}.json` (`live_url`)
-   and the `deployed?` / `live_url` columns in `PROJECTS-CHECKLIST.csv`, then
-   celebrate briefly and show the updated progress percentage.
+   and the `deploy_target` / `deployed?` / `live_url` columns in
+   `PROJECTS-CHECKLIST.csv`, then show the updated progress percentage.
 
 **Deployment heuristics:**
-- Tier A + `deploy_target: cloudflare-pages` → propose Cloudflare Pages deploy
-  (build cmd from checklist; usually `npm run build`, output `dist`).
+- Tier A + static output + no secrets → prefer a GitHub Pages workflow and set
+  `deploy_target: github-pages` after successful verification.
+- Tier A/B + edge API or protected server-side secrets → propose Cloudflare
+  Pages/Workers when credentials are available.
 - Tier A/B apps with `ai_providers: [gemini]` → remind that `GEMINI_API_KEY`
   must be set as the env var at deploy time.
 - Tier C stays deferred unless the owner asks — but if Tier A/B are done,
@@ -89,7 +91,8 @@ REPO CONTEXT
 - Content source of truth: content/projects/{id}.json, one file per project.
   Schema fields (see .pages.yml):
     id, title, repo, description, framework, tier (A|B|C),
-    deploy_target (cloudflare-pages|vercel|deferred), ai_providers[], env_vars[],
+    deploy_target (github-pages|cloudflare-pages|vercel|google-app-engine|manual|deferred),
+    ai_providers[], env_vars[],
     tags[], source, last_commit (YYYY-MM-DD), live_url, published, screenshot
 - PROJECTS-CHECKLIST.csv columns:
     #,tier,project_id,title,framework,build_cmd,output_dir,deploy_target,
@@ -121,8 +124,10 @@ PROCEDURE
    - description: repo description; if empty, read the repo README's first
      meaningful line; if still empty, write a short factual summary and flag it
    - framework: infer from primary language + repo files (package.json, etc.)
-   - deploy_target: cloudflare-pages (A/B static), vercel (B Next.js),
-     deferred (C)
+    - deploy_target: github-pages (secret-free static), cloudflare-pages
+      (static/edge deployments using Cloudflare), vercel (server-capable
+      Next.js), google-app-engine (App Engine), manual (another verified host),
+      deferred (not deployable yet)
    - env_vars: parse from repo README/.env.example if trivially available,
      else []
    - ai_providers: gemini/openai/etc. based on description/env vars, else []
@@ -147,7 +152,8 @@ PROCEDURE
     and push to main. Otherwise, output the full diff/patch for the user.
 11. **Deployment report (every run, even on-demand without sync):**
     - Count live deployments: projects with non-null `live_url` in
-      content/projects/. Report `X/87 live (Y%)` and change since last run.
+      content/projects/. Derive the denominator from the file count and report
+      `X/Y live (Z%)` plus the change since the last verified run.
     - End with the Mission section's 1–3 concrete next-step proposals,
       exactly as specified in "Mission" above.
 
@@ -196,11 +202,19 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
 - 2026-09: Mission upgraded — live detection now based on ACTUAL repo
   packaging (wrangler/vercel/netlify/firebase configs) + HTTP probes of
   candidate URLs, not just the live_url field.
-- Deployment baseline after owner corrections: **2/87 live** —
+- Historical baseline after owner corrections: **2/87 live** —
   beats-by-pooja → https://beatsbypooja.com (wrangler.jsonc, HTTP 200),
   standby-ai-studio → https://standby.ai.studio (HTTP 200, owner-confirmed;
   bumped Tier B → A). bloominghorizons.com returned 200 but hosts the OLD
-  site, NOT the owner's replacement build — `bloominghorizons-site` remains
-  un-deployed. Firebase Studio applets (qrcode-custom-erator, tickr,
+  site, NOT the owner's replacement build. Firebase Studio applets (qrcode-custom-erator, tickr,
   done_and_dusted, budgeted) have applet configs but no public hosting
   (web.app 404) — candidate next actions.
+- 2026-09-11: Deployed the portfolio and 20 secret-free static projects to
+  GitHub Pages using repository GitHub Actions workflows. The verified baseline
+  is now **22/87 live (25.3%)**: 20 GitHub Pages projects plus the two existing
+  custom-domain deployments. The replacement `bloominghorizons-site` is live at
+  `https://prafullkotecha.github.io/bloominghorizons-site/`; the unrelated old
+  `bloominghorizons.com` site still must not be counted for this project.
+- 2026-09-12: Corrected `standby-ai-studio` from the inherited
+  `cloudflare-pages` label to `google-app-engine` after its live response showed
+  `Server: Google Frontend` and App Engine session headers.

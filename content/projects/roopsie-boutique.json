@@ -5,7 +5,7 @@
   "description": "Roopsie Boutique ecommerce rebuild — PRD and click-through prototypes",
   "framework": "HTML",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [

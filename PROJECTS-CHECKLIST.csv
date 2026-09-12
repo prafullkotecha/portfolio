@@ -1,20 +1,20 @@
 #,tier,project_id,title,framework,build_cmd,output_dir,deploy_target,env_vars,ai_providers,deployed?,live_url,notes
 001,A,340b-platform,340B Platform,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 002,A,ai-dj-playset-generator,AI DJ Playset Generator,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-003,A,ai-temp-recruiter,AI Temp Recruiter,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/ai-temp-recruiter/,
-004,A,b-claim-alchemy,B Claim Alchemy,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/b-claim-alchemy/,
+003,A,ai-temp-recruiter,AI Temp Recruiter,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/ai-temp-recruiter/,GitHub Actions deploy-pages workflow
+004,A,b-claim-alchemy,B Claim Alchemy,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/b-claim-alchemy/,GitHub Actions deploy-pages workflow
 005,A,beat-by-dj-pooja,Beat by DJ Pooja,Next.js,npm run build,out,vercel,,,,,
-006,A,beat-stitch-studio,Beat Stitch Studio,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/beat-stitch-studio/,
-007,A,bloom-align-connect,Bloom Align Connect,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/bloom-align-connect/,
+006,A,beat-stitch-studio,Beat Stitch Studio,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/beat-stitch-studio/,GitHub Actions deploy-pages workflow
+007,A,bloom-align-connect,Bloom Align Connect,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/bloom-align-connect/,GitHub Actions deploy-pages workflow
 008,A,booth-lead-pro,Booth Lead Pro,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 009,A,chat-with-docs-pk,Chat with Docs,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-010,A,cheap-tour-hopper-79,Cheap Tour Hopper 79,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/cheap-tour-hopper-79/,
-011,A,bolt-college-job-finder-landing-page,College Job Finder Landing Page,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/bolt-college-job-finder-landing-page/,
+010,A,cheap-tour-hopper-79,Cheap Tour Hopper 79,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/cheap-tour-hopper-79/,GitHub Actions deploy-pages workflow
+011,A,bolt-college-job-finder-landing-page,College Job Finder Landing Page,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/bolt-college-job-finder-landing-page/,GitHub Actions deploy-pages workflow
 012,A,bolt-commerce-js-store,Commerce JS Store,Vite+React,npm run build,dist,cloudflare-pages,VITE_COMMERCEJS_PUBLIC_KEY,,,,
 013,A,dashboard-prototype-playful,Dashboard Prototype Playful,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 014,A,dictation-app-pk,Dictation App,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 015,A,digital-garage-ai,Digital Garage AI,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-016,A,document-zenith-view,Document Zenith View,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/document-zenith-view/,
+016,A,document-zenith-view,Document Zenith View,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/document-zenith-view/,GitHub Actions deploy-pages workflow
 017,A,gemini-ai-studio-echoscript-pk,Echoscript,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 018,A,gemini-ai-studio-ecommerce-category-generator-pk,Ecommerce Category Generator,Vite+React,npm run build,dist,cloudflare-pages,APP_URL;DISABLE_HMR;GEMINI_API_KEY,gemini,,,
 019,A,fit-check-pk,Fit Check,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
@@ -22,27 +22,27 @@
 021,A,GemBooth-pk,GemBooth,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 022,A,gemini-co-drawing-pk,Gemini Co Drawing,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 023,A,get-started-with-gemini-js-sdk-pk,Get Started with Gemini JS SDK,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-024,A,gram-connect-on-net,Gram Connect on Net,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/gram-connect-on-net/,
+024,A,gram-connect-on-net,Gram Connect on Net,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/gram-connect-on-net/,GitHub Actions deploy-pages workflow
 025,A,infinite-zoom-enhance-pk,Infinite Zoom Enhance,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 026,A,LiveAudio-pk,LiveAudio,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 027,A,google-ai-studio-lumina-scheduling,Lumina Scheduling,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 028,A,mcp-maps-3d-pk,MCP Maps 3D,Vite,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 029,A,mediaslim-pk,Mediaslim,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 030,A,modern-directory-listings,Modern Directory Listings,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-031,A,monky-dashboard-concept-v0,Monky Dashboard Concept,Next.js,npm run build,out,github-pages,,,yes,https://prafullkotecha.github.io/monky-dashboard-concept-v0/,
-032,A,mujtama-goal-getters-unite-69,Mujtama Goal Getters Unite 69,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/mujtama-goal-getters-unite-69/,
+031,A,monky-dashboard-concept-v0,Monky Dashboard Concept,Next.js,npm run build,out,github-pages,,,yes,https://prafullkotecha.github.io/monky-dashboard-concept-v0/,GitHub Actions deploy-pages workflow
+032,A,mujtama-goal-getters-unite-69,Mujtama Goal Getters Unite 69,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/mujtama-goal-getters-unite-69/,GitHub Actions deploy-pages workflow
 033,A,pastForward-pk,PastForward,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-034,A,bolt-photography-portfolio,Photography Portfolio,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/bolt-photography-portfolio/,
+034,A,bolt-photography-portfolio,Photography Portfolio,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/bolt-photography-portfolio/,GitHub Actions deploy-pages workflow
 035,A,gemini-ai-studio-pixshop-pk,Pixshop,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-036,A,bolt-rainbow-button-component,Rainbow Button Component,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/bolt-rainbow-button-component/,
+036,A,bolt-rainbow-button-component,Rainbow Button Component,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/bolt-rainbow-button-component/,GitHub Actions deploy-pages workflow
 037,A,gemini-aistudio-remix-bring-ideas-to-life-pk,Remix Bring Ideas to Life,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 038,A,google-ai-studio-research-visualization-pk,Research Visualization,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 039,A,gemini-ai-studio-robotics-spatial-understanding-pk,Robotics Spatial Understanding,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-040,A,royal-crm,Royal CRM,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/royal-crm/,
-041,A,seek-synergy,Seek Synergy,Vite+React,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/seek-synergy/,
+040,A,royal-crm,Royal CRM,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/royal-crm/,GitHub Actions deploy-pages workflow
+041,A,seek-synergy,Seek Synergy,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/seek-synergy/,GitHub Actions deploy-pages workflow
 042,A,signswift-esignature,Signswift Esignature,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
-043,A,bolt-slidev-forked,Slidev Forked,Unknown,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/bolt-slidev-forked/,
-044,A,tech-event-website,Tech Event Website,Static (public/),(none),public,cloudflare-pages,,,yes,https://prafullkotecha.github.io/tech-event-website/,
+043,A,bolt-slidev-forked,Slidev Forked,Unknown,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/bolt-slidev-forked/,GitHub Actions deploy-pages workflow
+044,A,tech-event-website,Tech Event Website,Static (public/),(none),public,github-pages,,,yes,https://prafullkotecha.github.io/tech-event-website/,GitHub Actions deploy-pages workflow
 045,A,type-motion-pk,Type Motion,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 046,A,gemini-flash-ui-generator-pk,UI Generator,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
 047,A,gemini-ai-studio-veo3-gallery-pk,Veo3 Gallery,Vite+React,npm run build,dist,cloudflare-pages,API_KEY;GEMINI_API_KEY,gemini,,,
@@ -69,14 +69,15 @@
 068,C,pk-ai-studio-remix-geoseeker,Remix Geoseeker,Vite+React,npm run build,dist,deferred,GEMINI_API_KEY;NODE_ENV;VITE_GOOGLE_MAPS_API_KEY,gemini,,,defer — backend-heavy
 069,C,StickerSage,StickerSage,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;OPENAI_API_KEY;REPL_ID;VITE_OPENAI_API_KEY,openai,,,defer — backend-heavy
 070,C,gemini-ai-studio-therapy-assistant,Therapy Assistant,Vite+React,npm run build,dist,deferred,FRONTEND_URL;GEMINI_API_KEY;NODE_ENV;PORT;VITE_BACKEND_URL,gemini,,,defer — backend-heavy
-072,A,qrcode-custom-erator,QR Code Custom-erator,TypeScript,npm run build,dist,cloudflare-pages,,,yes,https://prafullkotecha.github.io/qrcode-custom-erator/,
+071,C,therapy-clinic-nextjs,Therapy Clinic Nextjs,Next.js,npm run build,.next,deferred,ANALYZE;ARCJET_KEY;AUTH_PROVIDERS;AUTH_SECRET;AUTH_URL;AWS_REGION;CHECKLY_EMAIL_ADDRESS;CHECKLY_LOGICAL_ID;CHECKLY_PROJECT_NAME;CI;DATABASE_URL;DEV_BYPASS_AUTH;ENVIRONMENT_URL;KEYCLOAK_CLIENT_ID;KEYCLOAK_CLIENT_SECRET,,,,defer — backend-heavy
+072,A,qrcode-custom-erator,QR Code Custom-erator,TypeScript,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/qrcode-custom-erator/,GitHub Actions deploy-pages workflow
 073,A,beats-by-pooja,Beats by Pooja,Astro,npm run build,dist,cloudflare-pages,,,yes,https://beatsbypooja.com,
-074,A,design-templates,Design Templates,HTML,,,cloudflare-pages,,,yes,https://prafullkotecha.github.io/design-templates/,
+074,A,design-templates,Design Templates,HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/design-templates/,GitHub Actions deploy-pages workflow
 075,A,aistudio-remix-tickr-pk,Tickr,Vite+React,npm run build,dist,cloudflare-pages,GEMINI_API_KEY,gemini,,,
 076,A,remix-ai-data-analyst-pk,AI Data Analyst,Vite+React,npm run build,dist,cloudflare-pages,GEMINI_API_KEY,gemini,,,
-077,A,roopsie-boutique,Roopsie Boutique,HTML,,,cloudflare-pages,,,yes,https://prafullkotecha.github.io/roopsie-boutique/,
-078,A,bloominghorizons-site,Blooming Horizons (replacement),HTML,,,cloudflare-pages,,,yes,https://prafullkotecha.github.io/bloominghorizons-site/,replacement in progress — bloominghorizons.com is the OLD site — not owned by us
-079,B,standby-ai-studio,Standby AI Studio,TypeScript,npm run build,dist,cloudflare-pages,,,yes,https://standby.ai.studio,
+077,A,roopsie-boutique,Roopsie Boutique,HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/roopsie-boutique/,GitHub Actions deploy-pages workflow
+078,A,bloominghorizons-site,Blooming Horizons (replacement),HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/bloominghorizons-site/,Replacement is live on GitHub Pages; bloominghorizons.com is the old site and is not owned by us
+079,B,standby-ai-studio,Standby AI Studio,TypeScript,npm run build,dist,google-app-engine,,,yes,https://standby.ai.studio,Custom domain served by Google Frontend/App Engine
 080,B,tagsmith,Tagsmith,Unknown,,,cloudflare-pages,,,,,
 081,C,dctwin,DC Twin,Three.js+TypeScript,,,deferred,,,,,defer — backend-heavy
 082,C,340b-policy-navigator,340B Policy Navigator,TypeScript,npm run build,.next,deferred,,,,,defer — backend-heavy

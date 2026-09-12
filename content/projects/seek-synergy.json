@@ -5,7 +5,7 @@
   "description": "Team-finding platform for collaborators on side projects.",
   "framework": "Vite+React",
   "tier": "A",
-  "deploy_target": "cloudflare-pages",
+  "deploy_target": "github-pages",
   "ai_providers": [],
   "env_vars": [],
   "tags": [],
