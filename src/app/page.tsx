@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import projectsRaw from "@/data/projects.json";
 import type { Project } from "@/lib/types";
 import { ProjectCard } from "@/components/ProjectCard";
+import Link from "next/link";
 
 const projects = projectsRaw as Project[];
 
@@ -79,9 +80,9 @@ export default function Home() {
             <div className="flex flex-wrap gap-2 md:justify-end font-mono text-[10px] uppercase tracking-[0.15em] text-muted">
               <span className="text-rust">› catalog</span>
               <span>·</span>
-              <a href="/v2" className="hover:text-rust">terminal</a>
+              <Link href="/v2" className="hover:text-rust">terminal</Link>
               <span>·</span>
-              <a href="/v3" className="hover:text-rust">spec sheet</a>
+              <Link href="/v3" className="hover:text-rust">spec sheet</Link>
             </div>
           </div>
         </div>
