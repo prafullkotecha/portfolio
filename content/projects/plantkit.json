@@ -1,0 +1,19 @@
+{
+  "id": "plantkit",
+  "title": "PlantKit",
+  "repo": "https://github.com/prafullkotecha/plantkit",
+  "description": "A web-ready catalog of 106 procedural Three.js facility assets spanning data centers, HVAC, warehouses, offices, and healthcare environments.",
+  "framework": "Next.js+Three.js",
+  "tier": "A",
+  "deploy_target": "github-pages",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": ["3D", "Design", "Digital Twin", "Developer Tools", "Static/Landing"],
+  "source": "Hand-built",
+  "last_commit": "2026-09-12",
+  "live_url": "https://prafullkotecha.github.io/plantkit/",
+  "published": true,
+  "screenshot": null
+}

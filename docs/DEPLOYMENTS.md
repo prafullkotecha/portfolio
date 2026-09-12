@@ -4,8 +4,8 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 
 ## Current status
 
-- **24 of 89 projects are live (27.0%).**
-- **22 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
+- **26 of 91 projects are live (28.6%).**
+- **24 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
 - **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
 - The portfolio's three existing prototypes remain at `/`, `/v2/`, and `/v3/`; the case-studies page is at `/case-studies/`.
@@ -37,6 +37,8 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 | Monky Dashboard Concept | GitHub Pages | <https://prafullkotecha.github.io/monky-dashboard-concept-v0/> |
 | Mujtama Goal Getters Unite 69 | GitHub Pages | <https://prafullkotecha.github.io/mujtama-goal-getters-unite-69/> |
 | Photography Portfolio | GitHub Pages | <https://prafullkotecha.github.io/bolt-photography-portfolio/> |
+| PlantKit | GitHub Pages | <https://prafullkotecha.github.io/plantkit/> |
+| Pulse | GitHub Pages | <https://prafullkotecha.github.io/pulse/> |
 | QR Code Custom-erator | GitHub Pages | <https://prafullkotecha.github.io/qrcode-custom-erator/> |
 | Rainbow Button Component | GitHub Pages | <https://prafullkotecha.github.io/bolt-rainbow-button-component/> |
 | Riverside Temple Site | GitHub Pages | <https://prafullkotecha.github.io/riverside-temple-site/> |
@@ -54,9 +56,11 @@ Standby AI Studio runs its Express application on **Google Cloud Run** and uses 
 
 The Enlight Productions and Riverside Temple Site source repositories are private and use the portfolio's proprietary all-rights-reserved license. Their GitHub Pages sites remain publicly accessible.
 
+PlantKit and Pulse follow the same private-source/public-demo model. Standby DJ/MC Companion is source-only: its Flutter client requires Firebase production configuration and a protected A2A agent, and its upstream BSD 3-Clause notice is preserved alongside the proprietary license for Prafull Kotecha's modifications.
+
 ## How GitHub Pages deployment works
 
-The portfolio and each of the 22 GitHub Pages projects contain `.github/workflows/deploy-pages.yml`. A push to the default branch triggers the workflow, builds or stages the static site, uploads a Pages artifact, and deploys it with `actions/deploy-pages@v4`.
+The portfolio and each of the 24 GitHub Pages projects contain `.github/workflows/deploy-pages.yml`. A push to the configured deployment branch triggers the workflow, builds or stages the static site, uploads a Pages artifact, and deploys it with `actions/deploy-pages@v4`.
 
 For the portfolio:
 

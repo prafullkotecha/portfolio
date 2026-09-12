@@ -2,18 +2,23 @@
   "id": "pulse",
   "title": "Pulse",
   "repo": "https://github.com/prafullkotecha/pulse",
-  "description": "Pulse — a Flutter app.",
+  "description": "A customizable daily tracking board for currency, gold, stocks, cricket, and arbitrary JSON data, with a responsive bento-grid interface.",
   "framework": "Flutter",
-  "tier": "C",
-  "deploy_target": "deferred",
+  "tier": "A",
+  "deploy_target": "github-pages",
+  "repository_visibility": "private",
+  "license": "proprietary",
   "ai_providers": [],
   "env_vars": [],
   "tags": [
-    "Mobile"
+    "Mobile",
+    "Productivity",
+    "Data",
+    "Utility"
   ],
   "source": "Hand-built",
-  "last_commit": "2026-07-25",
-  "live_url": null,
+  "last_commit": "2026-09-12",
+  "live_url": "https://prafullkotecha.github.io/pulse/",
   "published": true,
   "screenshot": null
 }

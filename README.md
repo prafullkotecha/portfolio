@@ -1,16 +1,16 @@
 # Maker's Catalog — Portfolio
 
-Static Next.js site listing 89 hobby projects. Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
+Static Next.js site listing 91 hobby projects. Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
 
 ## At a glance
 
 | Tier | Count | Meaning | Default next host |
 |---|---|---|---|
-| **A** — deploy as-is | 58 | Static or frontend-only | GitHub Pages or Cloudflare Pages |
+| **A** — deploy as-is | 60 | Static or frontend-only | GitHub Pages or Cloudflare Pages |
 | **B** — minor work | 11 | Configuration, secrets, or managed services required | Vercel/Cloudflare plus the required service |
 | **C** — backend-heavy | 20 | Backend or database work required | Deferred until its runtime is provisioned |
 
-**Current deployment status:** 24/89 projects live (27.0%), including 22 on GitHub Pages and two existing custom-domain deployments. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
+**Current deployment status:** 26/91 projects live (28.6%), including 24 on GitHub Pages and two existing custom-domain deployments. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
 
 - [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) — canonical live inventory and current GitHub Pages mechanics
 - [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform choices for remaining projects
@@ -19,7 +19,7 @@ Static Next.js site listing 89 hobby projects. Project content lives in `content
 
 ## Current rollout
 
-1. The portfolio and 22 static projects are deployed through GitHub Actions to GitHub Pages.
+1. The portfolio and 24 static projects are deployed through GitHub Actions to GitHub Pages.
 2. Two existing projects remain live on custom domains.
 3. Remaining frontend projects should be deployed only after required API keys and service dependencies are available.
 4. Tier C remains source-only until its backend runtime and databases are provisioned.
@@ -50,7 +50,7 @@ Each save commits to GitHub. A push to `main` triggers the GitHub Pages workflow
 
 ### How it works under the hood
 
-- Source of truth: `content/projects/*.json` (one file per project, 89 today)
+- Source of truth: `content/projects/*.json` (one file per project, 91 today)
 - Build-time aggregator: `scripts/aggregate-projects.mjs` runs at `predev` and `prebuild`, reading all files in `content/projects/`, filtering out unpublished entries, and writing the result to `src/data/projects.json`
 - The three React pages (`/`, `/v2`, `/v3`) import from `src/data/projects.json` as before — they don't know the CMS exists
 - `src/data/projects.json` is git-ignored (regenerated on each build) so there's only one source of truth
@@ -162,7 +162,7 @@ Repository Settings → Pages must use **GitHub Actions** as the source. See [do
 
 ## Original 71-project catalog snapshot
 
-The tables below are retained as the original detailed write-up. The live portfolio and `content/projects/` are authoritative for the current 89-project inventory and deployment status.
+The tables below are retained as the original detailed write-up. The live portfolio and `content/projects/` are authoritative for the current 91-project inventory and deployment status.
 
 <details>
 <summary><strong>Original Tier A deploy-ready candidates — 48 projects</strong></summary>

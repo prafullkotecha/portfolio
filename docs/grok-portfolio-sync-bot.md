@@ -229,3 +229,8 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
 - 2026-09-12: Added private, proprietary repositories and verified GitHub Pages
   deployments for `enlight-productions` and `riverside-temple-site`. The current
   baseline is **24/89 live (27.0%)**, including 22 GitHub Pages projects.
+- 2026-09-12: Updated the existing private `pulse` record with its web release,
+  added private/proprietary `plantkit`, and extracted only the DJ/MC branch into
+  private `dj-mc-companion` with upstream BSD notices preserved. The latter is
+  source-only pending a protected agent deployment. Current baseline:
+  **26/91 live (28.6%)**, including 24 GitHub Pages projects.

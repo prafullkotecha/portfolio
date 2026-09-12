@@ -173,7 +173,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:justify-between gap-3">
           <p>© {new Date().getFullYear()} Prafull Kotecha · San Diego, CA</p>
           <p>
-            Hand-built. Hosted on Cloudflare Pages + Vercel.
+            Hand-built. Hosted on GitHub Pages.
             {" "}
             <a href="https://github.com/prafullkotecha" className="underline decoration-dotted underline-offset-4 hover:text-rust">View source</a>
           </p>

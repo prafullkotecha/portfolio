@@ -83,8 +83,10 @@
 082,C,340b-policy-navigator,340B Policy Navigator,TypeScript,npm run build,.next,deferred,,,,,defer — backend-heavy
 083,C,cloakwork,Cloakwork,Spring Boot,mvn package,target,deferred,,,,,defer — backend-heavy
 084,C,340b-refgraph,340B RefGraph,Java,,,deferred,,,,,defer — backend-heavy
-085,C,pulse,Pulse,Flutter,flutter build web,build/web,deferred,,,,,defer — backend-heavy
+085,A,pulse,Pulse,Flutter,flutter build web --release --base-href /pulse/,build/web,github-pages,,,yes,https://prafullkotecha.github.io/pulse/,Private repository; proprietary license; GitHub Actions deploy-pages workflow
 086,C,fieldmedic,FieldMedic,Kotlin,,,deferred,,,,,defer — Android/NPU
 087,C,omnitrck,OmniTrck,Kotlin,,,deferred,,,,,defer — Android
 088,A,enlight-productions,Enlight Productions,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/enlight-productions/,Private repository; proprietary license; GitHub Actions deploy-pages workflow
 089,A,riverside-temple-site,Riverside Temple Site,Static HTML,(none),.,github-pages,,,yes,https://prafullkotecha.github.io/riverside-temple-site/,Private repository; proprietary license; GitHub Actions deploy-pages workflow
+090,A,plantkit,PlantKit,Next.js+Three.js,npm run build,out,github-pages,,,yes,https://prafullkotecha.github.io/plantkit/,Private repository; proprietary license; 106 static asset pages
+091,C,dj-mc-companion,Standby DJ/MC Companion,Flutter+Python,flutter build web,build/web,deferred,AGENT_URL;AGENT_API_KEY;GEMINI_API_KEY;RECAPTCHA_SITE_KEY,gemini,,,Private repository extracted only from dj-mc-companion branch; proprietary modifications with BSD upstream; needs protected A2A agent and Firebase production config

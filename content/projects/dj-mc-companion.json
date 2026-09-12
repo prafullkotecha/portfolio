@@ -1,0 +1,20 @@
+{
+  "id": "dj-mc-companion",
+  "title": "Standby DJ/MC Companion",
+  "repo": "https://github.com/prafullkotecha/dj-mc-companion",
+  "description": "A Flutter and GenUI gig companion with event preparation, stage navigation, a prompter, scorekeeping, soundboard workflows, and printable run-of-show views.",
+  "framework": "Flutter+Python",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary modifications; BSD-3-Clause upstream",
+  "backend_services": ["firebase", "a2a-agent"],
+  "ai_providers": ["gemini"],
+  "env_vars": ["AGENT_URL", "AGENT_API_KEY", "GEMINI_API_KEY", "RECAPTCHA_SITE_KEY"],
+  "tags": ["AI", "Flutter", "Music", "Events", "Mobile"],
+  "source": "Mixed",
+  "last_commit": "2026-09-12",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}
