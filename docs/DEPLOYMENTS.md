@@ -6,7 +6,7 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 
 - **22 of 87 projects are live (25.3%).**
 - **20 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
-- **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google App Engine.
+- **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
 - The portfolio's three existing prototypes remain at `/`, `/v2/`, and `/v3/`; the case-studies page is at `/case-studies/`.
 
@@ -44,9 +44,11 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 | Slidev Forked | GitHub Pages | <https://prafullkotecha.github.io/bolt-slidev-forked/> |
 | Tech Event Website | GitHub Pages | <https://prafullkotecha.github.io/tech-event-website/> |
 | Beats by Pooja | Cloudflare Pages (custom domain) | <https://beatsbypooja.com> |
-| Standby AI Studio | Google App Engine (custom domain) | <https://standby.ai.studio> |
+| Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.ai.studio> |
 
 `bloominghorizons.com` is not the replacement deployment and is not owned by this portfolio. Use the GitHub Pages URL above until an owned custom domain is connected.
+
+Standby AI Studio runs its Express application on **Google Cloud Run** and uses **Firebase** for backend services. Cloud Run is visible in the repository's `.env.example` and server-oriented build; the Firebase association is owner-confirmed deployment infrastructure and is not currently represented by Firebase configuration or SDK references in the checked-in project files.
 
 ## How GitHub Pages deployment works
 
@@ -77,4 +79,4 @@ After a deployment is verified with an HTTP 200 response:
 4. Update the counts and inventory in this file.
 5. Commit and push; the portfolio's Pages workflow republishes the catalog.
 
-The deployed platform must describe the current host, not an earlier recommendation. Use `github-pages`, `cloudflare-pages`, `vercel`, `google-app-engine`, `manual`, or `deferred` as appropriate.
+The deployed platform must describe the current host, not an earlier recommendation. Use `github-pages`, `cloudflare-pages`, `vercel`, `google-cloud-run`, `manual`, or `deferred` as appropriate. Record associated services such as Firebase in `backend_services`.

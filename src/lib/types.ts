@@ -8,6 +8,7 @@ export interface Project {
   framework: string;
   tier: Tier;
   deploy_target: string;
+  backend_services?: string[];
   ai_providers: string[];
   env_vars: string[];
   tags: string[];

@@ -90,10 +90,19 @@ content:
             - 'github-pages'
             - 'cloudflare-pages'
             - 'vercel'
-            - 'google-app-engine'
+            - 'google-cloud-run'
             - 'deferred'
             - 'manual'
         default: 'cloudflare-pages'
+
+      - name: backend_services
+        label: 'Backend services'
+        type: select
+        list: true
+        options:
+          multiple: true
+          creatable: true
+          values: ['firebase', 'supabase', 'postgres', 'cloudflare-workers', 'google-cloud-run']
 
       - name: ai_providers
         label: 'AI providers'

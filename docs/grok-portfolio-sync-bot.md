@@ -91,8 +91,8 @@ REPO CONTEXT
 - Content source of truth: content/projects/{id}.json, one file per project.
   Schema fields (see .pages.yml):
     id, title, repo, description, framework, tier (A|B|C),
-    deploy_target (github-pages|cloudflare-pages|vercel|google-app-engine|manual|deferred),
-    ai_providers[], env_vars[],
+    deploy_target (github-pages|cloudflare-pages|vercel|google-cloud-run|manual|deferred),
+    backend_services[], ai_providers[], env_vars[],
     tags[], source, last_commit (YYYY-MM-DD), live_url, published, screenshot
 - PROJECTS-CHECKLIST.csv columns:
     #,tier,project_id,title,framework,build_cmd,output_dir,deploy_target,
@@ -126,8 +126,10 @@ PROCEDURE
    - framework: infer from primary language + repo files (package.json, etc.)
     - deploy_target: github-pages (secret-free static), cloudflare-pages
       (static/edge deployments using Cloudflare), vercel (server-capable
-      Next.js), google-app-engine (App Engine), manual (another verified host),
+      Next.js), google-cloud-run (Cloud Run), manual (another verified host),
       deferred (not deployable yet)
+    - backend_services: verified attached services such as firebase, supabase,
+      postgres, or cloudflare-workers; do not infer these from hosting headers
    - env_vars: parse from repo README/.env.example if trivially available,
      else []
    - ai_providers: gemini/openai/etc. based on description/env vars, else []
@@ -215,6 +217,7 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
   custom-domain deployments. The replacement `bloominghorizons-site` is live at
   `https://prafullkotecha.github.io/bloominghorizons-site/`; the unrelated old
   `bloominghorizons.com` site still must not be counted for this project.
-- 2026-09-12: Corrected `standby-ai-studio` from the inherited
-  `cloudflare-pages` label to `google-app-engine` after its live response showed
-  `Server: Google Frontend` and App Engine session headers.
+- 2026-09-12: Corrected `standby-ai-studio` to `google-cloud-run` based on its
+  `.env.example`, which explicitly identifies the injected Cloud Run service
+  URL. Recorded Firebase as an owner-confirmed backend service. Google Frontend
+  response headers alone must not be used to distinguish Cloud Run from App Engine.

@@ -16,7 +16,7 @@ GitHub Pages is not a universal target. Projects requiring server-side secrets, 
 | Static frontend plus edge API/proxy | **Cloudflare Pages + Workers** | Appropriate when Cloudflare credentials and Worker secrets are configured |
 | Next.js API routes or serverless functions | **Vercel** | Natural fit for Next.js applications that cannot be statically exported |
 | Firebase-native application | **Firebase Hosting/App Hosting** | Use when Firestore/Auth/App Hosting are actual dependencies |
-| Existing Google App Engine application | **Google App Engine** | Preserve a functioning App Engine deployment unless migration has a clear benefit |
+| Containerized web application on Google Cloud | **Google Cloud Run** | Current host for Standby AI Studio; preserve when the service is functioning |
 | Express, Spring Boot, Keycloak, or persistent process | **Container host or VPS** | Use a managed container platform or Docker/Caddy VPS |
 | Static site already configured for another provider | **Existing provider** | Preserve a working custom deployment unless migration has a clear benefit |
 
@@ -93,7 +93,7 @@ After deployment, record the host that actually serves the site:
 4. update [DEPLOYMENTS.md](./DEPLOYMENTS.md);
 5. probe the URL and visually verify it before marking the project live.
 
-Supported target labels are `github-pages`, `cloudflare-pages`, `vercel`, `google-app-engine`, `manual`, and `deferred`.
+Supported target labels are `github-pages`, `cloudflare-pages`, `vercel`, `google-cloud-run`, `manual`, and `deferred`. Record attached platforms such as Firebase separately in `backend_services`.
 
 ## Cost posture
 

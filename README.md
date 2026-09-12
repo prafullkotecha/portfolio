@@ -144,7 +144,8 @@ Repository Settings → Pages must use **GitHub Actions** as the source. See [do
   description: string,
   framework: string,     // Vite+React | Next.js | ...
   tier: "A" | "B" | "C", // controls badge + filter
-  deploy_target: string, // github-pages | cloudflare-pages | vercel | google-app-engine | manual | deferred
+  deploy_target: string, // github-pages | cloudflare-pages | vercel | google-cloud-run | manual | deferred
+  backend_services?: string[], // firebase | supabase | postgres | ...
   ai_providers: string[],
   env_vars: string[],
   tags: string[],

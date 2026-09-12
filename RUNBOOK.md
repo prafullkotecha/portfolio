@@ -92,7 +92,7 @@ Use these target values consistently:
 | `github-pages` | GitHub Pages currently serves the project |
 | `cloudflare-pages` | Cloudflare Pages currently serves the project |
 | `vercel` | Vercel currently serves the project |
-| `google-app-engine` | Google App Engine currently serves the project |
+| `google-cloud-run` | Google Cloud Run currently serves the project |
 | `manual` | Hosted by another or manually managed service |
 | `deferred` | Not currently deployed |
 

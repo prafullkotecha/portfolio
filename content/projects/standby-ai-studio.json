@@ -2,17 +2,25 @@
   "id": "standby-ai-studio",
   "title": "Standby AI Studio",
   "repo": "https://github.com/prafullkotecha/standby-ai-studio",
-  "description": "Help DJ be an MC and keep the crowd entertained",
-  "framework": "TypeScript",
+  "description": "Cloud Run-hosted AI event console that helps a DJ act as MC and keep the crowd entertained, with Firebase providing backend services.",
+  "framework": "Vite+React+Express",
   "tier": "A",
-  "deploy_target": "google-app-engine",
-  "ai_providers": [],
-  "env_vars": [],
+  "deploy_target": "google-cloud-run",
+  "backend_services": [
+    "firebase"
+  ],
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "APP_URL",
+    "GEMINI_API_KEY"
+  ],
   "tags": [
     "AI",
     "Music"
   ],
-  "source": "Mixed",
+  "source": "Google AI Studio",
   "last_commit": "2026-08-21",
   "live_url": "https://standby.ai.studio",
   "published": true,

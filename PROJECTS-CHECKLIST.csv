@@ -77,7 +77,7 @@
 076,A,remix-ai-data-analyst-pk,AI Data Analyst,Vite+React,npm run build,dist,cloudflare-pages,GEMINI_API_KEY,gemini,,,
 077,A,roopsie-boutique,Roopsie Boutique,HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/roopsie-boutique/,GitHub Actions deploy-pages workflow
 078,A,bloominghorizons-site,Blooming Horizons (replacement),HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/bloominghorizons-site/,Replacement is live on GitHub Pages; bloominghorizons.com is the old site and is not owned by us
-079,B,standby-ai-studio,Standby AI Studio,TypeScript,npm run build,dist,google-app-engine,,,yes,https://standby.ai.studio,Custom domain served by Google Frontend/App Engine
+079,A,standby-ai-studio,Standby AI Studio,Vite+React+Express,npm run build,dist,google-cloud-run,APP_URL;GEMINI_API_KEY,gemini,yes,https://standby.ai.studio,Google Cloud Run service with Firebase backend (owner-confirmed)
 080,B,tagsmith,Tagsmith,Unknown,,,cloudflare-pages,,,,,
 081,C,dctwin,DC Twin,Three.js+TypeScript,,,deferred,,,,,defer — backend-heavy
 082,C,340b-policy-navigator,340B Policy Navigator,TypeScript,npm run build,.next,deferred,,,,,defer — backend-heavy
