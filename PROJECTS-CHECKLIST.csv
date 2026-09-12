@@ -86,3 +86,5 @@
 085,C,pulse,Pulse,Flutter,flutter build web,build/web,deferred,,,,,defer — backend-heavy
 086,C,fieldmedic,FieldMedic,Kotlin,,,deferred,,,,,defer — Android/NPU
 087,C,omnitrck,OmniTrck,Kotlin,,,deferred,,,,,defer — Android
+088,A,enlight-productions,Enlight Productions,Vite+React,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/enlight-productions/,Private repository; proprietary license; GitHub Actions deploy-pages workflow
+089,A,riverside-temple-site,Riverside Temple Site,Static HTML,(none),.,github-pages,,,yes,https://prafullkotecha.github.io/riverside-temple-site/,Private repository; proprietary license; GitHub Actions deploy-pages workflow

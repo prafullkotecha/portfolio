@@ -1,12 +1,12 @@
 # Deployment Runbook
 
-Operational guide for maintaining and extending the 87-project portfolio. The current live inventory is recorded in [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md).
+Operational guide for maintaining and extending the 89-project portfolio. The current live inventory is recorded in [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md).
 
 ## 1. Current production state
 
 - Portfolio: <https://prafullkotecha.github.io/portfolio/>
-- Live projects: **22/87 (25.3%)**
-- New static deployments: **20 on GitHub Pages**
+- Live projects: **24/89 (27.0%)**
+- Static project deployments: **22 on GitHub Pages**
 - Existing custom deployments: **Beats by Pooja** and **Standby AI Studio**
 - Portfolio prototypes: Catalog `/`, Terminal `/v2/`, Spec sheet `/v3/`
 - Curated presentation: Case studies `/case-studies/`
@@ -54,10 +54,12 @@ Each GitHub Pages project contains `.github/workflows/deploy-pages.yml`. The exa
 ### Repository setup
 
 1. Add the workflow to the project's default branch.
-2. In repository Settings → Pages, select **GitHub Actions**.
-3. Ensure the workflow has `pages: write` and `id-token: write` permissions.
-4. Push the workflow or run it manually.
-5. Verify `https://prafullkotecha.github.io/<repo>/` returns HTTP 200 and loads its assets.
+2. Keep newly created portfolio project repositories private.
+3. Add the proprietary `LICENSE` used by this portfolio unless the owner explicitly selects another restricted license.
+4. In repository Settings → Pages, select **GitHub Actions**.
+5. Ensure the workflow has `pages: write` and `id-token: write` permissions.
+6. Push the workflow or run it manually.
+7. Verify `https://prafullkotecha.github.io/<repo>/` returns HTTP 200 and loads its assets.
 
 ### Framework notes
 
@@ -77,6 +79,7 @@ After verifying a project:
 1. Update `content/projects/<id>.json`:
    - set `deploy_target` to the platform actually serving the site;
    - set `live_url` to the verified public URL.
+   - record `repository_visibility` and `license` for newly created repositories.
 2. Update `PROJECTS-CHECKLIST.csv`:
    - set the same `deploy_target`;
    - set `deployed?` to `yes`;
@@ -125,6 +128,7 @@ Choose the runtime based on the application, then record the actual platform usi
 - [ ] Project build succeeds from a clean checkout.
 - [ ] Required base path is configured.
 - [ ] No private secrets are embedded in static assets.
+- [ ] Newly created repository is private and carries the proprietary license.
 - [ ] GitHub Actions deployment completes successfully.
 - [ ] Public URL returns HTTP 200.
 - [ ] Assets, navigation, and key interactions work in production.

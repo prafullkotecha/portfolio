@@ -92,7 +92,8 @@ REPO CONTEXT
   Schema fields (see .pages.yml):
     id, title, repo, description, framework, tier (A|B|C),
     deploy_target (github-pages|cloudflare-pages|vercel|google-cloud-run|manual|deferred),
-    backend_services[], ai_providers[], env_vars[],
+    repository_visibility (private|public), license, backend_services[],
+    ai_providers[], env_vars[],
     tags[], source, last_commit (YYYY-MM-DD), live_url, published, screenshot
 - PROJECTS-CHECKLIST.csv columns:
     #,tier,project_id,title,framework,build_cmd,output_dir,deploy_target,
@@ -110,7 +111,9 @@ PROCEDURE
    - If it exists → it is an UPDATE: refresh last_commit (from pushed_at) and
      description only if they changed. Do not overwrite manually curated
      fields (tier, live_url, published, screenshot) unless clearly stale.
-   - If it does not exist → it is a NEW project: create a full entry.
+   - If it does not exist → it is a NEW project: create a full entry. Do not
+     create or change repository visibility; newly created repositories must be
+     private and use the proprietary restricted license unless the owner says otherwise.
 4. Classify each NEW project into a tier using these heuristics:
    - A (deploy as-is): static sites (HTML/Astro), or pure-frontend Vite/React
      apps with no required backend (AI Studio remixes typically qualify).
@@ -130,6 +133,8 @@ PROCEDURE
       deferred (not deployable yet)
     - backend_services: verified attached services such as firebase, supabase,
       postgres, or cloudflare-workers; do not infer these from hosting headers
+    - repository_visibility and license: record verified repository settings;
+      default owner policy for newly created repositories is private/proprietary
    - env_vars: parse from repo README/.env.example if trivially available,
      else []
    - ai_providers: gemini/openai/etc. based on description/env vars, else []
@@ -221,3 +226,6 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
   `.env.example`, which explicitly identifies the injected Cloud Run service
   URL. Recorded Firebase as an owner-confirmed backend service. Google Frontend
   response headers alone must not be used to distinguish Cloud Run from App Engine.
+- 2026-09-12: Added private, proprietary repositories and verified GitHub Pages
+  deployments for `enlight-productions` and `riverside-temple-site`. The current
+  baseline is **24/89 live (27.0%)**, including 22 GitHub Pages projects.

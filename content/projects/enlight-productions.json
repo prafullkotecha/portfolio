@@ -1,0 +1,24 @@
+{
+  "id": "enlight-productions",
+  "title": "Enlight Productions",
+  "repo": "https://github.com/prafullkotecha/enlight-productions",
+  "description": "Three polished redesign directions for an Enlight Productions photography portfolio, spanning cinematic, editorial, and booking-focused visual systems.",
+  "framework": "Vite+React",
+  "tier": "A",
+  "deploy_target": "github-pages",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Design",
+    "Photography",
+    "Prototype",
+    "Static/Landing"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-09-12",
+  "live_url": "https://prafullkotecha.github.io/enlight-productions/",
+  "published": true,
+  "screenshot": null
+}

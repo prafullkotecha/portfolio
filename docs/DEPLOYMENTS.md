@@ -4,8 +4,8 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 
 ## Current status
 
-- **22 of 87 projects are live (25.3%).**
-- **20 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
+- **24 of 89 projects are live (27.0%).**
+- **22 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
 - **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
 - The portfolio's three existing prototypes remain at `/`, `/v2/`, and `/v3/`; the case-studies page is at `/case-studies/`.
@@ -32,12 +32,14 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 | College Job Finder Landing Page | GitHub Pages | <https://prafullkotecha.github.io/bolt-college-job-finder-landing-page/> |
 | Design Templates | GitHub Pages | <https://prafullkotecha.github.io/design-templates/> |
 | Document Zenith View | GitHub Pages | <https://prafullkotecha.github.io/document-zenith-view/> |
+| Enlight Productions | GitHub Pages | <https://prafullkotecha.github.io/enlight-productions/> |
 | Gram Connect on Net | GitHub Pages | <https://prafullkotecha.github.io/gram-connect-on-net/> |
 | Monky Dashboard Concept | GitHub Pages | <https://prafullkotecha.github.io/monky-dashboard-concept-v0/> |
 | Mujtama Goal Getters Unite 69 | GitHub Pages | <https://prafullkotecha.github.io/mujtama-goal-getters-unite-69/> |
 | Photography Portfolio | GitHub Pages | <https://prafullkotecha.github.io/bolt-photography-portfolio/> |
 | QR Code Custom-erator | GitHub Pages | <https://prafullkotecha.github.io/qrcode-custom-erator/> |
 | Rainbow Button Component | GitHub Pages | <https://prafullkotecha.github.io/bolt-rainbow-button-component/> |
+| Riverside Temple Site | GitHub Pages | <https://prafullkotecha.github.io/riverside-temple-site/> |
 | Roopsie Boutique | GitHub Pages | <https://prafullkotecha.github.io/roopsie-boutique/> |
 | Royal CRM | GitHub Pages | <https://prafullkotecha.github.io/royal-crm/> |
 | Seek Synergy | GitHub Pages | <https://prafullkotecha.github.io/seek-synergy/> |
@@ -50,9 +52,11 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 
 Standby AI Studio runs its Express application on **Google Cloud Run** and uses **Firebase** for backend services. Cloud Run is visible in the repository's `.env.example` and server-oriented build; the Firebase association is owner-confirmed deployment infrastructure and is not currently represented by Firebase configuration or SDK references in the checked-in project files.
 
+The Enlight Productions and Riverside Temple Site source repositories are private and use the portfolio's proprietary all-rights-reserved license. Their GitHub Pages sites remain publicly accessible.
+
 ## How GitHub Pages deployment works
 
-The portfolio and each of the 20 GitHub Pages projects contain `.github/workflows/deploy-pages.yml`. A push to the default branch triggers the workflow, builds or stages the static site, uploads a Pages artifact, and deploys it with `actions/deploy-pages@v4`.
+The portfolio and each of the 22 GitHub Pages projects contain `.github/workflows/deploy-pages.yml`. A push to the default branch triggers the workflow, builds or stages the static site, uploads a Pages artifact, and deploys it with `actions/deploy-pages@v4`.
 
 For the portfolio:
 
@@ -74,6 +78,7 @@ GitHub Pages must remain configured with **Source: GitHub Actions** in each repo
 After a deployment is verified with an HTTP 200 response:
 
 1. Set `live_url` and the actual `deploy_target` in `content/projects/<id>.json`.
+   Record `repository_visibility` and `license` for newly created repositories.
 2. Set `deployed?=yes`, the actual target, and the URL in `PROJECTS-CHECKLIST.csv`.
 3. Run `npm run aggregate` to regenerate `src/data/projects.json`.
 4. Update the counts and inventory in this file.

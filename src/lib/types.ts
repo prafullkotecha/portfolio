@@ -8,6 +8,8 @@ export interface Project {
   framework: string;
   tier: Tier;
   deploy_target: string;
+  repository_visibility?: "private" | "public";
+  license?: string;
   backend_services?: string[];
   ai_providers: string[];
   env_vars: string[];

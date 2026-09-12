@@ -95,6 +95,18 @@ content:
             - 'manual'
         default: 'cloudflare-pages'
 
+      - name: repository_visibility
+        label: 'Repository visibility'
+        type: select
+        options:
+          values: ['private', 'public']
+        default: 'private'
+
+      - name: license
+        label: 'License'
+        type: string
+        default: 'proprietary'
+
       - name: backend_services
         label: 'Backend services'
         type: select

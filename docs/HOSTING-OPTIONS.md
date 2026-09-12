@@ -1,10 +1,12 @@
 # Hosting Options — Maker's Catalog
 
-Hosting strategy for the 87-project portfolio. For the authoritative list of what is live today, see [DEPLOYMENTS.md](./DEPLOYMENTS.md).
+Hosting strategy for the 89-project portfolio. For the authoritative list of what is live today, see [DEPLOYMENTS.md](./DEPLOYMENTS.md).
 
 ## Current decision
 
-GitHub Pages is the active host for the portfolio and 20 static projects. It was selected for the September 2026 deployment batch because GitHub authentication was available, the projects could be exported as static assets, and repository-scoped GitHub Actions provided repeatable deployments at no additional cost.
+GitHub Pages is the active host for the portfolio and 22 static projects. It was selected for the September 2026 deployment batch because GitHub authentication was available, the projects could be exported as static assets, and repository-scoped GitHub Actions provided repeatable deployments at no additional cost.
+
+New repositories created for local-only portfolio projects must be **private** and include the portfolio's **proprietary, all-rights-reserved license**. A public Pages site does not imply that its source repository is public.
 
 GitHub Pages is not a universal target. Projects requiring server-side secrets, API routes, persistent storage, databases, or long-running processes need another runtime.
 

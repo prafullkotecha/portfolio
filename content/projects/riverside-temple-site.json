@@ -1,0 +1,24 @@
+{
+  "id": "riverside-temple-site",
+  "title": "Riverside Temple Site",
+  "repo": "https://github.com/prafullkotecha/riverside-temple-site",
+  "description": "A complete static redesign prototype for Shri Lakshmi Narayan Mandir, with live darshan, events, poojas, visiting information, contact, and donation journeys.",
+  "framework": "Static HTML",
+  "tier": "A",
+  "deploy_target": "github-pages",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Design",
+    "Community",
+    "Prototype",
+    "Static/Landing"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-09-12",
+  "live_url": "https://prafullkotecha.github.io/riverside-temple-site/",
+  "published": true,
+  "screenshot": null
+}
