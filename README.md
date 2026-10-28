@@ -248,7 +248,7 @@ The tables below are retained as the original detailed write-up. The live portfo
 | **[ClinicConnect](https://github.com/prafullkotecha/ClinicConnect)** | Clinic management — patient records, scheduling, billing (Express+Drizzle+Postgres). | Replit | — |
 | **[DJProposals](https://github.com/prafullkotecha/DJProposals)** | DJ business proposal generator — packages, pricing, contracts (Express+Postgres). | Replit | — |
 | **[Done and Dusted Family Chores](https://github.com/prafullkotecha/gemini-ai-studio-done_and_dusted-family-chores-pk)** | Family chore manager — assignments, streaks, AI nudges. | Google AI Studio | gemini |
-| **[Field Service Pro](https://github.com/prafullkotecha/field-service-pro-sa)** | ServicePro is a comprehensive, multi-tenant SaaS platform designed to empower small to medium professional service busin | Mixed | — |
+| **[Field Service Pro](https://github.com/prafullkotecha/field-service-pro-sa)** | Multi-tenant field service SaaS — CRM, work orders, scheduling, invoicing (React+Express+Postgres). | Mixed | — |
 | **[HomeInventory](https://github.com/prafullkotecha/HomeInventory)** | Home inventory tracker with photos, warranties, and rooms. | Replit | — |
 | **[Metaphor MindIT](https://github.com/prafullkotecha/metaphor-mindIT)** | > Transform complex technical concepts into culturally grounded metaphors that resonate across diverse learning backgrou | Mixed | elevenlabs, openai |
 | **[PassGenius](https://github.com/prafullkotecha/PassGenius)** | Password manager with vault, tags, and breach checking. | Replit | — |
