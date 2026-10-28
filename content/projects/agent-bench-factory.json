@@ -1,0 +1,18 @@
+{
+  "id": "agent-bench-factory",
+  "title": "Agent Bench Factory",
+  "repo": "https://github.com/prafullkotecha/agent-bench-factory",
+  "description": "A pipeline that generates private, validated coding benchmarks for a healthcare engineering stack (Spring Boot, Angular, React, Java upgrades) and runs any coding agent or model against them on Docker or Kubernetes. Ships 39 tasks across 7 seeds and adapters for six agents; no benchmark results published yet.",
+  "framework": "Python CLI",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "ai_providers": ["anthropic", "openai", "gemini"],
+  "env_vars": ["ANTHROPIC_API_KEY", "OPENAI_API_KEY", "GEMINI_API_KEY"],
+  "tags": ["AI", "Agents", "Developer Tools", "Healthcare", "Java"],
+  "source": "Mixed",
+  "last_commit": "2026-10-09",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

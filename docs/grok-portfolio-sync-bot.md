@@ -234,3 +234,7 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
   private `dj-mc-companion` with upstream BSD notices preserved. The latter is
   source-only pending a protected agent deployment. Current baseline:
   **26/91 live (28.6%)**, including 24 GitHub Pages projects.
+- 2026-10-28: Added private `beatdrop` (Flutter + Rust desktop DJ studio) and
+  private `agent-bench-factory` (Python benchmark CLI) as source-only Tier C
+  records. Neither has a web deployment or a public release. Current baseline:
+  **26/93 live (28.0%)**, including 24 GitHub Pages projects.

@@ -1,0 +1,20 @@
+{
+  "id": "beatdrop",
+  "title": "BeatDrop",
+  "repo": "https://github.com/prafullkotecha/beatdrop",
+  "description": "A desktop DJ mix-creation studio with a Flutter UI and Rust audio engine: storyboard track cards and transitions, prompt-to-mix planning, stem separation, a pro timeline, and WAV/FLAC export. Beta and timeline-parity milestones are complete; signed macOS/Windows builds are not yet released.",
+  "framework": "Flutter+Rust",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": ["postgres"],
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": ["AI", "Music", "Desktop", "Flutter", "Rust"],
+  "source": "Mixed",
+  "last_commit": "2026-10-25",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}
