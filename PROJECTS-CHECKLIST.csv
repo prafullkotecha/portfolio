@@ -90,3 +90,5 @@
 089,A,riverside-temple-site,Riverside Temple Site,Static HTML,(none),.,github-pages,,,yes,https://prafullkotecha.github.io/riverside-temple-site/,Private repository; proprietary license; GitHub Actions deploy-pages workflow
 090,A,plantkit,PlantKit,Next.js+Three.js,npm run build,out,github-pages,,,yes,https://prafullkotecha.github.io/plantkit/,Private repository; proprietary license; 106 static asset pages
 091,C,dj-mc-companion,Standby DJ/MC Companion,Flutter+Python,flutter build web,build/web,deferred,AGENT_URL;AGENT_API_KEY;GEMINI_API_KEY;RECAPTCHA_SITE_KEY,gemini,,,Private repository extracted only from dj-mc-companion branch; proprietary modifications with BSD upstream; needs protected A2A agent and Firebase production config
+092,C,beatdrop,BeatDrop,Flutter+Rust,,,deferred,,,,,Private repository; closed source; desktop app (macOS/Windows) — no web build; unsigned and unreleased
+093,C,agent-bench-factory,Agent Bench Factory,Python CLI,,,deferred,ANTHROPIC_API_KEY;OPENAI_API_KEY;GEMINI_API_KEY,anthropic;openai;gemini,,,Private repository; CLI pipeline (Docker/Kubernetes) — no web build; no published results yet
