@@ -2,10 +2,16 @@
   "id": "field-service-pro-sa",
   "title": "Field Service Pro",
   "repo": "https://github.com/prafullkotecha/field-service-pro-sa",
-  "description": "ServicePro is a comprehensive, multi-tenant SaaS platform designed to empower small to medium professional service businesses. It provides the tools to efficiently manage field operations, customer re",
-  "framework": "Vite+React",
+  "description": "A multi-tenant field service platform for small trade businesses: CRM, work orders, drag-and-drop scheduling, a mobile technician view, estimates, invoicing, a customer portal and a building and asset registry. React and Express on Postgres with Keycloak SSO. Not deployed yet; 26 launch blockers are open, including invoices and estimates created in the UI losing their line items.",
+  "framework": "Vite+React+Express",
   "tier": "C",
   "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [
+    "postgres",
+    "keycloak"
+  ],
   "ai_providers": [],
   "env_vars": [
     "API_PORT",
@@ -25,10 +31,13 @@
     "STORAGE_BACKEND"
   ],
   "tags": [
+    "SaaS",
+    "Field Service",
+    "Multi-tenant",
     "Productivity"
   ],
   "source": "Mixed",
-  "last_commit": "2026-08-29",
+  "last_commit": "2026-09-24",
   "live_url": null,
   "published": true,
   "screenshot": null
