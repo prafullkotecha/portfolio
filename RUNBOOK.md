@@ -1,11 +1,11 @@
 # Deployment Runbook
 
-Operational guide for maintaining and extending the 93-project portfolio. The current live inventory is recorded in [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md).
+Operational guide for maintaining and extending the 94-project portfolio. The current live inventory is recorded in [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md).
 
 ## 1. Current production state
 
 - Portfolio: <https://prafullkotecha.github.io/portfolio/>
-- Live projects: **26/93 (28.0%)**
+- Live projects: **26/94 (27.7%)**
 - Static project deployments: **24 on GitHub Pages**
 - Existing custom deployments: **Beats by Pooja** and **Standby AI Studio**
 - Portfolio prototypes: Catalog `/`, Terminal `/v2/`, Spec sheet `/v3/`

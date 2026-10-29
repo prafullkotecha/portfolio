@@ -238,3 +238,7 @@ gh repo list prafullkotecha --limit 100 --json name,updatedAt,description,primar
   private `agent-bench-factory` (Python benchmark CLI) as source-only Tier C
   records. Neither has a web deployment or a public release. Current baseline:
   **26/93 live (28.0%)**, including 24 GitHub Pages projects.
+- 2026-10-29: Added private `spring-informatica-replacement` (EDI Hub, Spring
+  Boot X12 hub on open-source parts) as a source-only Tier C record. It runs on
+  Docker Compose with synthetic data and has no hosted environment. Current
+  baseline: **26/94 live (27.7%)**, including 24 GitHub Pages projects.

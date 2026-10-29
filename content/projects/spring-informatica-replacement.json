@@ -1,0 +1,19 @@
+{
+  "id": "spring-informatica-replacement",
+  "title": "EDI Hub (Informatica Replacement)",
+  "repo": "https://github.com/prafullkotecha/spring-informatica-replacement",
+  "description": "A healthcare X12 EDI hub built only from open-source parts (Spring Boot, Operaton BPMN/DMN, Camel, Spring Batch, Debezium/Kafka, DataHub) to test whether it can replace Informatica for a pharmacy benefit manager. Runs 834, 837P, 835, 270/271, 340B, accumulator and 820 flows end to end on synthetic data with recorded persona demos; runs locally on Docker Compose with no hosted environment yet.",
+  "framework": "Spring Boot",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "backend_services": ["postgres", "kafka", "datahub"],
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": ["Healthcare", "EDI", "Data Integration", "Java", "Spring Boot"],
+  "source": "Mixed",
+  "last_commit": "2026-10-07",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

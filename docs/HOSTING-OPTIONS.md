@@ -1,6 +1,6 @@
 # Hosting Options — Maker's Catalog
 
-Hosting strategy for the 93-project portfolio. For the authoritative list of what is live today, see [DEPLOYMENTS.md](./DEPLOYMENTS.md).
+Hosting strategy for the 94-project portfolio. For the authoritative list of what is live today, see [DEPLOYMENTS.md](./DEPLOYMENTS.md).
 
 ## Current decision
 
