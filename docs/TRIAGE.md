@@ -2,7 +2,7 @@
 
 Generated from package.json, source files, and README parsing across the original 71 repositories. This file is retained as the technical triage snapshot; it is not the current deployment ledger.
 
-The portfolio now tracks **93 projects** (Tier A: 60, Tier B: 11, Tier C: 22), of which **26 are live**. See [DEPLOYMENTS.md](./DEPLOYMENTS.md) for verified URLs and hosts, `content/projects/` for current metadata, and `PROJECTS-CHECKLIST.csv` for the operational checklist.
+The portfolio now tracks **94 projects** (Tier A: 60, Tier B: 11, Tier C: 23), of which **26 are live**. See [DEPLOYMENTS.md](./DEPLOYMENTS.md) for verified URLs and hosts, `content/projects/` for current metadata, and `PROJECTS-CHECKLIST.csv` for the operational checklist.
 
 ## Summary
 
