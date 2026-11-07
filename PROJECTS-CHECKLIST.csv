@@ -79,7 +79,7 @@
 078,A,bloominghorizons-site,Blooming Horizons (replacement),HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/bloominghorizons-site/,Replacement is live on GitHub Pages; bloominghorizons.com is the old site and is not owned by us
 079,A,standby-ai-studio,Standby AI Studio,Vite+React+Express,npm run build,dist,google-cloud-run,APP_URL;GEMINI_API_KEY,gemini,yes,https://standby.ai.studio,Google Cloud Run service with Firebase backend (owner-confirmed)
 080,B,tagsmith,Tagsmith,Unknown,,,cloudflare-pages,,,,,
-081,C,dctwin,DC Twin,Three.js+TypeScript,,,deferred,,,,,defer — backend-heavy
+081,C,dctwin,DC Twin,Three.js+TypeScript,,,deferred,,,,,defer — private; v0.1.0 + DCIM importer + MCP server; mock feed only
 082,C,340b-policy-navigator,340B Policy Navigator,TypeScript,npm run build,.next,deferred,,,,,defer — backend-heavy
 083,C,cloakwork,Cloakwork,Spring Boot,mvn package,target,deferred,,,,,defer — backend-heavy
 084,C,340b-refgraph,340B RefGraph,Java,,,deferred,,,,,defer — backend-heavy
