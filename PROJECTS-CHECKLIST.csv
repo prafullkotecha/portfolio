@@ -93,3 +93,7 @@
 092,C,beatdrop,BeatDrop,Flutter+Rust,,,deferred,,,,,Private repository; closed source; desktop app (macOS/Windows) — no web build; unsigned and unreleased
 093,C,agent-bench-factory,Agent Bench Factory,Python CLI,,,deferred,ANTHROPIC_API_KEY;OPENAI_API_KEY;GEMINI_API_KEY,anthropic;openai;gemini,,,Private repository; CLI pipeline (Docker/Kubernetes) — no web build; single-model LLM judge smoke-tested live on Azure AI Foundry; no published results yet
 094,C,spring-informatica-replacement,EDI Hub (Informatica Replacement),Spring Boot,mvn package,target,deferred,,,,,Private repository; Docker Compose stack (Postgres; Kafka; Debezium; DataHub) — no hosted environment; synthetic data only
+095,B,mixtape-drop-app,Mixtape,Plain HTML/CSS/JS,,,deferred,,,,,Private repository; PWA DJ mixer (M1–M8 complete; QA green); needs real-machine QA and Drive OAuth and licensing decisions before public launch
+096,A,dj-set-planner,DJ Set Planner,Plain HTML/CSS/JS,,,manual,,,yes,https://muse.ai/s/dj-live-tabla-set-planner-xfn5xqxgxixxxtcyxp,Private repository; DJ + live tabla set planner (28 tracks; 3 versions); Firebase keys pending — app runs fully local without them
+097,A,city-events,City Events,Plain HTML/CSS/JS,,,vercel,,,yes,https://city-events-three.vercel.app,Private repository; curated Bay Area events guide; live on Vercel
+098,A,job-aggregator,Job Aggregator,Node + Express + EJS,,,vercel,DATABASE_URL;JOBS_READ_WRITE_TOKEN,,yes,https://job-aggregator-nu.vercel.app,Private repository; curated job board; live on Vercel with Neon Postgres and Vercel Blob uploads

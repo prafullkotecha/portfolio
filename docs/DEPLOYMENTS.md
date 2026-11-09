@@ -1,12 +1,14 @@
 # Deployment Inventory
 
-Canonical record of the portfolio's live deployments. Last verified: **2026-09-12**.
+Canonical record of the portfolio's live deployments. Last verified: **2026-11-08**.
 
 ## Current status
 
-- **26 of 94 projects are live (27.7%).**
+- **29 of 98 projects are live (29.6%).**
 - **24 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
 - **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
+- **2 projects** are hosted on Vercel.
+- **1 project** is hosted on Muse as a manual deployment.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
 - The portfolio's three existing prototypes remain at `/`, `/v2/`, and `/v3/`; the case-studies page is at `/case-studies/`.
 
@@ -49,6 +51,9 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-09-1
 | Tech Event Website | GitHub Pages | <https://prafullkotecha.github.io/tech-event-website/> |
 | Beats by Pooja | Cloudflare Pages (custom domain) | <https://beatsbypooja.com> |
 | Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.ai.studio> |
+| City Events | Vercel | <https://city-events-three.vercel.app> |
+| DJ Set Planner | Muse (manual) | <https://muse.ai/s/dj-live-tabla-set-planner-xfn5xqxgxixxxtcyxp> |
+| Job Aggregator | Vercel | <https://job-aggregator-nu.vercel.app> |
 
 `bloominghorizons.com` is not the replacement deployment and is not owned by this portfolio. Use the GitHub Pages URL above until an owned custom domain is connected.
 
@@ -61,6 +66,8 @@ PlantKit and Pulse follow the same private-source/public-demo model. Standby DJ/
 BeatDrop and Agent Bench Factory are private and source-only. BeatDrop is a macOS/Windows desktop app with no web build and no signed release yet; Agent Bench Factory is a command-line pipeline that runs on Docker or Kubernetes.
 
 The EDI Hub (spring-informatica-replacement) is private and source-only. It runs as a Docker Compose stack (Spring Boot, Postgres, Kafka, Debezium, DataHub) on synthetic data and has no hosted environment.
+
+City Events, DJ Set Planner, and Job Aggregator are private repositories with publicly accessible demos. Mixtape is private and source-only until its licensing decisions and real-machine QA are complete.
 
 ## How GitHub Pages deployment works
 
