@@ -2,7 +2,7 @@
   "id": "guest-experience-app-builder",
   "title": "Guest Experience App",
   "repo": "https://github.com/prafullkotecha/guest-experience-app-builder",
-  "description": "An invite-only mobile app for the guests of a multi-day event, built first for an Indian wedding. Guests get schedule cards and the ceremony program, live announcements with push, chat, travel and arrival tracking, find-my-seat, a disposable-camera film reel with a shared gallery, and challenges, trivia and leaderboards, in one of four watercolour themes. Hosts manage the event from the app and a CLI. Flutter on iOS, Android and the web, over a Go API on Cloud Run with Firestore, Cloud Storage and Firebase push. It has run end to end on a sample wedding with invented guests; it has not yet been used at a real event.",
+  "description": "An invite-only app for the guests and hosts of a multi-day event, built first for an Indian wedding. Guests get painted schedule cards and the ceremony program, live announcements with push, chat, travel and arrival tracking, find-my-seat, a disposable-camera film roll with a shared gallery, and trivia, photo challenges, predictions and leaderboards, in one of four watercolour themes. Hosts run the event from the same app: they post announcements and edit the schedule, add, edit and settle challenges, import the guest list from a CSV and share the invite codes, arrange the seating chart, set up film rolls and chat channels, and hide photos from the gallery. Flutter on Android and the web (iPhone guests install the web app), over a Go API on Cloud Run with Firestore, Cloud Storage and Firebase push. Open gaps: it has only run on a sample wedding with invented guests and has not been used at a real event; there is no App Store build yet; push has been tested with stand-ins, not confirmed on real phones; and it has not been tried with more than a few dozen guests.",
   "framework": "Flutter+Go",
   "tier": "C",
   "deploy_target": "deferred",
@@ -26,8 +26,13 @@
     "Go"
   ],
   "source": "Mixed",
-  "last_commit": "2026-11-16",
+  "last_commit": "2026-11-18",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "video": {
+    "src": "/videos/guest-experience-app-demo.mp4",
+    "poster": "/videos/guest-experience-app-demo.jpg",
+    "caption": "The narrated product film (1 min 47 s; unmute for the voice-over), recorded on the sample wedding with invented guests: joining by invite code, the painted schedule, the film camera and gallery, challenges, chat and seating, and a host posting an announcement."
+  }
 }
