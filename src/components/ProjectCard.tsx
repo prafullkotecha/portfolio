@@ -1,5 +1,7 @@
 import type { Project } from "@/lib/types";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const TIER_INFO: Record<string, { dot: string; label: string }> = {
   A: { dot: "bg-tierA", label: "live" },
   B: { dot: "bg-tierB", label: "soon" },
@@ -39,6 +41,27 @@ export function ProjectCard({ project, index, delay }: { project: Project; index
             loading="lazy"
           />
         </div>
+      )}
+
+      {/* Walkthrough video (when present) */}
+      {project.video && (
+        <figure className="mb-3 -mx-1">
+          <div className="overflow-hidden border border-ink/10 bg-ink aspect-video">
+            <video
+              src={`${BASE_PATH}${project.video.src}`}
+              poster={`${BASE_PATH}${project.video.poster}`}
+              controls
+              muted
+              playsInline
+              preload="none"
+              className="w-full h-full object-contain"
+              aria-label={`Walkthrough of ${project.title}`}
+            />
+          </div>
+          <figcaption className="mt-1.5 font-mono text-[11px] leading-snug text-muted">
+            {project.video.caption}
+          </figcaption>
+        </figure>
       )}
 
       {/* Title */}
