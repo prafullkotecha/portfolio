@@ -1,0 +1,28 @@
+{
+  "id": "roamreel-wanderlink",
+  "title": "RoamReel",
+  "repo": "https://github.com/prafullkotecha/roamreel-wanderlink",
+  "description": "A travel planner that turns a shared reel or blog link, with its caption and comments pasted in, into a structured itinerary using Gemini, including the alternate stops and route corrections that commenters suggest. Stops show on Google Maps and the plan exports to PDF. Two sample reels ship with curated results.",
+  "framework": "Vite+React+Express",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY",
+    "VITE_GOOGLE_MAPS_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Travel",
+    "Maps"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-10-25",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "pk-ai-studio-remix-creative-co-creater",
+  "title": "Remix Proactive Co-Creator",
+  "repo": "https://github.com/prafullkotecha/pk-ai-studio-remix-creative-co-creater",
+  "description": "A copy of the Creative Co-Creator app from the Google AI Studio gallery: an agent that refines a content prompt with the user through a belief graph and interactive questions, with Gemini called from the server.",
+  "framework": "Vite+React+Express",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Generative",
+    "Agents"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-11-13",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

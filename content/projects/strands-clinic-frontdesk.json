@@ -1,0 +1,33 @@
+{
+  "id": "strands-clinic-frontdesk",
+  "title": "Clinic Front Desk on Strands Agents",
+  "repo": "https://github.com/prafullkotecha/strands-clinic-frontdesk",
+  "description": "A private 22-lesson course on AWS Strands Agents in Python, built around one agent: the front desk of an invented behavioural therapy clinic. Each lesson has a small runnable agent, a course page and a test that never calls a real model. The capstone deploys to Amazon Bedrock AgentCore Runtime with keyless GitHub deploys and a browser page; it runs on the Gemini API for now, because Bedrock model access is blocked on the course's AWS account, and its live smoke test is still being settled. Part of the same agent-framework series.",
+  "framework": "Python",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [
+    "aws-agentcore"
+  ],
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "AWS_REGION",
+    "FRONTDESK_RUNTIME_ARN"
+  ],
+  "tags": [
+    "AI",
+    "Agents",
+    "Course",
+    "Healthcare",
+    "AWS"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-11-15",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,0 +1,29 @@
+{
+  "id": "eve-field-dispatch",
+  "title": "Field Dispatch on Vercel eve",
+  "repo": "https://github.com/prafullkotecha/eve-field-dispatch",
+  "description": "A private 21-lesson course on Vercel eve in TypeScript. The capstone is a field dispatcher for an invented home-services business: it drafts work orders, schedules technicians, moves jobs through their workflows and builds estimates, and a person approves anything risky. It deploys to Vercel through the AI Gateway and serves a dispatcher page behind the owner's Google sign-in. Tests and deterministic evals never call a model. Part of the same agent-framework series.",
+  "framework": "TypeScript",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [
+    "vercel-ai-gateway"
+  ],
+  "ai_providers": [],
+  "env_vars": [
+    "DISPATCH_MODEL"
+  ],
+  "tags": [
+    "AI",
+    "Agents",
+    "Course",
+    "Field Service"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-11-15",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

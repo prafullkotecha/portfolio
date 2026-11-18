@@ -1,0 +1,33 @@
+{
+  "id": "adk-standby-mc",
+  "title": "StandBy MC on Google ADK",
+  "repo": "https://github.com/prafullkotecha/adk-standby-mc",
+  "description": "A private 22-lesson course on Google's Agent Development Kit 2.x in Python, built around StandBy MC, a backstage co-host adapted from the StandBy event console that helps a live-event MC with the run of show, DJ cues and team scores, by text or by voice. It works a sample wedding reception with invented people. The service runs privately on Cloud Run behind a sign-in, redeployed with a live smoke test whenever a merge changes it. Part of the same agent-framework series.",
+  "framework": "Python",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [
+    "cloud-run"
+  ],
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "STANDBY_MODEL",
+    "STANDBY_LIVE_MODEL"
+  ],
+  "tags": [
+    "AI",
+    "Agents",
+    "Course",
+    "Events",
+    "Voice"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-11-15",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

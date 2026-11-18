@@ -1,0 +1,33 @@
+{
+  "id": "guest-experience-app-builder",
+  "title": "Guest Experience App",
+  "repo": "https://github.com/prafullkotecha/guest-experience-app-builder",
+  "description": "An invite-only mobile app for the guests of a multi-day event, built first for an Indian wedding. Guests get schedule cards and the ceremony program, live announcements with push, chat, travel and arrival tracking, find-my-seat, a disposable-camera film reel with a shared gallery, and challenges, trivia and leaderboards, in one of four watercolour themes. Hosts manage the event from the app and a CLI. Flutter on iOS, Android and the web, over a Go API on Cloud Run with Firestore, Cloud Storage and Firebase push. It has run end to end on a sample wedding with invented guests; it has not yet been used at a real event.",
+  "framework": "Flutter+Go",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [
+    "firestore",
+    "cloud-storage",
+    "firebase-cloud-messaging"
+  ],
+  "ai_providers": [],
+  "env_vars": [
+    "EVENT_ID",
+    "GCP_PROJECT_ID"
+  ],
+  "tags": [
+    "Events",
+    "Weddings",
+    "Mobile",
+    "Flutter",
+    "Go"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-11-16",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

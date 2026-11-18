@@ -1,0 +1,22 @@
+{
+  "id": "webai-2026-badge",
+  "title": "WebAI 2026 Badge",
+  "repo": "https://github.com/prafullkotecha/webai-2026-badge",
+  "description": "Patched firmware for the WebAI 2026 conference's ePaper badge (an Espruino ESP32-C3 board). The badge front carries a LinkedIn QR code on a clean layout, and the agenda pages are replaced with GitHub profile pages: a contribution heatmap, the language mix, a GitHub QR code and 20 repositories, with the LEDs as a redraw progress bar.",
+  "framework": "Espruino JavaScript",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "public",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Hardware",
+    "Events",
+    "IoT"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-10-31",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

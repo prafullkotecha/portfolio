@@ -1,0 +1,33 @@
+{
+  "id": "maf-340b-policy-navigator",
+  "title": "340B Navigator on Microsoft Agent Framework",
+  "repo": "https://github.com/prafullkotecha/maf-340b-policy-navigator",
+  "description": "A private 22-lesson course on the Microsoft Agent Framework in C# and .NET 10, one framework feature per lesson, building a policy navigator for the 340B Drug Pricing Program as its capstone. A compliance engine computes every verdict and the model only picks the tools and explains the result, and risky actions wait for a person's approval. The capstone runs on Azure Functions; a merge that changes it redeploys it and runs a smoke test with the real model. All data is synthetic. One of a series of agent-framework courses built on the same skeleton so the frameworks can be compared like for like.",
+  "framework": ".NET 10 (C#)",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [
+    "azure-functions"
+  ],
+  "ai_providers": [
+    "azure-openai"
+  ],
+  "env_vars": [
+    "AI_ENDPOINT",
+    "AI_DEPLOYMENT"
+  ],
+  "tags": [
+    "AI",
+    "Agents",
+    "Course",
+    "Healthcare",
+    "Azure"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-11-15",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}
