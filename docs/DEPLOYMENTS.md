@@ -1,11 +1,11 @@
 # Deployment Inventory
 
-Canonical record of the portfolio's live deployments. Last verified: **2026-11-08**.
+Canonical record of the portfolio's live deployments. Last verified: **2026-11-18**.
 
 ## Current status
 
-- **29 of 98 projects are live (29.6%).**
-- **24 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
+- **30 of 107 projects are live (28.0%).**
+- **25 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
 - **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
 - **2 projects** are hosted on Vercel.
 - **1 project** is hosted on Muse as a manual deployment.
@@ -44,6 +44,7 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-0
 | QR Code Custom-erator | GitHub Pages | <https://prafullkotecha.github.io/qrcode-custom-erator/> |
 | Rainbow Button Component | GitHub Pages | <https://prafullkotecha.github.io/bolt-rainbow-button-component/> |
 | Riverside Temple Site | GitHub Pages | <https://prafullkotecha.github.io/riverside-temple-site/> |
+| Sunnyvale Temple Site | GitHub Pages | <https://prafullkotecha.github.io/sunnyvale-temple-site/> |
 | Roopsie Boutique | GitHub Pages | <https://prafullkotecha.github.io/roopsie-boutique/> |
 | Royal CRM | GitHub Pages | <https://prafullkotecha.github.io/royal-crm/> |
 | Seek Synergy | GitHub Pages | <https://prafullkotecha.github.io/seek-synergy/> |
@@ -69,9 +70,11 @@ The EDI Hub (spring-informatica-replacement) is private and source-only. It runs
 
 City Events, DJ Set Planner, and Job Aggregator are private repositories with publicly accessible demos. Mixtape is private and source-only until its licensing decisions and real-machine QA are complete.
 
+The Guest Experience App, the four agent-framework courses (Microsoft Agent Framework, Strands Agents, Vercel eve and Google ADK), RoamReel and the Proactive Co-Creator remix are private and source-only on the portfolio. The courses' capstones run privately in their own clouds behind sign-ins and are not public demos. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
+
 ## How GitHub Pages deployment works
 
-The portfolio and each of the 24 GitHub Pages projects contain `.github/workflows/deploy-pages.yml`. A push to the configured deployment branch triggers the workflow, builds or stages the static site, uploads a Pages artifact, and deploys it with `actions/deploy-pages@v4`.
+The portfolio and each of the 25 GitHub Pages projects contain `.github/workflows/deploy-pages.yml`. A push to the configured deployment branch triggers the workflow, builds or stages the static site, uploads a Pages artifact, and deploys it with `actions/deploy-pages@v4`.
 
 For the portfolio:
 

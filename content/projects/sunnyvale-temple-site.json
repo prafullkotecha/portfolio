@@ -1,0 +1,24 @@
+{
+  "id": "sunnyvale-temple-site",
+  "title": "Sunnyvale Temple Site",
+  "repo": "https://github.com/prafullkotecha/sunnyvale-temple-site",
+  "description": "A complete static redesign prototype for the Sunnyvale Hindu Temple, with the temple's history, deities, weekly schedule, a filterable festival calendar for 2026, events, poojas and services, galleries, donations and a calendar feed visitors can subscribe to. Plain HTML, CSS and JavaScript with light and dark modes and no build step.",
+  "framework": "Static HTML",
+  "tier": "A",
+  "deploy_target": "github-pages",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Design",
+    "Community",
+    "Prototype",
+    "Static/Landing"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-11-09",
+  "live_url": "https://prafullkotecha.github.io/sunnyvale-temple-site/",
+  "published": true,
+  "screenshot": null
+}

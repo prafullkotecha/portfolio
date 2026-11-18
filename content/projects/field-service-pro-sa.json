@@ -2,7 +2,7 @@
   "id": "field-service-pro-sa",
   "title": "Field Service Pro",
   "repo": "https://github.com/prafullkotecha/field-service-pro-sa",
-  "description": "A multi-tenant field service platform for small trade businesses: CRM, work orders, drag-and-drop scheduling, a mobile technician view, estimates, invoicing, a customer portal and a building and asset registry. React and Express on Postgres with Keycloak SSO, plus a read-only MCP server so AI agents can work with it. A demo runs on Azure; 14 launch blockers are still open, including invoices and estimates created in the UI losing their line items.",
+  "description": "A multi-tenant field service platform for small trade businesses: CRM, work orders, drag-and-drop scheduling, a mobile technician view, estimates, invoicing, a customer portal and a building and asset registry. React and Express on Postgres with Keycloak SSO, plus a Go MCP server through which an AI agent such as Claude acts for one signed-in person: the agent registers itself, the person signs in through Keycloak and approves it, 18 read-only tools follow that person's role, and every call is written to an audit log. A demo runs on Azure; 14 launch blockers are still open, including invoices and estimates created in the UI losing their line items.",
   "framework": "Vite+React+Express",
   "tier": "C",
   "deploy_target": "deferred",
