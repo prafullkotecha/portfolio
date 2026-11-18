@@ -19,4 +19,11 @@ export interface Project {
   live_url: string | null;
   published?: boolean;     // CMS-managed; default true
   screenshot?: string | null;  // CMS-managed; path under /public/screenshots/
+  video?: ProjectVideo | null; // CMS-managed; files under /public/videos/
+}
+
+export interface ProjectVideo {
+  src: string;      // path under /public/videos/
+  poster: string;   // still frame shown before play
+  caption: string;  // one line on what the clip proves
 }
