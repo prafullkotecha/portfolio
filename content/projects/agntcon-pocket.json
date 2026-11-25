@@ -1,0 +1,22 @@
+{
+  "id": "agntcon-pocket",
+  "title": "AGNTCon Pocket",
+  "repo": "https://github.com/prafullkotecha/agntcon-pocket",
+  "description": "An unofficial, phone-friendly schedule for AGNTCon + MCPCon North America 2026 in San Jose. It offers focus, grid, list and plan views with clash detection for starred sessions, a company filter and search, and photo notes that decode QR codes on the device. It is a single HTML file with no dependencies.",
+  "framework": "Plain HTML/CSS/JS",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": [
+    "Events",
+    "PWA",
+    "MCP"
+  ],
+  "source": "Mixed",
+  "last_commit": "2026-10-23",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

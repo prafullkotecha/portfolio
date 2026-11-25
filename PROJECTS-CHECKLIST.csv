@@ -77,9 +77,9 @@
 076,A,remix-ai-data-analyst-pk,AI Data Analyst,Vite+React,npm run build,dist,cloudflare-pages,GEMINI_API_KEY,gemini,,,
 077,A,roopsie-boutique,Roopsie Boutique,HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/roopsie-boutique/,GitHub Actions deploy-pages workflow
 078,A,bloominghorizons-site,Blooming Horizons (replacement),HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/bloominghorizons-site/,Replacement is live on GitHub Pages; bloominghorizons.com is the old site and is not owned by us
-079,A,standby-ai-studio,Standby AI Studio,Vite+React+Express,npm run build,dist,google-cloud-run,APP_URL;GEMINI_API_KEY,gemini,yes,https://standby.ai.studio,Google Cloud Run service with Firebase backend (owner-confirmed)
+079,A,standby-ai-studio,Standby AI Studio,React+Fastify microservices,npm run build,dist,google-cloud-run,APP_URL;GEMINI_API_KEY,gemini,yes,https://standby.direkshan.digital,Google Cloud Run microservices with Firestore/Redis/GCS and Firebase Auth; invite-only; moved from standby.ai.studio Nov 2026
 080,B,tagsmith,Tagsmith,Unknown,,,cloudflare-pages,,,,,
-081,C,aislewise,aislewise,Three.js+TypeScript,,,deferred,,,,,defer — private; v0.1.0 + DCIM importer + MCP server; mock feed only
+081,C,aislewise,aislewise,Three.js+TypeScript,,,deferred,,,,,defer — private; twin core + WebSocket feed + protocol adapters with simulated devices; hosted demo behind Microsoft sign-in
 082,C,340b-policy-navigator,340B Policy Navigator,TypeScript,npm run build,.next,deferred,,,,,defer — backend-heavy
 083,C,cloakwork,Cloakwork,Spring Boot,mvn package,target,deferred,,,,,defer — backend-heavy
 084,C,340b-refgraph,340B RefGraph,Java,,,deferred,,,,,defer — backend-heavy
@@ -106,3 +106,7 @@
 105,C,roamreel-wanderlink,RoamReel,Vite+React+Express,npm run build,dist,deferred,GEMINI_API_KEY;VITE_GOOGLE_MAPS_API_KEY,gemini,,,Private repository; Google AI Studio app; server-side Gemini and Google Maps keys needed
 106,C,pk-ai-studio-remix-creative-co-creater,Remix Proactive Co-Creator,Vite+React+Express,npm run build,dist,deferred,GEMINI_API_KEY,gemini,,,Private repository; copy of a Google AI Studio gallery app; server-side Gemini key needed
 107,C,webai-2026-badge,WebAI 2026 Badge,Espruino JavaScript,(none),,deferred,,,,,Public repository; patched Espruino ePaper badge firmware; flashed by hand
+108,C,signal-stick,SignalStick,Vite+React+Express,npm run build,dist,deferred,GEMINI_API_KEY,gemini,,,Private repository; Google AI Studio start; fleet server + device agent + hardware pack in open PR #1
+109,C,pk-ai-studio-remix-finance-story,Remix Finance Story,Vite+TypeScript+Node,npm run build,dist,deferred,GEMINI_API_KEY,gemini,,,Private repository; copy of a Google AI Studio gallery app; server-side Gemini key needed
+110,C,pk-ai-studio-remix-shoebox-receipt-analyzer,Remix Expense & Receipts Analytics,Vite+React+Express,npm run build,dist,deferred,GEMINI_API_KEY,gemini,,,Private repository; copy of a Google AI Studio gallery app; server-side Gemini key needed
+111,C,agntcon-pocket,AGNTCon Pocket,Plain HTML/CSS/JS,npm run build,.,deferred,,,,,Private repository; unofficial AGNTCon + MCPCon 2026 schedule; single HTML file

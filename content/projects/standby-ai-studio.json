@@ -2,12 +2,15 @@
   "id": "standby-ai-studio",
   "title": "Standby AI Studio",
   "repo": "https://github.com/prafullkotecha/standby-ai-studio",
-  "description": "Cloud Run-hosted AI event console that helps a DJ act as MC and keep the crowd entertained, with Firebase providing backend services.",
-  "framework": "Vite+React+Express",
+  "description": "All-in-one live stage and event console for MCs, DJs and hosts: an audio soundboard, a teleprompter script, live timers, DJ cues and a companion scorekeeper. A React 19 progressive web app talks to Fastify microservices on Google Cloud Run, with Gemini and Lyria for AI help and generated audio. Access is invite-only with Google sign-in.",
+  "framework": "React+Fastify microservices",
   "tier": "A",
   "deploy_target": "google-cloud-run",
   "backend_services": [
-    "firebase"
+    "firebase",
+    "firestore",
+    "redis",
+    "google-cloud-storage"
   ],
   "ai_providers": [
     "gemini"
@@ -21,8 +24,8 @@
     "Music"
   ],
   "source": "Google AI Studio",
-  "last_commit": "2026-08-21",
-  "live_url": "https://standby.ai.studio",
+  "last_commit": "2026-11-24",
+  "live_url": "https://standby.direkshan.digital",
   "published": true,
   "screenshot": null
 }

@@ -4,7 +4,7 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-1
 
 ## Current status
 
-- **30 of 107 projects are live (28.0%).**
+- **30 of 111 projects are live (27.0%).**
 - **25 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
 - **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
 - **2 projects** are hosted on Vercel.
@@ -51,14 +51,14 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-1
 | Slidev Forked | GitHub Pages | <https://prafullkotecha.github.io/bolt-slidev-forked/> |
 | Tech Event Website | GitHub Pages | <https://prafullkotecha.github.io/tech-event-website/> |
 | Beats by Pooja | Cloudflare Pages (custom domain) | <https://beatsbypooja.com> |
-| Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.ai.studio> |
+| Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.direkshan.digital> |
 | City Events | Vercel | <https://city-events-three.vercel.app> |
 | DJ Set Planner | Muse (manual) | <https://muse.ai/s/dj-live-tabla-set-planner-xfn5xqxgxixxxtcyxp> |
 | Job Aggregator | Vercel | <https://job-aggregator-nu.vercel.app> |
 
 `bloominghorizons.com` is not the replacement deployment and is not owned by this portfolio. Use the GitHub Pages URL above until an owned custom domain is connected.
 
-Standby AI Studio runs its Express application on **Google Cloud Run** and uses **Firebase** for backend services. Cloud Run is visible in the repository's `.env.example` and server-oriented build; the Firebase association is owner-confirmed deployment infrastructure and is not currently represented by Firebase configuration or SDK references in the checked-in project files.
+Standby AI Studio runs on **Google Cloud Run** at <https://standby.direkshan.digital>, which replaced the earlier `standby.ai.studio` address in November 2026. The repository's `PROJECT.md` and `cloudbuild.yaml` describe a React 19 web app in front of Fastify microservices (API gateway, auth, events, scoring, AI studio and media) backed by Firestore, Redis and Cloud Storage, with Firebase Auth for Google sign-in. Access is invite-only.
 
 The Enlight Productions and Riverside Temple Site source repositories are private and use the portfolio's proprietary all-rights-reserved license. Their GitHub Pages sites remain publicly accessible.
 

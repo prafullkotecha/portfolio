@@ -7,7 +7,7 @@ Operational guide for maintaining and extending the 94-project portfolio. The cu
 - Portfolio: <https://prafullkotecha.github.io/portfolio/>
 - Live projects: **26/94 (27.7%)**
 - Static project deployments: **24 on GitHub Pages**
-- Existing custom deployments: **Beats by Pooja** and **Standby AI Studio**
+- Existing custom deployments: **Beats by Pooja** and **Standby AI Studio** (standby.direkshan.digital)
 - Portfolio prototypes: Catalog `/`, Terminal `/v2/`, Spec sheet `/v3/`
 - Curated presentation: Case studies `/case-studies/`
 

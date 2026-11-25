@@ -1,0 +1,26 @@
+{
+  "id": "pk-ai-studio-remix-finance-story",
+  "title": "Remix Finance Story",
+  "repo": "https://github.com/prafullkotecha/pk-ai-studio-remix-finance-story",
+  "description": "A copy of the Finance Story app from the Google AI Studio gallery: it turns a Google Drive folder, a Google Sheet, an Excel workbook or a CSV ledger into an interactive financial story, an explorer and a natural-language query studio, with Gemini called from the server.",
+  "framework": "Vite+TypeScript+Node",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "AI",
+    "Finance",
+    "Data Visualization"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-11-21",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}
