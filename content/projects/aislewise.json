@@ -2,10 +2,10 @@
   "id": "aislewise",
   "title": "aislewise",
   "repo": "https://github.com/prafullkotecha/dctwin",
-  "description": "A live 3D digital twin of the data hall, built from data and fed by the devices already on the floor. A twin is a folder of DTDL v3 models, twin instances, a presentation file and a theme, and one generic Three.js runtime renders any of them as a single self-contained page with overview, thermal and network modes. A twin core service feeds the page over WebSocket, and an adapter kit reads BACnet, Modbus, SNMP, Redfish, Prometheus, Project Haystack and MQTT, with simulated devices for each. A CLI, a DCIM importer and an MCP server let a person or an agent build and edit a twin.",
+  "description": "A live 3D digital twin of the data hall, built from data and fed by the devices already on the floor. A twin is a folder of DTDL v3 models, twin instances, a presentation file and a theme, and one generic Three.js runtime renders any of them as a single self-contained page with overview, thermal and network modes. A twin core service feeds the page over WebSocket, and an adapter kit reads BACnet, Modbus, SNMP, Redfish, Prometheus, Project Haystack and MQTT, with simulated devices for each. A CLI, a DCIM importer and an MCP server let a person or an agent build and edit a twin. The hosted demo runs on Azure Container Apps and is private: it asks for a Microsoft sign-in.",
   "framework": "Three.js+TypeScript",
   "tier": "C",
-  "deploy_target": "deferred",
+  "deploy_target": "manual",
   "repository_visibility": "private",
   "license": "proprietary",
   "ai_providers": [],
@@ -20,7 +20,7 @@
   ],
   "source": "Mixed",
   "last_commit": "2026-11-25",
-  "live_url": null,
+  "live_url": "https://ca-aislewise-core.proudglacier-51df53ce.eastus2.azurecontainerapps.io",
   "published": true,
   "screenshot": null
 }

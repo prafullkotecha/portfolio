@@ -10,7 +10,7 @@ Static Next.js site listing 111 hobby projects. Project content lives in `conten
 | **B** — minor work | 12 | Configuration, secrets, or managed services required | Vercel/Cloudflare plus the required service |
 | **C** — backend-heavy | 35 | Backend or database work required | Deferred until its runtime is provisioned |
 
-**Current deployment status:** 30/111 projects live (27.0%), including 25 on GitHub Pages, two on Vercel, one manual deployment, and two existing custom-domain deployments. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
+**Current deployment status:** 32/111 projects live (28.8%), including 25 on GitHub Pages, three on Vercel, one on Azure Container Apps, one manual deployment, and two existing custom-domain deployments. Two of them, aislewise and Field Dispatch on Vercel eve, are private demos that ask for a sign-in. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
 
 - [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) — canonical live inventory and current GitHub Pages mechanics
 - [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform choices for remaining projects
