@@ -171,7 +171,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="mt-24 md:mt-32 pt-8 border-t-2 border-ink/30 text-xs font-mono text-muted">
         <div className="flex flex-col md:flex-row md:justify-between gap-3">
-          <p>© {new Date().getFullYear()} Prafull Kotecha · San Diego, CA</p>
+          <p>© {new Date().getFullYear()} Prafull Kotecha · San Francisco, CA</p>
           <p>
             Hand-built. Hosted on GitHub Pages.
             {" "}

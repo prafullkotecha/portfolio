@@ -93,7 +93,7 @@ export default function StandardOutput() {
           <div className="text-[12px]">
             <p className="text-[#f0883e] font-medium">prafull@portfolio</p>
             <p className="text-[#6e7681]">─────────────────</p>
-            <Row k="OS" v="MacOS · 92128 · San Diego" />
+            <Row k="OS" v="MacOS · San Francisco" />
             <Row k="Host" v={stats.host} />
             <Row k="Shell" v={stats.shell} />
             <Row k="Uptime" v={`${stats.uptime} of side projects`} />

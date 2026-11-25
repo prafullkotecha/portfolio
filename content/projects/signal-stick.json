@@ -1,0 +1,27 @@
+{
+  "id": "signal-stick",
+  "title": "SignalStick",
+  "repo": "https://github.com/prafullkotecha/signal-stick",
+  "description": "A 4K digital signage stick and fleet control plane for independent restaurants, coffee shops and bakeries. It pairs a Node.js fleet server with a Linux device agent on each stick, a phone remote for live menu edits and sold-out toggles, and a 4K kiosk player, plus a KiCad board, an OpenSCAD enclosure and a five-venue pilot kit. The repository started as a Google AI Studio hardware workbench; the fleet server, device agent and hardware pack are in an open pull request.",
+  "framework": "Vite+React+Express",
+  "tier": "C",
+  "deploy_target": "deferred",
+  "repository_visibility": "private",
+  "ai_providers": [
+    "gemini"
+  ],
+  "env_vars": [
+    "GEMINI_API_KEY"
+  ],
+  "tags": [
+    "IoT",
+    "Hardware",
+    "Digital Signage",
+    "Restaurants"
+  ],
+  "source": "Google AI Studio",
+  "last_commit": "2026-11-25",
+  "live_url": null,
+  "published": true,
+  "screenshot": null
+}

@@ -1,13 +1,14 @@
 # Deployment Inventory
 
-Canonical record of the portfolio's live deployments. Last verified: **2026-11-18**.
+Canonical record of the portfolio's live deployments. Last verified: **2026-11-25**.
 
 ## Current status
 
-- **30 of 107 projects are live (28.0%).**
+- **32 of 111 projects are live (28.8%).**
 - **25 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
 - **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
-- **2 projects** are hosted on Vercel.
+- **3 projects** are hosted on Vercel.
+- **1 project** is hosted on Azure Container Apps.
 - **1 project** is hosted on Muse as a manual deployment.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
 - The portfolio's three existing prototypes remain at `/`, `/v2/`, and `/v3/`; the case-studies page is at `/case-studies/`.
@@ -51,14 +52,16 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-1
 | Slidev Forked | GitHub Pages | <https://prafullkotecha.github.io/bolt-slidev-forked/> |
 | Tech Event Website | GitHub Pages | <https://prafullkotecha.github.io/tech-event-website/> |
 | Beats by Pooja | Cloudflare Pages (custom domain) | <https://beatsbypooja.com> |
-| Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.ai.studio> |
+| Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.direkshan.digital> |
 | City Events | Vercel | <https://city-events-three.vercel.app> |
 | DJ Set Planner | Muse (manual) | <https://muse.ai/s/dj-live-tabla-set-planner-xfn5xqxgxixxxtcyxp> |
 | Job Aggregator | Vercel | <https://job-aggregator-nu.vercel.app> |
+| Field Dispatch on Vercel eve (private demo, Google sign-in) | Vercel | <https://eve-field-dispatch.vercel.app> |
+| aislewise (private demo, Microsoft sign-in) | Azure Container Apps | <https://ca-aislewise-core.proudglacier-51df53ce.eastus2.azurecontainerapps.io> |
 
 `bloominghorizons.com` is not the replacement deployment and is not owned by this portfolio. Use the GitHub Pages URL above until an owned custom domain is connected.
 
-Standby AI Studio runs its Express application on **Google Cloud Run** and uses **Firebase** for backend services. Cloud Run is visible in the repository's `.env.example` and server-oriented build; the Firebase association is owner-confirmed deployment infrastructure and is not currently represented by Firebase configuration or SDK references in the checked-in project files.
+Standby AI Studio runs on **Google Cloud Run** at <https://standby.direkshan.digital>, which replaced the earlier `standby.ai.studio` address in November 2026. The repository's `PROJECT.md` and `cloudbuild.yaml` describe a React 19 web app in front of Fastify microservices (API gateway, auth, events, scoring, AI studio and media) backed by Firestore, Redis and Cloud Storage, with Firebase Auth for Google sign-in. Access is invite-only.
 
 The Enlight Productions and Riverside Temple Site source repositories are private and use the portfolio's proprietary all-rights-reserved license. Their GitHub Pages sites remain publicly accessible.
 
@@ -70,7 +73,9 @@ The EDI Hub (spring-informatica-replacement) is private and source-only. It runs
 
 City Events, DJ Set Planner, and Job Aggregator are private repositories with publicly accessible demos. Mixtape is private and source-only until its licensing decisions and real-machine QA are complete.
 
-The Guest Experience App, the four agent-framework courses (Microsoft Agent Framework, Strands Agents, Vercel eve and Google ADK), RoamReel and the Proactive Co-Creator remix are private and source-only on the portfolio. The courses' capstones run privately in their own clouds behind sign-ins and are not public demos. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
+The Guest Experience App, three of the agent-framework courses (Microsoft Agent Framework, Strands Agents and Google ADK), RoamReel and the Proactive Co-Creator remix are private and source-only on the portfolio. Those courses' capstones run privately in their own clouds behind sign-ins and are not linked.
+
+aislewise and Field Dispatch on Vercel eve link to their private demos. Field Dispatch's landing page opens for anyone, but only the owner's Google account can sign in. aislewise's demo on Azure Container Apps goes straight to a Microsoft sign-in. Both cards say so. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
 
 ## How GitHub Pages deployment works
 

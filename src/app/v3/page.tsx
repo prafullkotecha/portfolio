@@ -77,7 +77,7 @@ export default function SpecSheet() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] text-[#0a0a0a]/60 mb-1">Issue 01 · Rev. 2026.05</p>
               <h1 className="text-[32px] md:text-[40px] font-bold leading-[0.95] tracking-tight">Side-Project Parts Catalog</h1>
-              <p className="text-[13px] text-[#0a0a0a]/70 mt-2 max-w-md">{projects.length} units catalogued. AI agents, full-stack tooling, generative UI experiments. Built nights and weekends in San Diego, CA.</p>
+              <p className="text-[13px] text-[#0a0a0a]/70 mt-2 max-w-md">{projects.length} units catalogued. AI agents, full-stack tooling, generative UI experiments. Built nights and weekends in San Francisco, CA.</p>
             </div>
             <Stat label="Units" value={projects.length} />
             <Stat label="In Stock" value={projects.filter(p => p.tier === "A").length} accent />
@@ -198,7 +198,7 @@ export default function SpecSheet() {
       {/* Footer */}
       <footer className="border-t-2 border-[#0a0a0a] bg-[#0a0a0a] text-[#f5f4ee] mt-12">
         <div className="max-w-[1400px] mx-auto px-6 py-6 text-[11px] uppercase tracking-[0.15em] flex flex-col md:flex-row justify-between gap-3">
-          <span>© {new Date().getFullYear()} Prafull Kotecha · San Diego, CA</span>
+          <span>© {new Date().getFullYear()} Prafull Kotecha · San Francisco, CA</span>
           <span>End of catalog · No returns on free demos</span>
           <span><a href="https://github.com/prafullkotecha" className="hover:text-[#ffd400]">github.com/prafullkotecha</a></span>
         </div>

@@ -1,6 +1,6 @@
 # Maker's Catalog — Portfolio
 
-Static Next.js site listing 107 hobby projects. Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
+Static Next.js site listing 111 hobby projects. Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
 
 ## At a glance
 
@@ -8,9 +8,9 @@ Static Next.js site listing 107 hobby projects. Project content lives in `conten
 |---|---|---|---|
 | **A** — deploy as-is | 64 | Static or frontend-only | GitHub Pages or Cloudflare Pages |
 | **B** — minor work | 12 | Configuration, secrets, or managed services required | Vercel/Cloudflare plus the required service |
-| **C** — backend-heavy | 31 | Backend or database work required | Deferred until its runtime is provisioned |
+| **C** — backend-heavy | 35 | Backend or database work required | Deferred until its runtime is provisioned |
 
-**Current deployment status:** 30/107 projects live (28.0%), including 25 on GitHub Pages, two on Vercel, one manual deployment, and two existing custom-domain deployments. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
+**Current deployment status:** 32/111 projects live (28.8%), including 25 on GitHub Pages, three on Vercel, one on Azure Container Apps, one manual deployment, and two existing custom-domain deployments. Two of them, aislewise and Field Dispatch on Vercel eve, are private demos that ask for a sign-in. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
 
 - [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) — canonical live inventory and current GitHub Pages mechanics
 - [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform choices for remaining projects
@@ -50,7 +50,7 @@ Each save commits to GitHub. A push to `main` triggers the GitHub Pages workflow
 
 ### How it works under the hood
 
-- Source of truth: `content/projects/*.json` (one file per project, 107 today)
+- Source of truth: `content/projects/*.json` (one file per project, 111 today)
 - Build-time aggregator: `scripts/aggregate-projects.mjs` runs at `predev` and `prebuild`, reading all files in `content/projects/`, filtering out unpublished entries, and writing the result to `src/data/projects.json`
 - The three React pages (`/`, `/v2`, `/v3`) import from `src/data/projects.json` as before — they don't know the CMS exists
 - `src/data/projects.json` is git-ignored (regenerated on each build) so there's only one source of truth
