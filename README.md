@@ -10,7 +10,7 @@ Static Next.js site listing 54 hobby projects in eight sections (Healthcare, Ent
 | **B** — minor work | 12 | Configuration, secrets, or managed services required | Vercel/Cloudflare plus the required service |
 | **C** — backend-heavy | 35 | Backend or database work required | Deferred until its runtime is provisioned |
 
-**Current catalog:** 54 published cards (60 more are kept in `content/projects/` with `published: false`). 22 have a working link; three of those, aislewise, Standby AI Studio and Field Dispatch on Vercel eve, are private demos that ask for a sign-in, so their cards carry a short video. See [docs/DEPLOYMENTS.md](docs/DEPLOYMENTS.md). The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
+**Current catalog:** 54 published cards (60 more are kept in `content/projects/` with `published: false`). 23 have a working link; four of those, aislewise, Standby AI Studio, Field Dispatch on Vercel eve and Field Service Pro, are private demos that ask for a sign-in, so their cards carry a short video. See [docs/DEPLOYMENTS.md](docs/DEPLOYMENTS.md). The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
 
 - [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) — canonical live inventory and current GitHub Pages mechanics
 - [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform choices for remaining projects
