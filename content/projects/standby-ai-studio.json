@@ -27,5 +27,13 @@
   "last_commit": "2026-11-24",
   "live_url": "https://standby.direkshan.digital",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Entertainment",
+  "repository_visibility": "private",
+  "label": "private-demo",
+  "video": {
+    "src": "/videos/standby-ai-studio-demo.mp4",
+    "poster": "/videos/standby-ai-studio-demo.jpg",
+    "caption": "The landing page and quick-start guide in light and dark. The console itself is invite-only."
+  }
 }

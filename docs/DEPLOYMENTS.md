@@ -1,15 +1,14 @@
 # Deployment Inventory
 
-Canonical record of the portfolio's live deployments. Last verified: **2026-11-25**.
+Canonical record of the portfolio's live deployments. Last verified: **2026-11-26**.
 
 ## Current status
 
-- **32 of 111 projects are live (28.8%).**
-- **25 projects** are hosted by GitHub Pages at `https://prafullkotecha.github.io/<repo>/`.
-- **2 projects** retain their existing custom-domain deployments: one on Cloudflare Pages and one on Google Cloud Run.
-- **3 projects** are hosted on Vercel.
-- **1 project** is hosted on Azure Container Apps.
-- **1 project** is hosted on Muse as a manual deployment.
+- **54 cards are published, in eight sections; 22 of them have a working link.**
+- 19 open without a sign-in. Three are private demos that ask for one (aislewise, Standby AI Studio, Field Dispatch on Vercel eve), so their cards carry a short video instead.
+- 16 on GitHub Pages, 1 on Azure Container Apps, 1 on Cloudflare Pages (custom domain), 3 on Vercel, 1 on Google Cloud Run (custom domain).
+- DJ Set Planner's app is served from GitHub Pages (`prafullkotecha/dj-set-planner`); its Muse video is the card's second link.
+- 11 deployments stay up but are no longer in the catalog: beat-stitch-studio, bloom-align-connect, bolt-college-job-finder-landing-page, bolt-photography-portfolio, bolt-rainbow-button-component, cheap-tour-hopper-79, document-zenith-view, mujtama-goal-getters-unite-69, royal-crm, seek-synergy, tech-event-website.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
 - The portfolio's three existing prototypes remain at `/`, `/v2/`, and `/v3/`; the case-studies page is at `/case-studies/`.
 
@@ -24,40 +23,30 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-2
 
 ## Live projects
 
-| Project | Host | Live URL |
-|---|---|---|
-| AI Temp Recruiter | GitHub Pages | <https://prafullkotecha.github.io/ai-temp-recruiter/> |
-| B Claim Alchemy | GitHub Pages | <https://prafullkotecha.github.io/b-claim-alchemy/> |
-| Beat Stitch Studio | GitHub Pages | <https://prafullkotecha.github.io/beat-stitch-studio/> |
-| Bloom Align Connect | GitHub Pages | <https://prafullkotecha.github.io/bloom-align-connect/> |
-| Blooming Horizons replacement | GitHub Pages | <https://prafullkotecha.github.io/bloominghorizons-site/> |
-| Cheap Tour Hopper 79 | GitHub Pages | <https://prafullkotecha.github.io/cheap-tour-hopper-79/> |
-| College Job Finder Landing Page | GitHub Pages | <https://prafullkotecha.github.io/bolt-college-job-finder-landing-page/> |
-| Design Templates | GitHub Pages | <https://prafullkotecha.github.io/design-templates/> |
-| Document Zenith View | GitHub Pages | <https://prafullkotecha.github.io/document-zenith-view/> |
-| Enlight Productions | GitHub Pages | <https://prafullkotecha.github.io/enlight-productions/> |
-| Gram Connect on Net | GitHub Pages | <https://prafullkotecha.github.io/gram-connect-on-net/> |
-| Monky Dashboard Concept | GitHub Pages | <https://prafullkotecha.github.io/monky-dashboard-concept-v0/> |
-| Mujtama Goal Getters Unite 69 | GitHub Pages | <https://prafullkotecha.github.io/mujtama-goal-getters-unite-69/> |
-| Photography Portfolio | GitHub Pages | <https://prafullkotecha.github.io/bolt-photography-portfolio/> |
-| PlantKit | GitHub Pages | <https://prafullkotecha.github.io/plantkit/> |
-| Pulse | GitHub Pages | <https://prafullkotecha.github.io/pulse/> |
-| QR Code Custom-erator | GitHub Pages | <https://prafullkotecha.github.io/qrcode-custom-erator/> |
-| Rainbow Button Component | GitHub Pages | <https://prafullkotecha.github.io/bolt-rainbow-button-component/> |
-| Riverside Temple Site | GitHub Pages | <https://prafullkotecha.github.io/riverside-temple-site/> |
-| Sunnyvale Temple Site | GitHub Pages | <https://prafullkotecha.github.io/sunnyvale-temple-site/> |
-| Roopsie Boutique | GitHub Pages | <https://prafullkotecha.github.io/roopsie-boutique/> |
-| Royal CRM | GitHub Pages | <https://prafullkotecha.github.io/royal-crm/> |
-| Seek Synergy | GitHub Pages | <https://prafullkotecha.github.io/seek-synergy/> |
-| Slidev Forked | GitHub Pages | <https://prafullkotecha.github.io/bolt-slidev-forked/> |
-| Tech Event Website | GitHub Pages | <https://prafullkotecha.github.io/tech-event-website/> |
-| Beats by Pooja | Cloudflare Pages (custom domain) | <https://beatsbypooja.com> |
-| Standby AI Studio | Google Cloud Run (custom domain) | <https://standby.direkshan.digital> |
-| City Events | Vercel | <https://city-events-three.vercel.app> |
-| DJ Set Planner | Muse (manual) | <https://muse.ai/s/dj-live-tabla-set-planner-xfn5xqxgxixxxtcyxp> |
-| Job Aggregator | Vercel | <https://job-aggregator-nu.vercel.app> |
-| Field Dispatch on Vercel eve (private demo, Google sign-in) | Vercel | <https://eve-field-dispatch.vercel.app> |
-| aislewise (private demo, Microsoft sign-in) | Azure Container Apps | <https://ca-aislewise-core.proudglacier-51df53ce.eastus2.azurecontainerapps.io> |
+| Project | Section | Host | Live URL |
+|---|---|---|---|
+| 340B Claims Adjudicator | Healthcare | GitHub Pages | <https://prafullkotecha.github.io/b-claim-alchemy/> |
+| AI Temp Recruiter | AI | GitHub Pages | <https://prafullkotecha.github.io/ai-temp-recruiter/> |
+| aislewise (private demo, sign-in) | IoT | Azure Container Apps | <https://ca-aislewise-core.proudglacier-51df53ce.eastus2.azurecontainerapps.io> |
+| Beats by Pooja | Entertainment | Cloudflare Pages (custom domain) | <https://beatsbypooja.com> |
+| Blooming Horizons | Community | GitHub Pages | <https://prafullkotecha.github.io/bloominghorizons-site/> |
+| City Events | Community | Vercel | <https://city-events-three.vercel.app> |
+| Design Templates | Productivity | GitHub Pages | <https://prafullkotecha.github.io/design-templates/> |
+| DJ Set Planner | Entertainment | GitHub Pages | <https://prafullkotecha.github.io/dj-set-planner/> |
+| Enlight Productions | Entertainment | GitHub Pages | <https://prafullkotecha.github.io/enlight-productions/> |
+| Field Dispatch on Vercel eve (private demo, sign-in) | Services | Vercel | <https://eve-field-dispatch.vercel.app> |
+| Fremont Gurdwara Site | Community | GitHub Pages | <https://prafullkotecha.github.io/fremont-gurdwara-site/> |
+| FreshConnect | Community | GitHub Pages | <https://prafullkotecha.github.io/gram-connect-on-net/> |
+| Job Aggregator | Community | Vercel | <https://job-aggregator-nu.vercel.app> |
+| Monky Dashboard | Productivity | GitHub Pages | <https://prafullkotecha.github.io/monky-dashboard-concept-v0/> |
+| PlantKit | IoT | GitHub Pages | <https://prafullkotecha.github.io/plantkit/> |
+| Pulse | Productivity | GitHub Pages | <https://prafullkotecha.github.io/pulse/> |
+| QR Studio Pro | Services | GitHub Pages | <https://prafullkotecha.github.io/qrcode-custom-erator/> |
+| Riverside Temple Site | Community | GitHub Pages | <https://prafullkotecha.github.io/riverside-temple-site/> |
+| Roopsie Boutique | Community | GitHub Pages | <https://prafullkotecha.github.io/roopsie-boutique/> |
+| Slidev | Productivity | GitHub Pages | <https://prafullkotecha.github.io/bolt-slidev-forked/> |
+| Standby AI Studio (private demo, sign-in) | Entertainment | Google Cloud Run (custom domain) | <https://standby.direkshan.digital> |
+| Sunnyvale Temple Site | Community | GitHub Pages | <https://prafullkotecha.github.io/sunnyvale-temple-site/> |
 
 `bloominghorizons.com` is not the replacement deployment and is not owned by this portfolio. Use the GitHub Pages URL above until an owned custom domain is connected.
 

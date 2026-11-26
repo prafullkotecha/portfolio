@@ -1,8 +1,8 @@
 {
   "id": "qrcode-custom-erator",
-  "title": "QR Code Custom-erator",
+  "title": "QR Studio Pro",
   "repo": "https://github.com/prafullkotecha/qrcode-custom-erator",
-  "description": "Whip up custom QR codes in a snap, share the magic, and watch the scan stats roll in live!",
+  "description": "Designs branded QR codes, generates them in batches and tracks scans with live analytics.",
   "framework": "TypeScript",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -16,5 +16,7 @@
   "last_commit": "2026-09-07",
   "live_url": "https://prafullkotecha.github.io/qrcode-custom-erator/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Services",
+  "repository_visibility": "private"
 }

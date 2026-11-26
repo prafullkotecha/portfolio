@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import projectsRaw from "@/data/projects.json";
 import type { Project } from "@/lib/types";
+import { LABEL_TEXT, showRepo, statusOf, type Status } from "@/lib/status";
 import Link from "next/link";
 
 const projects = projectsRaw as Project[];
@@ -20,9 +21,11 @@ const CAT_CODE: Record<string, string> = {
   "Next.js": "WEB",
 };
 
+const STATUS_CODE: Record<Status, string> = { live: "L", "private-demo": "D", source: "S" };
+
 function partNo(p: Project, index: number) {
-  // Format: PK-{tier}-{index}
-  return `PK·${p.tier}·${String(index).padStart(3, "0")}`;
+  // Format: PK-{status}-{index}
+  return `PK·${STATUS_CODE[statusOf(p)]}·${String(index).padStart(3, "0")}`;
 }
 
 function category(p: Project) {
@@ -30,22 +33,22 @@ function category(p: Project) {
   return "GEN";
 }
 
-const STATUS_LABEL: Record<string, { label: string; bg: string; color: string }> = {
-  A: { label: "IN STOCK", bg: "bg-[#0a0a0a]", color: "text-white" },
-  B: { label: "ON ORDER", bg: "bg-[#ffd400]", color: "text-[#0a0a0a]" },
-  C: { label: "DATASHEET", bg: "bg-transparent", color: "text-[#0a0a0a] border border-[#0a0a0a]" },
+const STATUS_LABEL: Record<Status, { label: string; bg: string; color: string }> = {
+  live: { label: "IN STOCK", bg: "bg-[#0a0a0a]", color: "text-white" },
+  "private-demo": { label: "BY APPOINTMENT", bg: "bg-[#ffd400]", color: "text-[#0a0a0a]" },
+  source: { label: "DATASHEET", bg: "bg-transparent", color: "text-[#0a0a0a] border border-[#0a0a0a]" },
 };
 
 export default function SpecSheet() {
   const [query, setQuery] = useState("");
-  const [tier, setTier] = useState<string | null>(null);
+  const [status, setStatus] = useState<Status | null>(null);
   const [aiOnly, setAiOnly] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
     return projects.filter(p => {
-      if (tier && p.tier !== tier) return false;
+      if (status && statusOf(p) !== status) return false;
       if (aiOnly && p.ai_providers.length === 0) return false;
       if (q) {
         const hay = `${p.title} ${p.description} ${p.tags.join(" ")} ${p.id}`.toLowerCase();
@@ -53,7 +56,7 @@ export default function SpecSheet() {
       }
       return true;
     });
-  }, [query, tier, aiOnly]);
+  }, [query, status, aiOnly]);
 
   return (
     <div className="min-h-screen w-full bg-[#f5f4ee] text-[#0a0a0a] selection:bg-[#ffd400]" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
@@ -80,7 +83,7 @@ export default function SpecSheet() {
               <p className="text-[13px] text-[#0a0a0a]/70 mt-2 max-w-md">{projects.length} units catalogued. AI agents, full-stack tooling, generative UI experiments. Built nights and weekends in San Francisco, CA.</p>
             </div>
             <Stat label="Units" value={projects.length} />
-            <Stat label="In Stock" value={projects.filter(p => p.tier === "A").length} accent />
+            <Stat label="In Stock" value={projects.filter(p => statusOf(p) === "live").length} accent />
             <Stat label="AI-Enabled" value={projects.filter(p => p.ai_providers.length > 0).length} />
             <Stat label="Distinct Vendors" value={new Set(projects.map(p => p.source)).size} />
           </div>
@@ -103,10 +106,10 @@ export default function SpecSheet() {
           <span className="text-[#0a0a0a]/40">|</span>
 
           <span className="font-bold uppercase tracking-[0.1em] text-[11px]">Stock</span>
-          <FilterRadio label="All" active={tier === null} onClick={() => setTier(null)} />
-          <FilterRadio label="A · in stock" active={tier === "A"} onClick={() => setTier("A")} />
-          <FilterRadio label="B · on order" active={tier === "B"} onClick={() => setTier("B")} />
-          <FilterRadio label="C · datasheet" active={tier === "C"} onClick={() => setTier("C")} />
+          <FilterRadio label="All" active={status === null} onClick={() => setStatus(null)} />
+          <FilterRadio label="In stock · live" active={status === "live"} onClick={() => setStatus("live")} />
+          <FilterRadio label="By appointment · private demo" active={status === "private-demo"} onClick={() => setStatus("private-demo")} />
+          <FilterRadio label="Datasheet · source" active={status === "source"} onClick={() => setStatus("source")} />
 
           <span className="text-[#0a0a0a]/40">|</span>
 
@@ -137,7 +140,7 @@ export default function SpecSheet() {
         {filtered.map((p, i) => {
           const idx = projects.indexOf(p) + 1;
           const isExpanded = expanded === p.id;
-          const status = STATUS_LABEL[p.tier];
+          const badge = STATUS_LABEL[statusOf(p)];
           return (
             <div key={p.id} className="border-b border-[#0a0a0a]/15">
               <div
@@ -152,7 +155,7 @@ export default function SpecSheet() {
                 <code className="text-[10px] font-medium tracking-wider text-[#0a0a0a]/70">{category(p)}</code>
                 <span className="text-[12px] text-[#0a0a0a]/80">{p.framework}</span>
                 <span className="text-[11px] text-[#0a0a0a]/70">{p.ai_providers.length ? p.ai_providers.join(", ") : "—"}</span>
-                <span className={`text-[10px] font-bold uppercase tracking-[0.1em] px-2 py-1 inline-block w-max ${status.bg} ${status.color}`}>{status.label}</span>
+                <span className={`text-[10px] font-bold uppercase tracking-[0.1em] px-2 py-1 inline-block w-max ${badge.bg} ${badge.color}`}>{badge.label}</span>
                 <span className="text-[14px] text-[#0a0a0a]/40">{isExpanded ? "−" : "+"}</span>
               </div>
               {isExpanded && (
@@ -164,6 +167,9 @@ export default function SpecSheet() {
                   <div className="text-[12px] space-y-1">
                     <SpecRow k="Part No." v={partNo(p, idx)} />
                     <SpecRow k="Title" v={p.title} />
+                    {p.group && <SpecRow k="Section" v={p.group} />}
+                    {p.label && <SpecRow k="Note" v={LABEL_TEXT[p.label]} />}
+                    {p.includes && p.includes.length > 0 && <SpecRow k="Includes" v={p.includes.join(" · ")} />}
                     <SpecRow k="Repo ID" v={<code>{p.id}</code>} />
                     <SpecRow k="Framework" v={p.framework} />
                     <SpecRow k="Vendor" v={p.source} />
@@ -176,11 +182,18 @@ export default function SpecSheet() {
                   <div className="space-y-2">
                     <p className="text-[10px] uppercase tracking-[0.2em] text-[#ffd400] mb-2">Order / Inspect</p>
                     {p.live_url ? (
-                      <a href={p.live_url} target="_blank" rel="noopener noreferrer" className="block bg-[#ffd400] text-[#0a0a0a] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px] hover:bg-white">Open live demo →</a>
+                      <a href={p.live_url} target="_blank" rel="noopener noreferrer" className="block bg-[#ffd400] text-[#0a0a0a] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px] hover:bg-white">
+                        {statusOf(p) === "private-demo" ? "Open (sign-in required) →" : "Open live demo →"}
+                      </a>
                     ) : (
-                      <span className="block bg-[#0a0a0a] border border-[#ffd400] text-[#ffd400] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px]">{p.tier === "C" ? "Datasheet only" : "Awaiting deploy"}</span>
+                      <span className="block bg-[#0a0a0a] border border-[#ffd400] text-[#ffd400] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px]">Datasheet only</span>
                     )}
-                    <a href={p.repo} target="_blank" rel="noopener noreferrer" className="block border border-[#f5f4ee] text-[#f5f4ee] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px] hover:bg-[#f5f4ee] hover:text-[#0a0a0a]">View source ↗</a>
+                    {p.extra_links?.map(l => (
+                      <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer" className="block border border-[#ffd400] text-[#ffd400] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px] hover:bg-[#ffd400] hover:text-[#0a0a0a]">{l.label} ↗</a>
+                    ))}
+                    {showRepo(p) && (
+                      <a href={p.repo} target="_blank" rel="noopener noreferrer" className="block border border-[#f5f4ee] text-[#f5f4ee] text-center py-3 font-bold uppercase tracking-[0.1em] text-[12px] hover:bg-[#f5f4ee] hover:text-[#0a0a0a]">View source ↗</a>
+                    )}
                   </div>
                 </div>
               )}
@@ -190,7 +203,7 @@ export default function SpecSheet() {
 
         {filtered.length === 0 && (
           <p className="py-24 text-center text-[14px]">
-            No units match. <button onClick={() => { setQuery(""); setTier(null); setAiOnly(false); }} className="underline font-bold">Reset filters</button>
+            No units match. <button onClick={() => { setQuery(""); setStatus(null); setAiOnly(false); }} className="underline font-bold">Reset filters</button>
           </p>
         )}
       </main>

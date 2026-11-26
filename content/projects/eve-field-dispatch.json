@@ -25,5 +25,12 @@
   "last_commit": "2026-11-15",
   "live_url": "https://eve-field-dispatch.vercel.app",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Services",
+  "label": "private-demo",
+  "video": {
+    "src": "/videos/field-dispatch-demo.mp4",
+    "poster": "/videos/field-dispatch-demo.jpg",
+    "caption": "The dispatcher drafts a new job and suggests a technician; nothing is created until a person approves. Sign-in required."
+  }
 }

@@ -2,7 +2,7 @@
   "id": "tagsmith",
   "title": "Tagsmith",
   "repo": "https://github.com/prafullkotecha/tagsmith",
-  "description": "Tag generation tooling.",
+  "description": "A WebNFC app that reads and programs NFC tags straight from your phone's browser, with nothing to install.",
   "framework": "Unknown",
   "tier": "B",
   "deploy_target": "cloudflare-pages",
@@ -15,5 +15,7 @@
   "last_commit": "2026-05-19",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Hardware",
+  "repository_visibility": "private"
 }

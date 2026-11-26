@@ -2,21 +2,22 @@
 
 import { useMemo, useState } from "react";
 import projectsRaw from "@/data/projects.json";
-import type { Project } from "@/lib/types";
+import { GROUPS, type Project } from "@/lib/types";
+import { STATUS_INFO, statusOf, type Status } from "@/lib/status";
 import { ProjectCard } from "@/components/ProjectCard";
 import Link from "next/link";
 
 const projects = projectsRaw as Project[];
 
-const TIER_LABELS: Record<string, { label: string; color: string }> = {
-  A: { label: "Live", color: "text-tierA" },
-  B: { label: "Soon", color: "text-tierB" },
-  C: { label: "Source", color: "text-tierC" },
+const STATUS_CHIPS: Record<Status, string> = {
+  live: "Live",
+  "private-demo": "Private demo",
+  source: "Source",
 };
 
 export default function Home() {
   const [query, setQuery] = useState("");
-  const [tier, setTier] = useState<string | null>(null);
+  const [status, setStatus] = useState<Status | null>(null);
   const [tag, setTag] = useState<string | null>(null);
   const [source, setSource] = useState<string | null>(null);
 
@@ -35,7 +36,7 @@ export default function Home() {
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
     return projects.filter(p => {
-      if (tier && p.tier !== tier) return false;
+      if (status && statusOf(p) !== status) return false;
       if (tag && !p.tags.includes(tag)) return false;
       if (source && p.source !== source) return false;
       if (q) {
@@ -44,11 +45,11 @@ export default function Home() {
       }
       return true;
     });
-  }, [query, tier, tag, source]);
+  }, [query, status, tag, source]);
 
   const stats = useMemo(() => {
     const total = projects.length;
-    const liveCount = projects.filter(p => p.live_url).length;
+    const liveCount = projects.filter(p => statusOf(p) === "live").length;
     const aiCount = projects.filter(p => p.ai_providers.length > 0).length;
     const sourcesCount = new Set(projects.map(p => p.source)).size;
     return { total, liveCount, aiCount, sourcesCount };
@@ -76,6 +77,8 @@ export default function Home() {
               <a href="https://github.com/prafullkotecha" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-4 hover:text-rust">GitHub →</a>
               <span className="text-muted">·</span>
               <a href="https://www.linkedin.com/in/prafullkotecha/" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-4 hover:text-rust">LinkedIn →</a>
+              <span className="text-muted">·</span>
+              <a href="https://direkshan.digital" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-4 hover:text-rust">direkshan.digital →</a>
             </div>
             <div className="flex flex-wrap gap-2 md:justify-end font-mono text-[10px] uppercase tracking-[0.15em] text-muted">
               <span className="text-rust">› catalog</span>
@@ -110,11 +113,11 @@ export default function Home() {
           </div>
           <div>
             <label className="block text-xs uppercase tracking-[0.2em] text-muted mb-2">Status</label>
-            <div className="flex gap-2">
-              <FilterChip active={tier === null} onClick={() => setTier(null)}>All</FilterChip>
-              {(["A", "B", "C"] as const).map(t => (
-                <FilterChip key={t} active={tier === t} onClick={() => setTier(t === tier ? null : t)} accent={TIER_LABELS[t].color}>
-                  {TIER_LABELS[t].label}
+            <div className="flex flex-wrap gap-2">
+              <FilterChip active={status === null} onClick={() => setStatus(null)}>All</FilterChip>
+              {(["live", "private-demo", "source"] as const).map(s => (
+                <FilterChip key={s} active={status === s} onClick={() => setStatus(s === status ? null : s)} accent={STATUS_INFO[s].text}>
+                  {STATUS_CHIPS[s]}
                 </FilterChip>
               ))}
             </div>
@@ -148,25 +151,49 @@ export default function Home() {
             ? <>The complete catalog</>
             : <>Showing <span className="text-rust">{filtered.length}</span> of {projects.length}</>}
         </p>
-        {(tier || tag || source || query) && (
-          <button onClick={() => { setTier(null); setTag(null); setSource(null); setQuery(""); }}
+        {(status || tag || source || query) && (
+          <button onClick={() => { setStatus(null); setTag(null); setSource(null); setQuery(""); }}
             className="font-mono text-xs uppercase tracking-wider text-muted hover:text-rust">
             Reset ↻
           </button>
         )}
       </div>
 
-      {/* GRID */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
-        {filtered.map((p, i) => (
-          <ProjectCard key={p.id} project={p} index={projects.indexOf(p) + 1} delay={Math.min(i, 12) * 30} />
-        ))}
-        {filtered.length === 0 && (
-          <div className="md:col-span-2 lg:col-span-3 bg-paper py-24 text-center font-display italic text-3xl text-muted">
-            Nothing in this drawer.
-          </div>
-        )}
-      </section>
+      {/* SECTION INDEX */}
+      <nav aria-label="Sections" className="flex flex-wrap gap-x-4 gap-y-1 mb-10 font-mono text-xs uppercase tracking-[0.15em] text-muted">
+        {GROUPS.map(g => {
+          const n = filtered.filter(p => p.group === g).length;
+          return n > 0 ? (
+            <a key={g} href={`#${g.toLowerCase()}`} className="hover:text-rust">
+              {g} <span className="text-muted/60">{n}</span>
+            </a>
+          ) : null;
+        })}
+      </nav>
+
+      {/* GROUPS */}
+      {GROUPS.map(group => {
+        const items = filtered.filter(p => p.group === group);
+        if (items.length === 0) return null;
+        return (
+          <section key={group} id={group.toLowerCase()} className="mb-12 md:mb-16 scroll-mt-8">
+            <div className="flex items-baseline gap-3 mb-4">
+              <h2 className="font-display text-3xl md:text-4xl text-ink">{group}</h2>
+              <span className="font-mono text-xs text-muted">{items.length}</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+              {items.map((p, i) => (
+                <ProjectCard key={p.id} project={p} index={projects.indexOf(p) + 1} delay={Math.min(i, 12) * 30} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
+      {filtered.length === 0 && (
+        <div className="bg-paper py-24 text-center font-display italic text-3xl text-muted border border-line">
+          Nothing in this drawer.
+        </div>
+      )}
 
       {/* FOOTER */}
       <footer className="mt-24 md:mt-32 pt-8 border-t-2 border-ink/30 text-xs font-mono text-muted">

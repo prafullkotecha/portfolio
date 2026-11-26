@@ -110,3 +110,6 @@
 109,C,pk-ai-studio-remix-finance-story,Remix Finance Story,Vite+TypeScript+Node,npm run build,dist,deferred,GEMINI_API_KEY,gemini,,,Private repository; copy of a Google AI Studio gallery app; server-side Gemini key needed
 110,C,pk-ai-studio-remix-shoebox-receipt-analyzer,Remix Expense & Receipts Analytics,Vite+React+Express,npm run build,dist,deferred,GEMINI_API_KEY,gemini,,,Private repository; copy of a Google AI Studio gallery app; server-side Gemini key needed
 111,C,agntcon-pocket,AGNTCon Pocket,Plain HTML/CSS/JS,npm run build,.,deferred,,,,,Private repository; unofficial AGNTCon + MCPCon 2026 schedule; single HTML file
+112,C,gemini-experiments,Gemini experiments,Vite+React,,,none,,gemini,,,"folds 26 AI Studio apps into one card"
+113,A,fremont-gurdwara-site,Fremont Gurdwara Site,Static HTML,,.,github-pages,,,yes,https://prafullkotecha.github.io/fremont-gurdwara-site/,
+114,C,demo-reel,Demo Reel,Node.js CLI,,,none,,,,,

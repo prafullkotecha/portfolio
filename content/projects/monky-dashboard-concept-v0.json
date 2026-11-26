@@ -1,8 +1,8 @@
 {
   "id": "monky-dashboard-concept-v0",
-  "title": "Monky Dashboard Concept",
+  "title": "Monky Dashboard",
   "repo": "https://github.com/prafullkotecha/monky-dashboard-concept-v0",
-  "description": "Concept dashboard with monkey theme — built with v0.",
+  "description": "A dashboard concept that started from a v0 community template and was reworked in v0.",
   "framework": "Next.js",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -16,5 +16,7 @@
   "last_commit": "2025-08-31",
   "live_url": "https://prafullkotecha.github.io/monky-dashboard-concept-v0/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Productivity",
+  "repository_visibility": "private"
 }

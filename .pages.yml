@@ -15,11 +15,11 @@ content:
     format: json
     filename: '{fields.id}.json'
     view:
-      fields: [title, tier, framework, source, published, live_url]
+      fields: [title, group, label, framework, source, published, live_url]
       primary: title
-      sort: [tier, title]
+      sort: [group, title]
       group:
-        field: tier
+        field: group
       search: [id, title, description, tags]
     fields:
       - name: id
@@ -40,8 +40,22 @@ content:
         type: boolean
         default: true
 
+      - name: group
+        label: 'Section (every published card needs one)'
+        type: select
+        options:
+          values: [Healthcare, Entertainment, Community, AI, Services, Hardware, IoT, Productivity]
+
+      - name: label
+        label: 'Card label (optional)'
+        type: select
+        options:
+          values:
+            - { value: 'private-demo', label: 'Private demo — link needs a sign-in; add a video' }
+            - { value: 'redesign-prototype', label: 'Redesign prototype — concept, not the official site' }
+
       - name: tier
-        label: 'Tier'
+        label: 'Tier (deploy planning only; the badge comes from live_url)'
         type: select
         options:
           values:

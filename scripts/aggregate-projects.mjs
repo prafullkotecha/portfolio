@@ -35,9 +35,29 @@ const all = files.map((f) => {
 const published = all.filter((p) => p.published !== false);
 const hidden = all.length - published.length;
 
-// Sort: tier asc (A,B,C), then alphabetical by title
+// Every published card belongs to one of the eight groups.
+const GROUPS = [
+  "Healthcare",
+  "Entertainment",
+  "Community",
+  "AI",
+  "Services",
+  "Hardware",
+  "IoT",
+  "Productivity",
+];
+const ungrouped = published.filter((p) => !GROUPS.includes(p.group));
+if (ungrouped.length) {
+  console.error(
+    `✗ published projects without a valid group: ${ungrouped.map((p) => p.id).join(", ")}`
+  );
+  process.exit(1);
+}
+
+// Sort: group order, then alphabetical by title
 published.sort((a, b) => {
-  if (a.tier !== b.tier) return a.tier.localeCompare(b.tier);
+  const g = GROUPS.indexOf(a.group) - GROUPS.indexOf(b.group);
+  if (g !== 0) return g;
   return (a.title || "").toLowerCase().localeCompare((b.title || "").toLowerCase());
 });
 

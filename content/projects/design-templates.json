@@ -2,7 +2,7 @@
   "id": "design-templates",
   "title": "Design Templates",
   "repo": "https://github.com/prafullkotecha/design-templates",
-  "description": "A collection of design templates.",
+  "description": "A mirror of a dashboard UI kit, kept as a reference for layouts and components. It started from that kit, not from scratch.",
   "framework": "HTML",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -15,5 +15,7 @@
   "last_commit": "2026-08-29",
   "live_url": "https://prafullkotecha.github.io/design-templates/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Productivity",
+  "repository_visibility": "private"
 }

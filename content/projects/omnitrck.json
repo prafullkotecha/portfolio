@@ -2,7 +2,7 @@
   "id": "omnitrck",
   "title": "OmniTrck",
   "repo": "https://github.com/prafullkotecha/omnitrck",
-  "description": "Android app to track purchases across stores.",
+  "description": "An Android app that tracks your purchases across stores.",
   "framework": "Kotlin",
   "tier": "C",
   "deploy_target": "deferred",
@@ -15,5 +15,7 @@
   "last_commit": "2026-05-23",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Productivity",
+  "repository_visibility": "private"
 }

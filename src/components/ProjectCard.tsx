@@ -1,15 +1,11 @@
 import type { Project } from "@/lib/types";
+import { LABEL_TEXT, STATUS_INFO, showRepo, statusOf } from "@/lib/status";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-const TIER_INFO: Record<string, { dot: string; label: string }> = {
-  A: { dot: "bg-tierA", label: "live" },
-  B: { dot: "bg-tierB", label: "soon" },
-  C: { dot: "bg-tierC", label: "source-only" },
-};
-
 export function ProjectCard({ project, index, delay }: { project: Project; index: number; delay: number }) {
-  const tier = TIER_INFO[project.tier];
+  const status = statusOf(project);
+  const badge = STATUS_INFO[status];
   const num = String(index).padStart(3, "0");
   const cleanDesc = project.description
     .replace(/^\*\*URL\*\*:.*$/gm, "")
@@ -26,8 +22,8 @@ export function ProjectCard({ project, index, delay }: { project: Project; index
       <div className="flex items-center justify-between mb-3 pb-2 border-b border-ink/20">
         <span className="font-mono text-[11px] tracking-[0.15em] text-muted">№ {num}</span>
         <div className="flex items-center gap-1.5">
-          <span className={`inline-block w-1.5 h-1.5 rounded-full ${tier.dot}`} />
-          <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted">{tier.label}</span>
+          <span className={`inline-block w-1.5 h-1.5 rounded-full ${badge.dot}`} />
+          <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted">{badge.label}</span>
         </div>
       </div>
 
@@ -64,6 +60,15 @@ export function ProjectCard({ project, index, delay }: { project: Project; index
         </figure>
       )}
 
+      {/* Label: private demo or redesign prototype */}
+      {project.label && (
+        <p className="mb-2">
+          <span className="inline-block font-mono text-[10px] uppercase tracking-[0.15em] px-1.5 py-0.5 border border-rust/50 text-rust">
+            {LABEL_TEXT[project.label]}
+          </span>
+        </p>
+      )}
+
       {/* Title */}
       <h3 className="font-display text-2xl leading-tight text-ink mb-2 group-hover:text-rust transition-colors">
         {project.title}
@@ -73,6 +78,16 @@ export function ProjectCard({ project, index, delay }: { project: Project; index
       <p className="font-mono text-[13px] leading-relaxed text-ink/75 mb-4 flex-1 min-h-[3.5em]">
         {cleanDesc || <span className="italic text-muted">— no description on file —</span>}
       </p>
+
+      {/* Folded apps (one card standing for several small builds) */}
+      {project.includes && project.includes.length > 0 && (
+        <details className="mb-4 font-mono text-[12px] text-ink/70">
+          <summary className="cursor-pointer text-[11px] uppercase tracking-[0.1em] text-muted hover:text-rust">
+            {project.includes.length} apps inside
+          </summary>
+          <p className="mt-2 leading-relaxed">{project.includes.join(" · ")}</p>
+        </details>
+      )}
 
       {/* Meta */}
       <div className="text-[10px] font-mono uppercase tracking-[0.1em] text-muted mb-3 space-y-0.5">
@@ -101,21 +116,32 @@ export function ProjectCard({ project, index, delay }: { project: Project; index
             rel="noopener noreferrer"
             className="text-rust font-medium underline decoration-dotted underline-offset-4 hover:no-underline"
           >
-            Live demo →
+            {status === "private-demo" ? "Open (sign-in) →" : "Live demo →"}
           </a>
-        ) : project.tier === "C" ? (
-          <span className="text-muted italic">source available</span>
         ) : (
-          <span className="text-tierB italic">coming soon</span>
+          <span className="text-muted italic">no public demo</span>
         )}
-        <a
-          href={project.repo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-auto text-ink/60 hover:text-ink underline decoration-dotted underline-offset-4"
-        >
-          GitHub ↗
-        </a>
+        {project.extra_links?.map((l) => (
+          <a
+            key={l.url}
+            href={l.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink/70 hover:text-ink underline decoration-dotted underline-offset-4"
+          >
+            {l.label} ↗
+          </a>
+        ))}
+        {showRepo(project) && (
+          <a
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-auto text-ink/60 hover:text-ink underline decoration-dotted underline-offset-4"
+          >
+            GitHub ↗
+          </a>
+        )}
       </div>
     </article>
   );
