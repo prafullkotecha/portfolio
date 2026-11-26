@@ -4,9 +4,9 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-2
 
 ## Current status
 
-- **54 cards are published, in eight sections; 22 of them have a working link.**
-- 19 open without a sign-in. Three are private demos that ask for one (aislewise, Standby AI Studio, Field Dispatch on Vercel eve), so their cards carry a short video instead.
-- 16 on GitHub Pages, 1 on Azure Container Apps, 1 on Cloudflare Pages (custom domain), 3 on Vercel, 1 on Google Cloud Run (custom domain).
+- **54 cards are published, in eight sections; 23 of them have a working link.**
+- 19 open without a sign-in. Four are private demos that ask for one (aislewise, Standby AI Studio, Field Dispatch on Vercel eve, Field Service Pro), so their cards carry a short video instead.
+- 16 on GitHub Pages, 2 on Azure Container Apps, 1 on Cloudflare Pages (custom domain), 3 on Vercel, 1 on Google Cloud Run (custom domain).
 - DJ Set Planner's app is served from GitHub Pages (`prafullkotecha/dj-set-planner`); its Muse video is the card's second link.
 - 11 deployments stay up but are no longer in the catalog: beat-stitch-studio, bloom-align-connect, bolt-college-job-finder-landing-page, bolt-photography-portfolio, bolt-rainbow-button-component, cheap-tour-hopper-79, document-zenith-view, mujtama-goal-getters-unite-69, royal-crm, seek-synergy, tech-event-website.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
@@ -35,6 +35,7 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-2
 | DJ Set Planner | Entertainment | GitHub Pages | <https://prafullkotecha.github.io/dj-set-planner/> |
 | Enlight Productions | Entertainment | GitHub Pages | <https://prafullkotecha.github.io/enlight-productions/> |
 | Field Dispatch on Vercel eve (private demo, sign-in) | Services | Vercel | <https://eve-field-dispatch.vercel.app> |
+| Field Service Pro (private demo, sign-in) | Services | Azure Container Apps | <https://servicepro-app.orangewater-2e58a500.centralus.azurecontainerapps.io> |
 | Fremont Gurdwara Site | Community | GitHub Pages | <https://prafullkotecha.github.io/fremont-gurdwara-site/> |
 | FreshConnect | Community | GitHub Pages | <https://prafullkotecha.github.io/gram-connect-on-net/> |
 | Job Aggregator | Community | Vercel | <https://job-aggregator-nu.vercel.app> |
@@ -64,7 +65,7 @@ City Events, DJ Set Planner, and Job Aggregator are private repositories with pu
 
 The Guest Experience App, three of the agent-framework courses (Microsoft Agent Framework, Strands Agents and Google ADK), RoamReel and the Proactive Co-Creator remix are private and source-only on the portfolio. Those courses' capstones run privately in their own clouds behind sign-ins and are not linked.
 
-aislewise and Field Dispatch on Vercel eve link to their private demos. Field Dispatch's landing page opens for anyone, but only the owner's Google account can sign in. aislewise's demo on Azure Container Apps goes straight to a Microsoft sign-in. Both cards say so. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
+aislewise, Field Dispatch on Vercel eve and Field Service Pro link to their private demos. Field Dispatch's landing page opens for anyone, but only the owner's Google account can sign in. aislewise's demo on Azure Container Apps goes straight to a Microsoft sign-in, and Field Service Pro's opens on its own sign-in page. All three cards say so. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
 
 ## How GitHub Pages deployment works
 
