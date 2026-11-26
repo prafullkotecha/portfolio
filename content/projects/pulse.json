@@ -2,7 +2,7 @@
   "id": "pulse",
   "title": "Pulse",
   "repo": "https://github.com/prafullkotecha/pulse",
-  "description": "A customizable daily tracking board for currency, gold, stocks, cricket, and arbitrary JSON data, with a responsive bento-grid interface.",
+  "description": "A daily board that tracks currencies, gold, stocks and any JSON feed in one bento grid.",
   "framework": "Flutter",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -20,5 +20,6 @@
   "last_commit": "2026-09-12",
   "live_url": "https://prafullkotecha.github.io/pulse/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Productivity"
 }

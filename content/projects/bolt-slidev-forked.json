@@ -1,8 +1,8 @@
 {
   "id": "bolt-slidev-forked",
-  "title": "Slidev Forked",
+  "title": "Slidev",
   "repo": "https://github.com/prafullkotecha/bolt-slidev-forked",
-  "description": "[Edit on StackBlitz ⚡️](https://sli.dev/new)",
+  "description": "The standard Slidev starter deck, forked in Bolt to try writing slides in Markdown.",
   "framework": "Unknown",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -13,5 +13,7 @@
   "last_commit": "2025-09-27",
   "live_url": "https://prafullkotecha.github.io/bolt-slidev-forked/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Productivity",
+  "repository_visibility": "private"
 }

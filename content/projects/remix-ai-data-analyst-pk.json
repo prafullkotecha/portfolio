@@ -20,5 +20,7 @@
   "last_commit": "2026-08-21",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "AI",
+  "repository_visibility": "private"
 }

@@ -1,8 +1,8 @@
 {
   "id": "b-claim-alchemy",
-  "title": "B Claim Alchemy",
+  "title": "340B Claims Adjudicator",
   "repo": "https://github.com/prafullkotecha/b-claim-alchemy",
-  "description": "Healthcare claims alchemy — transform raw claims data through ETL pipelines.",
+  "description": "Checks 340B claims against program rules and flags the ones that need review.",
   "framework": "Vite+React",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -16,5 +16,7 @@
   "last_commit": "2025-07-14",
   "live_url": "https://prafullkotecha.github.io/b-claim-alchemy/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Healthcare",
+  "repository_visibility": "private"
 }

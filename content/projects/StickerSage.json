@@ -2,7 +2,7 @@
   "id": "StickerSage",
   "title": "StickerSage",
   "repo": "https://github.com/prafullkotecha/StickerSage",
-  "description": "AI sticker generator with OpenAI image API — themes, packs.",
+  "description": "Generates themed sticker packs with OpenAI's image model.",
   "framework": "Vite+React",
   "tier": "C",
   "deploy_target": "deferred",
@@ -23,5 +23,7 @@
   "last_commit": "2025-04-13",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Entertainment",
+  "repository_visibility": "private"
 }

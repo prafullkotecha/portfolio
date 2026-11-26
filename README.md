@@ -1,6 +1,6 @@
 # Maker's Catalog — Portfolio
 
-Static Next.js site listing 111 hobby projects. Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
+Static Next.js site listing 54 hobby projects in eight sections (Healthcare, Entertainment, Community, AI, Services, Hardware, IoT, Productivity). Project content lives in `content/projects/`, is aggregated into `src/data/projects.json`, and renders as three portfolio prototypes plus a curated case-studies page.
 
 ## At a glance
 
@@ -10,7 +10,7 @@ Static Next.js site listing 111 hobby projects. Project content lives in `conten
 | **B** — minor work | 12 | Configuration, secrets, or managed services required | Vercel/Cloudflare plus the required service |
 | **C** — backend-heavy | 35 | Backend or database work required | Deferred until its runtime is provisioned |
 
-**Current deployment status:** 32/111 projects live (28.8%), including 25 on GitHub Pages, three on Vercel, one on Azure Container Apps, one manual deployment, and two existing custom-domain deployments. Two of them, aislewise and Field Dispatch on Vercel eve, are private demos that ask for a sign-in. The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
+**Current catalog:** 54 published cards (60 more are kept in `content/projects/` with `published: false`). 22 have a working link; three of those, aislewise, Standby AI Studio and Field Dispatch on Vercel eve, are private demos that ask for a sign-in, so their cards carry a short video. See [docs/DEPLOYMENTS.md](docs/DEPLOYMENTS.md). The portfolio is live at <https://prafullkotecha.github.io/portfolio/>.
 
 - [docs/DEPLOYMENTS.md](./docs/DEPLOYMENTS.md) — canonical live inventory and current GitHub Pages mechanics
 - [docs/HOSTING-OPTIONS.md](./docs/HOSTING-OPTIONS.md) — platform choices for remaining projects
@@ -50,7 +50,7 @@ Each save commits to GitHub. A push to `main` triggers the GitHub Pages workflow
 
 ### How it works under the hood
 
-- Source of truth: `content/projects/*.json` (one file per project, 111 today)
+- Source of truth: `content/projects/*.json` (one file per project; 114 today, 54 published)
 - Build-time aggregator: `scripts/aggregate-projects.mjs` runs at `predev` and `prebuild`, reading all files in `content/projects/`, filtering out unpublished entries, and writing the result to `src/data/projects.json`
 - The three React pages (`/`, `/v2`, `/v3`) import from `src/data/projects.json` as before — they don't know the CMS exists
 - `src/data/projects.json` is git-ignored (regenerated on each build) so there's only one source of truth
@@ -145,7 +145,11 @@ Repository Settings → Pages must use **GitHub Actions** as the source. See [do
   repo: string,          // GitHub URL
   description: string,
   framework: string,     // Vite+React | Next.js | ...
-  tier: "A" | "B" | "C", // controls badge + filter
+  tier: "A" | "B" | "C", // deploy planning only; the badge comes from live_url and label
+  group: "Healthcare" | "Entertainment" | "Community" | "AI" | "Services" | "Hardware" | "IoT" | "Productivity", // required when published
+  label?: "private-demo" | "redesign-prototype",
+  extra_links?: { label: string, url: string }[], // secondary links after the live link
+  includes?: string[],   // apps folded into one card
   deploy_target: string, // github-pages | cloudflare-pages | vercel | google-cloud-run | manual | deferred
   repository_visibility?: "private" | "public",
   license?: string,

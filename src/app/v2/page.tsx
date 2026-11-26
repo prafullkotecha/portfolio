@@ -3,22 +3,24 @@
 import { useMemo, useState } from "react";
 import projectsRaw from "@/data/projects.json";
 import type { Project } from "@/lib/types";
+import { LABEL_TEXT, showRepo, statusOf, type Status } from "@/lib/status";
 import Link from "next/link";
 
 const projects = projectsRaw as Project[];
 
-// ANSI-ish color per tier
-const TIER_COLOR: Record<string, string> = {
-  A: "text-[#3fb950]",   // green
-  B: "text-[#d29922]",   // yellow
-  C: "text-[#8b949e]",   // grey
+// ANSI-ish color per status
+const STATUS_COLOR: Record<Status, string> = {
+  live: "text-[#3fb950]",           // green
+  "private-demo": "text-[#d29922]", // yellow
+  source: "text-[#8b949e]",         // grey
 };
-const TIER_TAG: Record<string, string> = { A: "live", B: "wip ", C: "src " };
+const STATUS_TAG: Record<Status, string> = { live: "live", "private-demo": "demo", source: "src " };
+const STATUS_FLAG: Record<Status, string> = { live: "--live", "private-demo": "--demo", source: "--src" };
 
-function asPerm(tier: string) {
-  // Fake permission strings: live = full read/exec, wip = restricted, src = read-only
-  if (tier === "A") return "drwxr-xr-x";
-  if (tier === "B") return "drwxr-x---";
+function asPerm(status: Status) {
+  // Fake permission strings: live = full read/exec, demo = restricted, src = read-only
+  if (status === "live") return "drwxr-xr-x";
+  if (status === "private-demo") return "drwxr-x---";
   return "drw-r-----";
 }
 function asSize(idx: number) {
@@ -38,13 +40,13 @@ function asDate(commit: string) {
 
 export default function StandardOutput() {
   const [query, setQuery] = useState("");
-  const [tier, setTier] = useState<string | null>(null);
+  const [status, setStatus] = useState<Status | null>(null);
   const [aiOnly, setAiOnly] = useState(false);
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
     return projects.filter(p => {
-      if (tier && p.tier !== tier) return false;
+      if (status && statusOf(p) !== status) return false;
       if (aiOnly && p.ai_providers.length === 0) return false;
       if (q) {
         const hay = `${p.title} ${p.description} ${p.tags.join(" ")} ${p.id}`.toLowerCase();
@@ -52,13 +54,13 @@ export default function StandardOutput() {
       }
       return true;
     });
-  }, [query, tier, aiOnly]);
+  }, [query, status, aiOnly]);
 
   const stats = useMemo(() => ({
     total: projects.length,
     aiCount: projects.filter(p => p.ai_providers.length > 0).length,
     sourcesCount: new Set(projects.map(p => p.source)).size,
-    liveCount: projects.filter(p => p.live_url).length,
+    liveCount: projects.filter(p => statusOf(p) === "live").length,
     repos: "github.com/prafullkotecha",
     host: "san-diego (PST)",
     uptime: "18 mo",
@@ -112,9 +114,11 @@ export default function StandardOutput() {
             <span className="text-[#79c0ff]">~/projects</span>
             <span className="text-[#c9d1d9]">$ </span>
             <span className="text-[#c9d1d9]">ls -la --color </span>
-            <Flag active={tier === "A"} onClick={() => setTier(tier === "A" ? null : "A")}>--tier=A</Flag>{" "}
-            <Flag active={tier === "B"} onClick={() => setTier(tier === "B" ? null : "B")}>--tier=B</Flag>{" "}
-            <Flag active={tier === "C"} onClick={() => setTier(tier === "C" ? null : "C")}>--tier=C</Flag>{" "}
+            {(["live", "private-demo", "source"] as const).map(s => (
+              <span key={s}>
+                <Flag active={status === s} onClick={() => setStatus(status === s ? null : s)}>{STATUS_FLAG[s]}</Flag>{" "}
+              </span>
+            ))}
             <Flag active={aiOnly} onClick={() => setAiOnly(!aiOnly)}>--ai</Flag>
           </p>
 
@@ -131,7 +135,7 @@ export default function StandardOutput() {
           </p>
 
           <p className="text-[#6e7681] text-[11px]">
-            {"//"} total {filtered.length} of {projects.length}, sorted by tier asc
+            {"//"} total {filtered.length} of {projects.length}, grouped by section
           </p>
         </div>
 
@@ -193,10 +197,10 @@ function FileRow({ project: p, index }: { project: Project; index: number }) {
         onClick={() => setExpanded(!expanded)}
         className="cursor-pointer hover:bg-[#161b22] py-0.5 px-2 -mx-2 grid grid-cols-[100px_60px_180px_110px_1fr_70px] gap-3 items-baseline whitespace-nowrap"
       >
-        <span className="text-[#6e7681]">{asPerm(p.tier)}</span>
+        <span className="text-[#6e7681]">{asPerm(statusOf(p))}</span>
         <span className="text-[#6e7681]">{asSize(index)}</span>
         <span className="text-[#6e7681] text-[11px]">{asDate(p.last_commit)}</span>
-        <span className={`${TIER_COLOR[p.tier]} text-[11px]`}>[{TIER_TAG[p.tier]}]</span>
+        <span className={`${STATUS_COLOR[statusOf(p)]} text-[11px]`}>[{STATUS_TAG[statusOf(p)]}]</span>
         <span>
           <span className="text-[#c9d1d9] font-medium">{p.id}</span>
           {p.ai_providers.length > 0 && (
@@ -209,6 +213,9 @@ function FileRow({ project: p, index }: { project: Project; index: number }) {
       {expanded && (
         <div className="bg-[#161b22] border-l-2 border-[#f0883e] px-4 py-3 mb-1 text-[12px] grid grid-cols-[120px_1fr] gap-x-4 gap-y-1">
           <span className="text-[#6e7681]">title</span><span>{p.title}</span>
+          {p.group && <><span className="text-[#6e7681]">section</span><span>{p.group}</span></>}
+          {p.label && <><span className="text-[#6e7681]">label</span><span className="text-[#d29922]">{LABEL_TEXT[p.label]}</span></>}
+          {p.includes && p.includes.length > 0 && <><span className="text-[#6e7681]">includes</span><span>{p.includes.join(" · ")}</span></>}
           <span className="text-[#6e7681]">description</span><span>{p.description}</span>
           <span className="text-[#6e7681]">framework</span><span>{p.framework}</span>
           <span className="text-[#6e7681]">built_with</span><span>{p.source}</span>
@@ -219,9 +226,16 @@ function FileRow({ project: p, index }: { project: Project; index: number }) {
           <span className="text-[#6e7681]">$ open</span>
           <span className="space-x-3">
             {p.live_url ? (
-              <a href={p.live_url} target="_blank" rel="noopener noreferrer" className="text-[#3fb950] hover:underline">live →</a>
-            ) : <span className="text-[#d29922]">[awaiting deploy]</span>}
-            <a href={p.repo} target="_blank" rel="noopener noreferrer" className="text-[#79c0ff] hover:underline">github →</a>
+              <a href={p.live_url} target="_blank" rel="noopener noreferrer" className="text-[#3fb950] hover:underline">
+                {statusOf(p) === "private-demo" ? "open (sign-in) →" : "live →"}
+              </a>
+            ) : <span className="text-[#8b949e]">[source only]</span>}
+            {p.extra_links?.map(l => (
+              <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer" className="text-[#3fb950] hover:underline">{l.label.toLowerCase()} →</a>
+            ))}
+            {showRepo(p) && (
+              <a href={p.repo} target="_blank" rel="noopener noreferrer" className="text-[#79c0ff] hover:underline">github →</a>
+            )}
           </span>
         </div>
       )}

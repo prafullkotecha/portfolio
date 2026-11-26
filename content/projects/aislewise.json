@@ -22,5 +22,12 @@
   "last_commit": "2026-11-25",
   "live_url": "https://ca-aislewise-core.proudglacier-51df53ce.eastus2.azurecontainerapps.io",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "IoT",
+  "label": "private-demo",
+  "video": {
+    "src": "/videos/aislewise-demo.mp4",
+    "poster": "/videos/aislewise-demo.jpg",
+    "caption": "The live twin of a 24-rack GPU pod: rack health, power and the rack inspector. The app itself needs a Microsoft sign-in."
+  }
 }

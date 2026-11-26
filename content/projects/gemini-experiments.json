@@ -1,0 +1,22 @@
+{
+  "id": "gemini-experiments",
+  "title": "Gemini experiments",
+  "repo": "https://github.com/prafullkotecha",
+  "description": "26 small apps built in Google AI Studio to try Gemini's image, audio, video and agent features, from GemBooth and Pixshop to Video Analyzer.",
+  "framework": "Vite+React",
+  "tier": "C",
+  "deploy_target": "none",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [],
+  "ai_providers": ["gemini"],
+  "env_vars": [],
+  "tags": ["AI", "Gemini", "Experiments"],
+  "source": "Google AI Studio",
+  "last_commit": "2026-11-21",
+  "live_url": null,
+  "published": true,
+  "screenshot": null,
+  "group": "AI",
+  "includes": ["Bring Ideas to Life", "Chat with Docs", "Dictation App", "Echoscript", "Ecommerce Category Generator", "Expense & Receipts Analytics", "Finance Story", "Fit Check", "Flashcard Maker", "GemBooth", "Gemini Co Drawing", "Geoseeker", "Infinite Zoom Enhance", "LiveAudio", "Lumina Scheduling", "MCP Maps 3D", "Mediaslim", "PastForward", "Pixshop", "Proactive Co-Creator", "Research Visualization", "Robotics Spatial Understanding", "Type Motion", "UI Generator", "Veo3 Gallery", "Video Analyzer"]
+}

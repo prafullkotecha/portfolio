@@ -24,5 +24,7 @@
   "last_commit": "2025-11-04",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Healthcare",
+  "repository_visibility": "private"
 }

@@ -2,7 +2,7 @@
   "id": "340b-refgraph",
   "title": "340B RefGraph",
   "repo": "https://github.com/prafullkotecha/340b-refgraph",
-  "description": "Graph-based reference tooling for 340B.",
+  "description": "Maintains a graph of every entity in the 340B ecosystem: covered entities, pharmacies, TPAs, PBMs, wholesalers, manufacturers, consultants, auditors, state agencies and HRSA.",
   "framework": "Java",
   "tier": "C",
   "deploy_target": "deferred",
@@ -16,5 +16,7 @@
   "last_commit": "2026-08-19",
   "live_url": null,
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Healthcare",
+  "repository_visibility": "private"
 }

@@ -1,0 +1,21 @@
+{
+  "id": "demo-reel",
+  "title": "Demo Reel",
+  "repo": "https://github.com/prafullkotecha/demo-reel",
+  "description": "Turns a script into a narrated product-demo video, with a Playwright screen recording, a neural voice and captions.",
+  "framework": "Node.js CLI",
+  "tier": "C",
+  "deploy_target": "none",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [],
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": ["Video", "Automation", "Developer Tools"],
+  "source": "Mixed",
+  "last_commit": "2026-09-24",
+  "live_url": null,
+  "published": true,
+  "screenshot": null,
+  "group": "Productivity"
+}

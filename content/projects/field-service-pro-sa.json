@@ -46,5 +46,6 @@
     "src": "/videos/field-service-pro-mcp-claude.mp4",
     "poster": "/videos/field-service-pro-mcp-claude.jpg",
     "caption": "Signed in as a demo technician through the MCP server, Claude answers her questions from live job data and sees only her own jobs. Every call is audit-logged."
-  }
+  },
+  "group": "Services"
 }

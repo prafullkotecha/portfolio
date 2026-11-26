@@ -1,0 +1,22 @@
+{
+  "id": "fremont-gurdwara-site",
+  "title": "Fremont Gurdwara Site",
+  "repo": "https://github.com/prafullkotecha/fremont-gurdwara-site",
+  "description": "A concept redesign of the Gurdwara Sahib Fremont website, made to show its management what a refresh could look like. It is not the official site.",
+  "framework": "Static HTML",
+  "tier": "A",
+  "deploy_target": "github-pages",
+  "repository_visibility": "private",
+  "license": "proprietary",
+  "backend_services": [],
+  "ai_providers": [],
+  "env_vars": [],
+  "tags": ["Design", "Community", "Prototype", "Static/Landing"],
+  "source": "Mixed",
+  "last_commit": "2026-11-13",
+  "live_url": "https://prafullkotecha.github.io/fremont-gurdwara-site/",
+  "published": true,
+  "screenshot": null,
+  "group": "Community",
+  "label": "redesign-prototype"
+}

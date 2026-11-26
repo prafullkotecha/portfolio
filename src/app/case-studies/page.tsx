@@ -16,7 +16,6 @@ const featured = [
       "A production-minded QR workspace that turns a simple generator into a flexible design, batch, and analytics tool.",
     image: "/screenshots/case-studies/qrcode.png",
     live: "https://prafullkotecha.github.io/qrcode-custom-erator/",
-    repo: "https://github.com/prafullkotecha/qrcode-custom-erator",
     tone: "olive",
   },
   {
@@ -26,7 +25,6 @@ const featured = [
       "An AI-assisted recruiting console for moving from open roles to shortlists, candidate review, and outreach.",
     image: "/screenshots/case-studies/tempflow.png",
     live: "https://prafullkotecha.github.io/ai-temp-recruiter/",
-    repo: "https://github.com/prafullkotecha/ai-temp-recruiter",
     tone: "blue",
   },
   {
@@ -36,28 +34,16 @@ const featured = [
       "A complex healthcare workflow reframed as an approachable claims, eligibility, pricing, and reporting workspace.",
     image: "/screenshots/case-studies/claims.png",
     live: "https://prafullkotecha.github.io/b-claim-alchemy/",
-    repo: "https://github.com/prafullkotecha/b-claim-alchemy",
     tone: "cyan",
   },
   {
     title: "Roopsie Boutique",
-    discipline: "Commerce · Brand",
+    discipline: "Commerce · Redesign prototype",
     description:
       "A fashion storefront concept with editorial scale, confident art direction, and a clearer path from collection to fitting.",
     image: "/screenshots/case-studies/roopsie.png",
     live: "https://prafullkotecha.github.io/roopsie-boutique/",
-    repo: "https://github.com/prafullkotecha/roopsie-boutique",
     tone: "plum",
-  },
-  {
-    title: "Beat Stitch Studio",
-    discipline: "Creative tools · Audio",
-    description:
-      "A browser-based DJ workspace for combining loops, shaping transitions, and turning fragments into a coherent set.",
-    image: "/screenshots/case-studies/beat-stitch.png",
-    live: "https://prafullkotecha.github.io/beat-stitch-studio/",
-    repo: "https://github.com/prafullkotecha/beat-stitch-studio",
-    tone: "orange",
   },
   {
     title: "FreshConnect",
@@ -66,7 +52,6 @@ const featured = [
       "An ONDC-inspired marketplace that gives village producers a direct, comprehensible route to city customers.",
     image: "/screenshots/case-studies/freshconnect.png",
     live: "https://prafullkotecha.github.io/gram-connect-on-net/",
-    repo: "https://github.com/prafullkotecha/gram-connect-on-net",
     tone: "green",
   },
 ] as const;
@@ -131,9 +116,6 @@ export default function CaseStudiesPage() {
               </div>
               <div className={styles.summary}>
                 <p>{project.description}</p>
-                <a href={project.repo} target="_blank" rel="noopener noreferrer">
-                  View source <span aria-hidden="true">↗</span>
-                </a>
               </div>
             </div>
           </article>

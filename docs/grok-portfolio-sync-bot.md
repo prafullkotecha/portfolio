@@ -94,7 +94,10 @@ REPO CONTEXT
     deploy_target (github-pages|cloudflare-pages|vercel|google-cloud-run|manual|deferred),
     repository_visibility (private|public), license, backend_services[],
     ai_providers[], env_vars[],
-    tags[], source, last_commit (YYYY-MM-DD), live_url, published, screenshot
+    tags[], source, last_commit (YYYY-MM-DD), live_url, published, screenshot,
+    group (Healthcare|Entertainment|Community|AI|Services|Hardware|IoT|Productivity),
+    label (private-demo|redesign-prototype, optional)
+  The catalog is curated: a published card must have a group, or the build fails.
 - PROJECTS-CHECKLIST.csv columns:
     #,tier,project_id,title,framework,build_cmd,output_dir,deploy_target,
     env_vars,ai_providers,deployed?,live_url,notes
@@ -141,14 +144,15 @@ PROCEDURE
    - source: "Google AI Studio" | "Lovable" | "GitHub Spark" | "Mixed" |
      "Hand-built" (infer from name/description patterns)
    - last_commit: pushed_at date (YYYY-MM-DD)
-   - live_url: null, published: true, screenshot: null
+   - live_url: null, published: false, screenshot: null (the owner picks a
+     group and publishes new cards himself; do not set group or publish)
 6. Update PROJECTS-CHECKLIST.csv: append rows for new projects with the next
    sequential number, matching tier/framework/deploy_target.
 7. Update README.md counts: total projects line and the tier table
    (A/B/C counts) so they match the actual number of content/projects files.
 8. Sanity check: run `node scripts/aggregate-projects.mjs` (or validate JSON
-   files individually) — all files must parse and the aggregate count must
-   equal the file count in content/projects/.
+   files individually) — all files must parse, every published file must have
+   a group, and the aggregate count must equal the number of published files.
 9. Report a summary:
    - N new projects added (list id → tier)
    - N existing projects updated (list field changes)

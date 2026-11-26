@@ -2,7 +2,7 @@
   "id": "roopsie-boutique",
   "title": "Roopsie Boutique",
   "repo": "https://github.com/prafullkotecha/roopsie-boutique",
-  "description": "Roopsie Boutique ecommerce rebuild — PRD and click-through prototypes",
+  "description": "A redesign prototype of Roopsie Boutique's online store, rebuilt as a full bridal-wear shopping experience.",
   "framework": "HTML",
   "tier": "A",
   "deploy_target": "github-pages",
@@ -16,5 +16,8 @@
   "last_commit": "2026-08-12",
   "live_url": "https://prafullkotecha.github.io/roopsie-boutique/",
   "published": true,
-  "screenshot": null
+  "screenshot": null,
+  "group": "Community",
+  "repository_visibility": "private",
+  "label": "redesign-prototype"
 }
