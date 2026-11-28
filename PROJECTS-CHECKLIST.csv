@@ -69,7 +69,7 @@
 068,C,pk-ai-studio-remix-geoseeker,Remix Geoseeker,Vite+React,npm run build,dist,deferred,GEMINI_API_KEY;NODE_ENV;VITE_GOOGLE_MAPS_API_KEY,gemini,,,defer — backend-heavy
 069,C,StickerSage,StickerSage,Vite+React,npm run build,dist,deferred,DATABASE_URL;NODE_ENV;OPENAI_API_KEY;REPL_ID;VITE_OPENAI_API_KEY,openai,,,defer — backend-heavy
 070,C,gemini-ai-studio-therapy-assistant,Therapy Assistant,Vite+React,npm run build,dist,deferred,FRONTEND_URL;GEMINI_API_KEY;NODE_ENV;PORT;VITE_BACKEND_URL,gemini,,,defer — backend-heavy
-071,C,therapy-clinic-nextjs,Therapy Clinic Nextjs,Next.js,npm run build,.next,deferred,ANALYZE;ARCJET_KEY;AUTH_PROVIDERS;AUTH_SECRET;AUTH_URL;AWS_REGION;CHECKLY_EMAIL_ADDRESS;CHECKLY_LOGICAL_ID;CHECKLY_PROJECT_NAME;CI;DATABASE_URL;DEV_BYPASS_AUTH;ENVIRONMENT_URL;KEYCLOAK_CLIENT_ID;KEYCLOAK_CLIENT_SECRET,,,,defer — backend-heavy
+071,C,therapy-clinic-nextjs,Therapy Clinic Nextjs,Next.js,npm run build,.next,manual,ANALYZE;ARCJET_KEY;AUTH_PROVIDERS;AUTH_SECRET;AUTH_URL;AWS_REGION;CHECKLY_EMAIL_ADDRESS;CHECKLY_LOGICAL_ID;CHECKLY_PROJECT_NAME;CI;DATABASE_URL;DEV_BYPASS_AUTH;ENVIRONMENT_URL;KEYCLOAK_CLIENT_ID;KEYCLOAK_CLIENT_SECRET,,yes,https://bloominghorizons.direkshan.digital,Private repository; private demo on AWS ECS Fargate behind a sign-in
 072,A,qrcode-custom-erator,QR Code Custom-erator,TypeScript,npm run build,dist,github-pages,,,yes,https://prafullkotecha.github.io/qrcode-custom-erator/,GitHub Actions deploy-pages workflow
 073,A,beats-by-pooja,Beats by Pooja,Astro,npm run build,dist,cloudflare-pages,,,yes,https://beatsbypooja.com,
 074,A,design-templates,Design Templates,HTML,,,github-pages,,,yes,https://prafullkotecha.github.io/design-templates/,GitHub Actions deploy-pages workflow

@@ -1,12 +1,12 @@
 # Deployment Inventory
 
-Canonical record of the portfolio's live deployments. Last verified: **2026-11-26**.
+Canonical record of the portfolio's live deployments. Last verified: **2026-11-28**.
 
 ## Current status
 
-- **54 cards are published, in eight sections; 23 of them have a working link.**
-- 19 open without a sign-in. Four are private demos that ask for one (aislewise, Standby AI Studio, Field Dispatch on Vercel eve, Field Service Pro), so their cards carry a short video instead.
-- 16 on GitHub Pages, 2 on Azure Container Apps, 1 on Cloudflare Pages (custom domain), 3 on Vercel, 1 on Google Cloud Run (custom domain).
+- **54 cards are published, in eight sections; 24 of them have a working link.**
+- 19 open without a sign-in. Five are private demos that ask for one (aislewise, Standby AI Studio, Field Dispatch on Vercel eve, Field Service Pro, Therapy Clinic), so their cards carry a short video instead.
+- 16 on GitHub Pages, 2 on Azure Container Apps, 1 on Cloudflare Pages (custom domain), 3 on Vercel, 1 on Google Cloud Run (custom domain), 1 on AWS ECS Fargate (custom domain).
 - DJ Set Planner's app is served from GitHub Pages (`prafullkotecha/dj-set-planner`); its Muse video is the card's second link.
 - 11 deployments stay up but are no longer in the catalog: beat-stitch-studio, bloom-align-connect, bolt-college-job-finder-landing-page, bolt-photography-portfolio, bolt-rainbow-button-component, cheap-tour-hopper-79, document-zenith-view, mujtama-goal-getters-unite-69, royal-crm, seek-synergy, tech-event-website.
 - The portfolio itself is hosted by GitHub Pages at <https://prafullkotecha.github.io/portfolio/>.
@@ -48,6 +48,7 @@ Canonical record of the portfolio's live deployments. Last verified: **2026-11-2
 | Slidev | Productivity | GitHub Pages | <https://prafullkotecha.github.io/bolt-slidev-forked/> |
 | Standby AI Studio (private demo, sign-in) | Entertainment | Google Cloud Run (custom domain) | <https://standby.direkshan.digital> |
 | Sunnyvale Temple Site | Community | GitHub Pages | <https://prafullkotecha.github.io/sunnyvale-temple-site/> |
+| Therapy Clinic (private demo, sign-in) | Healthcare | AWS ECS Fargate (custom domain) | <https://bloominghorizons.direkshan.digital> |
 
 `bloominghorizons.com` is not the replacement deployment and is not owned by this portfolio. Use the GitHub Pages URL above until an owned custom domain is connected.
 
@@ -65,7 +66,7 @@ City Events, DJ Set Planner, and Job Aggregator are private repositories with pu
 
 The Guest Experience App, three of the agent-framework courses (Microsoft Agent Framework, Strands Agents and Google ADK), RoamReel and the Proactive Co-Creator remix are private and source-only on the portfolio. Those courses' capstones run privately in their own clouds behind sign-ins and are not linked.
 
-aislewise, Field Dispatch on Vercel eve and Field Service Pro link to their private demos. Field Dispatch's landing page opens for anyone, but only the owner's Google account can sign in. aislewise's demo on Azure Container Apps goes straight to a Microsoft sign-in, and Field Service Pro's opens on its own sign-in page. All three cards say so. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
+aislewise, Field Dispatch on Vercel eve, Field Service Pro and Therapy Clinic link to their private demos. Field Dispatch's landing page opens for anyone, but only the owner's Google account can sign in. aislewise's demo on Azure Container Apps goes straight to a Microsoft sign-in, Field Service Pro's opens on its own sign-in page, and Therapy Clinic's landing page opens for anyone but the app needs a sign-in. All four cards say so. The WebAI 2026 Badge is badge firmware, flashed onto the device by hand, so it has nothing to host.
 
 ## How GitHub Pages deployment works
 
