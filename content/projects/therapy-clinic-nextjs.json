@@ -2,10 +2,10 @@
   "id": "therapy-clinic-nextjs",
   "title": "Therapy Clinic",
   "repo": "https://github.com/prafullkotecha/therapy-clinic-nextjs",
-  "description": "Multi-tenant HIPAA-compliant behavioral therapy clinic management system",
+  "description": "Multi-tenant, HIPAA-aware behavioral therapy clinic management system built with Next.js, PostgreSQL and Keycloak. The hosted demo runs on AWS and is private: it asks for a sign-in.",
   "framework": "Next.js",
   "tier": "C",
-  "deploy_target": "deferred",
+  "deploy_target": "manual",
   "ai_providers": [],
   "env_vars": [
     "ANALYZE",
@@ -29,10 +29,16 @@
     "Next.js"
   ],
   "source": "Mixed",
-  "last_commit": "2026-09-07",
-  "live_url": null,
+  "last_commit": "2026-11-27",
+  "live_url": "https://bloominghorizons.direkshan.digital",
   "published": true,
   "screenshot": null,
+  "video": {
+    "src": "/videos/therapy-clinic-demo.mp4",
+    "poster": "/videos/therapy-clinic-demo.jpg",
+    "caption": "The landing page in light and dark. The clinic app itself needs a sign-in."
+  },
   "group": "Healthcare",
-  "repository_visibility": "private"
+  "repository_visibility": "private",
+  "label": "private-demo"
 }
